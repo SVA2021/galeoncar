@@ -1,0 +1,31 @@
+body {
+	margin: 0 auto;
+	padding: 0 6px;
+	font-size: $html-font-size;
+}
+
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: $mq-xs-container;
+	
+	@include media-xs {
+		width: 100%;
+	}
+
+	@include media-sm {
+		width: $mq-sm-container;
+	}
+
+	@include media-md {
+		width: $mq-md-container;
+	}
+
+	@include media-lg {
+		width: $mq-lg-container;
+	}
+
+	@include media-xl {
+		width: $mq-xl-container;
+	}
+}

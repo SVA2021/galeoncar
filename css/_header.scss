@@ -1,0 +1,546 @@
+.header {
+
+	// .header__container
+
+	&__container {
+		margin: 0 auto;
+		padding: 0px 17px 0px 14px;
+		height: 70px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		border-radius: 5px;
+		color: $color-white;
+		background-color: $color-green;
+
+		.header__head {
+			position: relative;
+			width: 100%;
+			order: 1;
+
+			.header__logo {
+				display: block;
+				font: bold rem(18px) $OpenSans;
+				color: $color-white;
+			}
+
+			// hamburger button
+			.menu__icon {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translate(0%, -50%);
+				width: 36px;
+				height: 36px;
+				z-index: 20;
+				border-radius: 50%;
+				cursor: pointer;
+				box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+				span {
+					position: absolute;
+					display: block;
+					background: $color-white;
+					width: 24px;
+					height: 2px;
+					margin-top: -1px;
+					left: 6px;
+					top: 50%;
+					transition: all 0.5s ease;
+
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					display: block;
+					background: $color-white;
+
+					width: 24px;
+					height: 2px;
+					margin-bottom: -1px;
+					left: 6px;
+					top: 10px;
+
+					transform-origin: center;
+					transform: rotate(0deg);
+					transition: all 0.5s ease;
+				}
+
+				&::before {
+					content: "";
+					position: absolute;
+					display: block;
+					background: $color-white;
+
+					width: 24px;
+					height: 2px;
+					margin-top: -1px;
+					left: 6px;
+					bottom: 10px;
+
+					transform-origin: center;
+					transform: rotate(0deg);
+					transition: all 0.5s ease;
+				}
+
+			}
+		}
+
+		.menu,
+		.contacts {
+			display: none;
+		}
+	}
+
+	.active {
+		padding: 31px 23px 7px 28px;
+		z-index: 10;
+		width: 100%;
+		height: auto;
+
+		.menu,
+		.contacts {
+			display: block;
+		}
+
+		// hamburger menu X-animation
+		.menu__icon {
+
+			span {
+				display: none;
+			}
+
+			&::after {
+				top: 50%;
+				transform-origin: center;
+				transform: rotate(135deg);
+				transition: all 0.5s ease;
+			}
+
+			&::before {
+				top: 50%;
+				transform-origin: center;
+				transform: rotate(45deg);
+				transition: all 0.5s ease;
+			}
+		}
+	}
+
+	// .header__logo
+
+	&__logo {
+		font: bold rem(18px) $OpenSans;
+		color: $color-white;
+	}
+
+	// .header__menu
+
+	&__menu {
+		width: 100%;
+	}
+
+	// .header__contacts
+
+	&__contacts {
+		width: 100%;
+	}
+}
+
+.menu {
+	// .menu__search
+
+	&__search {
+		position: relative;
+		margin: 22px 0px 27px 0px;
+
+		input {
+			width: 100%;
+			height: 36px;
+			border-radius: 10px;
+		}
+
+		button {
+			position: absolute;
+			right: 0;
+			width: 36px;
+			height: 36px;
+			border-radius: 10px;
+			color: $color-green;
+			background-color: $color-gray-f0;
+		}
+	}
+
+	// .menu__body
+
+	&__body {}
+
+	// .menu__list
+
+	&__list {
+		color: $color-text-29;
+		font: 400 rem(16px) $OpenSans;
+		text-transform: uppercase;
+
+		li {
+			margin-top: 5px;
+			padding: 5px 0 5px 0;
+			cursor: pointer;
+
+			a:link,
+			a:visited,
+			a:hover,
+			a:active {
+				text-decoration: none;
+				color: $color-text-29;
+			}
+		}
+	}
+
+	// .menu__link
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__item {
+
+		.submenu {
+			display: none;
+		}
+
+
+		.item__active {
+			display: block;
+		}
+
+	}
+}
+
+.arrow {
+	@include arrow($color-text-29, 1px, 3px);
+}
+
+.arrow__small {
+	@include arrow($color-text-29, 1px, 2px);
+}
+
+.down {
+	transform: rotate(45deg);
+}
+
+.right {
+	transform: rotate(-45deg);
+}
+
+.left {
+	transform: rotate(135deg);
+}
+
+.up {
+	transform: rotate(-135deg);
+}
+
+.submenu {
+	padding: 10px;
+	font-size: 0.625em;
+	text-transform: capitalize;
+
+
+	&__item {
+
+		a {}
+
+		.submenu {
+			display: none;
+		}
+
+
+		.item__active {
+			display: block;
+		}
+	}
+
+}
+
+.item__active {
+	display: block;
+}
+
+.contacts {
+	margin: 25px 0px 0px 0px;
+
+	// .contacts__tel
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
+		color: $color-white;
+		font: 700 rem(18px) $OpenSans;
+		text-decoration: none;
+	}
+
+	&__callback {}
+
+	&__tel {
+		margin-bottom: 3px;
+		text-decoration: none;
+	}
+
+	&__comment {
+		display: block;
+		font: 600 rem(12px) $OpenSans;
+	}
+
+	// .contacts__call
+
+	&__call {
+		width: 100%;
+		margin: 19px 0px 23px 0px;
+		height: 47px;
+		font: 600 rem(14px) $OpenSans;
+		color: $color-green;
+		background-color: $color-white;
+		text-transform: uppercase;
+		border-radius: 5px;
+	}
+
+	// .contacts__login
+
+	&__login {
+		margin: 0 auto;
+		text-align: center;
+
+		button {
+			width: 100%;
+			height: 40px;
+			color: inherit;
+			background-color: inherit;
+			text-transform: uppercase;
+			font: 600 rem(14px) $OpenSans;
+		}
+
+		.icon-person-simple {
+			font-size: rem(23px);
+		}
+
+		span {
+			display: block;
+		}
+	}
+}
+
+@include media-sm {
+	.header {
+
+		&__container {
+			height: 93px;
+
+			.contacts {}
+
+		}
+
+		.header__head {
+
+			.header__logo {
+				font-size: rem(27px);
+			}
+
+
+			.menu__icon {
+				width: 50px;
+				height: 50px;
+
+				span {
+					width: 32px;
+					left: 9px;
+				}
+
+				&::after {
+					width: 32px;
+					left: 9px;
+					top: 14px;
+				}
+
+				&::before {
+					width: 32px;
+					left: 9px;
+					bottom: 14px;
+				}
+			}
+		}
+
+
+		.active {
+			padding: 51px 51px 7px 51px;
+
+			.menu__icon {
+
+				span {
+					display: none;
+				}
+
+				&::after {
+					top: 50%;
+					transform-origin: center center;
+					transform: rotate(135deg);
+					transition: all 0.5s ease;
+				}
+
+				&::before {
+					top: 50%;
+					transform-origin: center;
+					transform: rotate(45deg);
+					transition: all 0.5s ease;
+				}
+			}
+
+
+		}
+
+		.menu {
+			// .menu__search
+
+			&__search {
+				margin: 42px 0px 44px 0px;
+
+				.icon-search {
+					font-size: rem(30px);
+				}
+
+				input {
+					height: 60px;
+					border-radius: 16px;
+				}
+
+				button {
+					width: 60px;
+					height: 60px;
+					border-radius: 16px;
+				}
+			}
+
+			&__list {
+				font: 500 rem(30px) $OpenSans;
+
+				li {
+					margin-top: 10px;
+					padding: 10px 0 10px 0;
+					cursor: pointer;
+
+					a:link,
+					a:visited,
+					a:hover,
+					a:active {
+						text-decoration: none;
+						color: $color-text-29;
+					}
+				}
+			}
+		}
+	}
+
+	.arrow {
+		@include arrow($color-text-29, 2px, 6px);
+	}
+
+	.arrow__small {
+		@include arrow($color-text-29, 2px, 4px);
+	}
+
+	.contacts {
+
+		.icon-Vector-phone {
+			font-size: rem(26px);
+		}
+
+		// .contacts__tel
+		a:link,
+		a:visited,
+		a:hover,
+		a:active {
+			font-size: rem(36px);
+		}
+
+		&__tel {
+			margin-bottom: 6px;
+		}
+
+		&__comment {
+			font-size: rem(24px);
+		}
+
+		// .contacts__call
+
+		&__call {
+			margin: 35px 200px 55px 0px;
+			height: 91px;
+			font-size: rem(28px);
+			border-radius: 10px;
+		}
+
+		// .contacts__login
+
+		&__login {
+
+			button {
+				width: 100%;
+				height: 80px;
+				font-size: rem(28px);
+			}
+
+			.icon-person-simple {
+				font-size: rem(52px);
+			}
+
+		}
+	}
+}
+
+@include media-md {
+	.header {
+		margin: 0 auto;
+		padding: 0;
+
+		&__container {
+			flex-direction: row;
+			// align-items: center;
+			flex-wrap: wrap;
+
+			.contacts {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.menu {
+				display: block;
+			}
+
+			.menu__icon {
+				display: none;
+			}
+		}
+
+		&__head {
+			order: 1;
+			// width: 40%;
+		}
+
+		&__contacts {
+			order: 2;
+			// width: 60%;
+		}
+
+		&__menu {
+			order: 3;
+			// width: 100%;
+		}
+
+	}
+
+	.active {
+		// padding: 51px 51px 7px 51px;
+	}
+}

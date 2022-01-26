@@ -1,0 +1,37 @@
+//!*************COLORS **********************/
+//*common colors
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #ccc;
+//*text
+$color-text-29: #294B29;
+
+//* gray colors
+$color-gray-91: #919191;
+
+//**************MEDIA QUERIES ****************/
+$mq-xl: 1919px;
+$mq-xl-container: 1663px;
+$mq-lg: 1335px; //base for this project
+$mq-lg-container: 1170px; //base for this project
+$mq-md: 1023px;
+$mq-md-container: 961px;
+$mq-sm: 767px;
+$mq-sm-container: 724px;
+$mq-xs: 320px;
+$mq-xs-container: 294px;
+
+//**************FONTS****************/
+
+//gilroy
+$OpenSans: 'Open Sans',
+sans-serif;
+$Roboto: 'Roboto',
+sans-serif;
+// Trajan pro3
+$Inter: 'Inter',
+sans-serif;
+
+//**BASE FONT-SIZE FOR REM CALCULATION */
+
+$html-font-size: 16px;
