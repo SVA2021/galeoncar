@@ -2,24 +2,27 @@
 //*common colors
 $color-white: #fff;
 $color-black: #000;
-$color-gray: #ccc;
-//*text
-$color-text-29: #294B29;
+$color-pr1: #0A0C11;
+$color-pr2: #15171E;
+$color-pr3: #232731;
+$color-pr4: #EDC5A2;
+$color-red6: #B72025;
+$color-brown: #5E4139;
 
-//* gray colors
-$color-gray-91: #919191;
 
 //**************MEDIA QUERIES ****************/
 $mq-xl: 1919px;
-$mq-xl-container: 1663px;
-$mq-lg: 1335px; //base for this project
-$mq-lg-container: 1170px; //base for this project
-$mq-md: 1023px;
-$mq-md-container: 961px;
+$mq-xl-container: 1440px;
+$mq-lg: 1279px; //base for this project
+$mq-lg-container: 1212px; //base for this project
+$mq-md: 999px;
+$mq-md-container: 948px;
 $mq-sm: 767px;
-$mq-sm-container: 724px;
-$mq-xs: 320px;
-$mq-xs-container: 294px;
+$mq-sm-container: 720px;
+$mq-xs: 410px;
+$mq-xs-container: 372px;
+$mq-xxs: 320px;
+$mq-xxs-container: 282px;
 
 //**************FONTS****************/
 
