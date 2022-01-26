@@ -2,6 +2,7 @@
 
 #development initial files
 /assets
+/fonts
 # dependencies
 /node_modules
 /.pnp

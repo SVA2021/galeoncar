@@ -4,5 +4,9 @@
 @import './_global';
 @import './_functions';
 @import './_fonts';
-@import './_header';
+// @import './_header';
 @import './_footer';
+
+.main {
+	font: normal 16px 'Proxima Nova';
+}

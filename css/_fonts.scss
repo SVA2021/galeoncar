@@ -1,10 +1,115 @@
-// as Gilroy
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+//****************Gilroy
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap');
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy-Heavy.eot');
+	src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+			url('../fonts/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy-Heavy.woff') format('woff'),
+			url('../fonts/Gilroy-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
 
-// as Trajan pro 3
-@import url('https://fonts.googleapis.com/css?family=Inter:regular&display=swap');
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-SemiBold.eot');
+	src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+			url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+			url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
 
-// all svg icons, created with iconmoon.io service
-@import './_iconFont';
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'),
+			url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy-Regular.woff') format('woff'),
+			url('../fonts/Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.eot');
+	src: local('Gilroy Medium'), local('Gilroy-Medium'),
+			url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy-Medium.woff') format('woff'),
+			url('../fonts/Gilroy-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Bold.eot');
+	src: local('Gilroy Bold'), local('Gilroy-Bold'),
+			url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy-Bold.woff') format('woff'),
+			url('../fonts/Gilroy-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Black.eot');
+	src: local('Gilroy Black'), local('Gilroy-Black'),
+			url('../fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Gilroy-Black.woff') format('woff'),
+			url('../fonts/Gilroy-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+//****************Cera pro
+
+@font-face {
+	font-family: 'Cera Pro';
+	src: url('../fonts/CeraPro/CeraPro-Regular.eot');
+	src: local('Cera Pro Regular'), local('CeraPro-Regular'),
+			url('../fonts/CeraPro/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/CeraPro/CeraPro-Regular.woff') format('woff'),
+			url('../fonts/CeraPro/CeraPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cera Pro';
+	src: url('../fonts/CeraPro/CeraPro-Black.eot');
+	src: local('Cera Pro Black'), local('CeraPro-Black'),
+			url('../fonts/CeraPro/CeraPro-Black.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/CeraPro/CeraPro-Black.woff') format('woff'),
+			url('../fonts/CeraPro/CeraPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cera Pro';
+	src: url('../fonts/CeraPro/CeraPro-Bold.eot');
+	src: local('Cera Pro Bold'), local('CeraPro-Bold'),
+			url('../fonts/CeraPro/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/CeraPro/CeraPro-Bold.woff') format('woff'),
+			url('../fonts/CeraPro/CeraPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+//**********ProximaNova
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+			url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2'),
+			url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+			url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

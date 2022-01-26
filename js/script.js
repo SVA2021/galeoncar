@@ -18,3 +18,6 @@ for (const item of itemExpandedArray) {
 		hiddenList.classList.toggle('item__active');
 	})
 }
+
+let result = document.querySelector('.main').style.font;
+console.log(result);
