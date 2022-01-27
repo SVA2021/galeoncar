@@ -118,6 +118,11 @@
 
 	// .menu__item
 
+	&__item {
+		font: normal 14px $Gilroy;
+		line-height: 17px;
+	}
+
 	&__item:not(:first-child) {
 		margin-top: 8px;
 	}
@@ -127,8 +132,6 @@
 	a:visited,
 	a:hover,
 	a:active {
-		font: normal 14px $Gilroy;
-		line-height: 17px;
 		text-decoration: none;
 		color: $color-white;
 	}
@@ -455,20 +458,24 @@
 
 		// .menu__body
 
-		&__body {
-		}
+		&__body {}
 
 
 		// .menu__item
 		&__item {
 			margin-right: 24px;
+			font-size: 16px;
+
 		}
 
 		&__item:not(:first-child) {
 			// margin-top: 0;
 		}
 
-		&__link {}
+		&__link {
+			// font-size: 16px;
+
+		}
 	}
 
 	.apple-shop,
@@ -477,4 +484,31 @@
 			height: 45px;
 		}
 	}
+}
+
+//**** XL container (1920)  ********//////////
+
+@include media-xl {
+	.header {
+
+		&__container {
+			width: $mq-xl-container;
+			height: $height-header-xl;
+			grid-template-rows: 50% 50%;
+		}
+
+		// .header__phone
+
+		&__phone {
+			font-size: 36px;
+		}
+
+	}
+
+	// .menu__item
+	.menu__item {
+		font-size: 18px;
+	}
+
+
 }

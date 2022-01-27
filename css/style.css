@@ -472,6 +472,11 @@ body {
   z-index: 10;
 }
 
+.menu__item {
+  font: normal 14px "Gilroy", sans-serif;
+  line-height: 17px;
+}
+
 .menu__item:not(:first-child) {
   margin-top: 8px;
 }
@@ -480,8 +485,6 @@ body {
 .menu a:visited,
 .menu a:hover,
 .menu a:active {
-  font: normal 14px "Gilroy", sans-serif;
-  line-height: 17px;
   text-decoration: none;
   color: #fff;
 }
@@ -696,10 +699,26 @@ body {
   }
   .menu__item {
     margin-right: 24px;
+    font-size: 16px;
   }
   .apple-shop img,
   .google-shop img {
     height: 45px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .header__container {
+    width: 1440px;
+    height: 150px;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  .header__phone {
+    font-size: 36px;
+  }
+  .menu__item {
+    font-size: 18px;
   }
 }
 
