@@ -115,6 +115,13 @@ body {
   }
 }
 
+@media (min-width: 999px) {
+  .wrapper {
+    min-width: 999px;
+    width: 948px;
+  }
+}
+
 @font-face {
   font-family: "galeoncar";
   src: url("../fonts/iconmoon/galeoncar.ttf?wytpmi") format("truetype"), url("../fonts/iconmoon/galeoncar.woff?wytpmi") format("woff"), url("../fonts/iconmoon/galeoncar.svg?wytpmi#galeoncar") format("svg");
@@ -513,10 +520,6 @@ body {
     background-position: center right;
     width: 720px;
     height: 80px;
-    margin: 0 auto;
-    position: relative;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 32px 47px;
@@ -582,6 +585,75 @@ body {
   .google-shop {
     height: 24px;
     margin-left: 15px;
+  }
+}
+
+@media (min-width: 999px) {
+  .header__container {
+    width: 948px;
+    height: 100px;
+    background-position: 100% 45%;
+    background-size: 71% 1px;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+    -ms-grid-rows: 45px 55px;
+        grid-template-rows: 45px 55px;
+        grid-template-areas: 'logo logo . menu menu menu menu menu menu social' 'logo logo . phone phone phone . . app app';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__social {
+    font-size: 16px;
+  }
+  .header__social span {
+    margin: 0 5px;
+  }
+  .header__phone {
+    margin: 0px;
+    font-size: 24px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .logo-lion {
+    height: 60px;
+  }
+  .logo-text {
+    height: 56px;
+  }
+  .menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: menu;
+  }
+  .menu__body {
+    position: unset;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: inherit;
+  }
+  .menu__item {
+    margin-right: 16px;
+  }
+  .menu__item:not(:first-child) {
+    margin-top: 0;
+  }
+  .apple-shop,
+  .google-shop {
+    height: 30px;
   }
 }
 

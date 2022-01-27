@@ -20,9 +20,10 @@ body {
 		width: $mq-sm-container;
 	}
 
-	// @include media-md {
-	// 	width: $mq-md-container;
-	// }
+	@include media-md {
+		min-width: $mq-md;
+		width: $mq-md-container;
+	}
 
 	// @include media-lg {
 	// 	width: $mq-lg-container;

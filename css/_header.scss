@@ -194,9 +194,6 @@
 			width: $mq-sm-container;
 			height: $height-header-sm;
 
-			margin: 0 auto;
-			position: relative;
-			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-rows: 32px 47px;
 			grid-template-areas:
@@ -266,4 +263,110 @@
 		margin-left: 15px;
 	}
 
+}
+
+//**** MD container (1000)  ********//////////
+
+@include media-md {
+	.header {
+
+		&__container {
+			width: $mq-md-container;
+			height: $height-header-md;
+
+			background-position: 100% 45%;
+			background-size: 71% 1px;
+
+
+			grid-template-columns: repeat(10, 1fr);
+			grid-template-rows: 45px 55px;
+			grid-template-areas:
+				'logo logo . menu menu menu menu menu menu social'
+				'logo logo . phone phone phone . . app app';
+			align-items: center;
+		}
+
+		// .header__menu-bar
+
+		&__menu-bar {}
+
+		// .header__logo
+
+		&__logo {}
+
+		// .header__menu
+
+		&__menu {}
+
+		// .header__social
+
+		&__social {
+			font-size: 16px;
+
+			span {
+				margin: 0 5px;
+			}
+		}
+
+		// .header__phone
+
+		&__phone {
+			margin: 0px;
+			font-size: 24px;
+			justify-self: start;
+		}
+
+		// .header__app-shop
+
+		&__app-shop {}
+
+
+	}
+
+	.icon-menu {
+		display: none;
+	}
+
+	.logo-lion {
+		height: 60px;
+	}
+
+	.logo-text {
+		height: 56px;
+	}
+
+	.menu {
+
+		// .menu__body
+
+		grid-area: menu;
+
+		&__body {
+			position: unset;
+			margin: 0;
+			padding: 0;
+			height: auto;
+			width: auto;
+			display: flex;
+			flex-direction: row;
+			background-color: inherit;
+		}
+
+
+		// .menu__item
+		&__item {
+			margin-right: 16px;
+		}
+
+		&__item:not(:first-child) {
+			margin-top: 0;
+		}
+
+		&__link {}
+	}
+
+	.apple-shop,
+	.google-shop {
+		height: 30px;
+	}
 }
