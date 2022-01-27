@@ -15,9 +15,10 @@ body {
 		width: $mq-xs-container;
 	}
 
-	// @include media-sm {
-	// 	width: $mq-sm-container;
-	// }
+	@include media-sm {
+		min-width: $mq-sm;
+		width: $mq-sm-container;
+	}
 
 	// @include media-md {
 	// 	width: $mq-md-container;

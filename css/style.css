@@ -108,6 +108,13 @@ body {
   }
 }
 
+@media (min-width: 767px) {
+  .wrapper {
+    min-width: 767px;
+    width: 720px;
+  }
+}
+
 @font-face {
   font-family: "galeoncar";
   src: url("../fonts/iconmoon/galeoncar.ttf?wytpmi") format("truetype"), url("../fonts/iconmoon/galeoncar.woff?wytpmi") format("woff"), url("../fonts/iconmoon/galeoncar.svg?wytpmi#galeoncar") format("svg");
@@ -466,12 +473,9 @@ body {
   color: #B72025;
 }
 
-.apple-shop {
-  width: 106px;
-}
-
+.apple-shop,
 .google-shop {
-  width: 106px;
+  height: 32px;
 }
 
 @media (min-width: 410px) {
@@ -491,8 +495,93 @@ body {
   .logo-text {
     height: 34px;
   }
-  header__phone {
+  .header__phone {
+    margin-top: 6px;
     font-size: 18px;
+  }
+}
+
+@media (min-width: 767px) {
+  .header {
+    background-image: none;
+  }
+  .header__container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff40), to(#ffffff40));
+    background-image: linear-gradient(180deg, #ffffff40, #ffffff40);
+    background-repeat: no-repeat;
+    background-size: 60% 1px;
+    background-position: center right;
+    width: 720px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 32px 47px;
+        grid-template-rows: 32px 47px;
+        grid-template-areas: 'logo . social' 'logo phone app';
+  }
+  .header__logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: logo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__phone {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-top: 9px;
+    font-size: 22px;
+  }
+  .header__app-shop {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: app;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .logo-lion {
+    height: 45px;
+  }
+  .logo-text {
+    height: 42px;
+  }
+  .menu__body {
+    top: 80px;
+    left: 0px;
+    height: 249px;
+    padding: 32px;
+  }
+  .menu__item:not(:first-child) {
+    margin-top: 16px;
+  }
+  .apple-shop,
+  .google-shop {
+    height: 24px;
+    margin-left: 15px;
   }
 }
 
