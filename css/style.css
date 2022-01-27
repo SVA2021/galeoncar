@@ -315,9 +315,19 @@ body {
 }
 
 .header {
-  margin: 0 auto;
+  background-color: #15171E;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff40), to(#ffffff40));
+  background-image: linear-gradient(180deg, #ffffff40, #ffffff40);
+  background-repeat: no-repeat;
+  background-size: 50% 1px;
+  background-position: center right;
+}
+
+.header__container {
   width: 282px;
   height: 60px;
+  margin: 0 auto;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -326,8 +336,6 @@ body {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: 'logo social' 'logo phone';
-  background-color: #15171E;
-  color: #fff;
 }
 
 .header__logo {
@@ -354,7 +362,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: social;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +380,7 @@ body {
 }
 
 .header__social span {
-  margin: 0 2px;
+  margin: 0 4px;
 }
 
 .header__phone {
@@ -400,6 +408,7 @@ body {
   top: 257px;
   left: 32px;
   row-gap: 20px;
+  z-index: 10;
 }
 
 .icon-menu {
@@ -429,6 +438,7 @@ body {
 
 .menu__body.menu__active {
   display: block;
+  z-index: 10;
 }
 
 .menu__item:not(:first-child) {

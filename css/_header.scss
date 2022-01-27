@@ -1,17 +1,25 @@
 .header {
-	margin: 0 auto;
-	width: $mq-xxs-container;
-	height: $height-header-xxs;
-	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-		'logo social'
-		'logo phone';
 
 	background-color: $color-pr2;
 	color: $color-white;
+	background-image: linear-gradient(180deg, #ffffff40, #ffffff40);
+	background-repeat: no-repeat;
+	background-size: 50% 1px;
+	background-position: center right;
+
+	&__container {
+		width: $mq-xxs-container;
+		height: $height-header-xxs;
+
+		margin: 0 auto;
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			'logo social'
+			'logo phone';
+	}
 
 	// .header__menu-bar
 
@@ -35,7 +43,7 @@
 
 	&__social {
 		grid-area: social;
-		border-bottom: 1px solid rgba($color: #fff, $alpha: 0.25);
+		margin-top: 10px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -43,7 +51,7 @@
 		font-size: 14px;
 
 		span {
-			margin: 0 2px;
+			margin: 0 4px;
 		}
 	}
 
@@ -69,6 +77,7 @@
 		top: $height-header-xxs + 197px;
 		left: 32px;
 		row-gap: 20px;
+		z-index: $z-index-navigation;
 
 		a {}
 	}
@@ -106,7 +115,7 @@
 
 	&__body.menu__active {
 		display: block;
-
+		z-index: $z-index-navigation;
 	}
 
 	// .menu__item
