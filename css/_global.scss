@@ -9,10 +9,11 @@ body {
 	position: relative;
 	min-width: $mq-xxs;
 	width: $mq-xxs-container;
-	
-	// @include media-xs {
-	// 	width: $mq-xs-container;
-	// }
+
+	@include media-xs {
+		min-width: $mq-xs;
+		width: $mq-xs-container;
+	}
 
 	// @include media-sm {
 	// 	width: $mq-sm-container;

@@ -101,6 +101,13 @@ body {
   width: 282px;
 }
 
+@media (min-width: 410px) {
+  .wrapper {
+    min-width: 410px;
+    width: 372px;
+  }
+}
+
 @font-face {
   font-family: "galeoncar";
   src: url("../fonts/iconmoon/galeoncar.ttf?wytpmi") format("truetype"), url("../fonts/iconmoon/galeoncar.woff?wytpmi") format("woff"), url("../fonts/iconmoon/galeoncar.svg?wytpmi#galeoncar") format("svg");
@@ -350,9 +357,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -414,12 +418,11 @@ body {
 .icon-menu {
   display: block;
   font-size: 14px;
-  margin-right: 12px;
+  padding: 12px 12px 12px 0px;
 }
 
 .logo-lion {
   height: 30px;
-  color: #fff;
 }
 
 .logo-text {
@@ -469,6 +472,28 @@ body {
 
 .google-shop {
   width: 106px;
+}
+
+@media (min-width: 410px) {
+  .header__container {
+    width: 372px;
+    height: 64px;
+  }
+  .menu__body {
+    top: 64px;
+  }
+  .header__app-shop.app-shop__active {
+    top: 261px;
+  }
+  .logo-lion {
+    height: 36px;
+  }
+  .logo-text {
+    height: 34px;
+  }
+  header__phone {
+    font-size: 18px;
+  }
 }
 
 .main {

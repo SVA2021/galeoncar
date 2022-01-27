@@ -31,7 +31,6 @@
 		grid-area: logo;
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		align-items: center;
 	}
 
@@ -87,12 +86,11 @@
 .icon-menu {
 	display: block;
 	font-size: 14px;
-	margin-right: 12px;
+	padding: 12px 12px 12px 0px;
 }
 
 .logo-lion {
 	height: 30px;
-	color: $color-white;
 }
 
 .logo-text {
@@ -152,4 +150,33 @@
 
 .google-shop {
 	width: 106px;
+}
+
+//**** XS container (410)  ********//////////
+
+@include media-xs {
+	.header__container {
+		width: $mq-xs-container;
+		height: $height-header-xs;
+	}
+
+	.menu__body {
+		top: $height-header-xs;
+	}
+
+	.header__app-shop.app-shop__active {
+		top: $height-header-xs + 197px;
+	}
+
+	.logo-lion {
+		height: 36px;
+	}
+
+	.logo-text {
+		height: 34px;
+	}
+
+	header__phone {
+		font-size: 18px;
+	}
 }
