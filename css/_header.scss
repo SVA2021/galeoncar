@@ -146,7 +146,9 @@
 
 .apple-shop,
 .google-shop {
-	height: 32px;
+	img {
+		height: 32px;
+	}
 }
 
 //**** XS container (410)  ********//////////
@@ -259,8 +261,11 @@
 
 	.apple-shop,
 	.google-shop {
-		height: 24px;
 		margin-left: 15px;
+
+		img {
+			height: 24px;
+		}
 	}
 
 }
@@ -275,11 +280,11 @@
 			height: $height-header-md;
 
 			background-position: 100% 45%;
-			background-size: 71% 1px;
+			background-size: 72% 1px;
 
 
 			grid-template-columns: repeat(10, 1fr);
-			grid-template-rows: 45px 55px;
+			grid-template-rows: 45% 55%;
 			grid-template-areas:
 				'logo logo . menu menu menu menu menu menu social'
 				'logo logo . phone phone phone . . app app';
@@ -312,6 +317,7 @@
 
 		&__phone {
 			margin: 0px;
+			margin-left: -10px;
 			font-size: 24px;
 			justify-self: start;
 		}
@@ -344,6 +350,7 @@
 		&__body {
 			position: unset;
 			margin: 0;
+			margin-left: -10px;
 			padding: 0;
 			height: auto;
 			width: auto;
@@ -367,6 +374,107 @@
 
 	.apple-shop,
 	.google-shop {
-		height: 30px;
+		img {
+			height: 30px;
+		}
+	}
+}
+
+
+//**** LG container (1280)  ********//////////
+
+@include media-lg {
+	.header {
+
+		&__container {
+			width: $mq-lg-container;
+			height: $height-header-lg;
+
+			// background-position: 100% 45%;
+			// background-size: 71% 1px;
+
+
+			// grid-template-columns: repeat(10, 1fr);
+			// grid-template-rows: 45px 55px;
+			grid-template-areas:
+				'logo logo . menu menu menu menu menu menu social'
+				'logo logo . phone phone phone . app app app';
+			align-items: center;
+		}
+
+		// .header__menu-bar
+
+		&__menu-bar {}
+
+		// .header__logo
+
+		&__logo {}
+
+		// .header__menu
+
+		&__menu {}
+
+		// .header__social
+
+		&__social {
+			// 	font-size: 16px;
+
+			span {
+				// margin: 0 5px;
+			}
+		}
+
+		// .header__phone
+
+		&__phone {
+			// margin: 0px;
+			font-size: 32px;
+			// justify-self: start;
+		}
+
+		// .header__app-shop
+
+		&__app-shop {}
+
+
+	}
+
+	.icon-menu {
+		// display: none;
+	}
+
+	.logo-lion {
+		height: 90px;
+	}
+
+	.logo-text {
+		height: 84px;
+	}
+
+	.menu {
+
+		// .menu__body
+
+		&__body {
+		}
+
+
+		// .menu__item
+		&__item {
+			margin-right: 24px;
+		}
+
+		&__item:not(:first-child) {
+			// margin-top: 0;
+		}
+
+		&__link {}
+	}
+
+	.apple-shop,
+	.google-shop {
+		img {
+			height: 45px;
+		}
 	}
 }

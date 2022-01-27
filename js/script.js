@@ -7,7 +7,7 @@ const appShop = document.querySelector('.header__app-shop');
 const menuList = document.querySelector('.menu__body');
 let windowWidth = document.documentElement.clientWidth;
 
-if (windowWidth < 1000) {
+// if (windowWidth < 1000) {
 	menuBtn.addEventListener('click', () => {
 		if (windowWidth <= 767) {
 			appShop.classList.toggle('app-shop__active');
@@ -15,4 +15,4 @@ if (windowWidth < 1000) {
 		menuList.classList.toggle('menu__active');
 	}
 	);
-}
+// }

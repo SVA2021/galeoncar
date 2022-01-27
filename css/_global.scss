@@ -25,11 +25,13 @@ body {
 		width: $mq-md-container;
 	}
 
-	// @include media-lg {
-	// 	width: $mq-lg-container;
-	// }
+	@include media-lg {
+		min-width: $mq-lg;
+		width: $mq-lg-container;
+	}
 
-	// @include media-xl {
-	// 	width: $mq-xl-container;
-	// }
+	@include media-xl {
+		min-width: $mq-xl;
+		width: $mq-xl-container;
+	}
 }

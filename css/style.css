@@ -122,6 +122,20 @@ body {
   }
 }
 
+@media (min-width: 1279px) {
+  .wrapper {
+    min-width: 1279px;
+    width: 1212px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .wrapper {
+    min-width: 1919px;
+    width: 1440px;
+  }
+}
+
 @font-face {
   font-family: "galeoncar";
   src: url("../fonts/iconmoon/galeoncar.ttf?wytpmi") format("truetype"), url("../fonts/iconmoon/galeoncar.woff?wytpmi") format("woff"), url("../fonts/iconmoon/galeoncar.svg?wytpmi#galeoncar") format("svg");
@@ -480,8 +494,8 @@ body {
   color: #B72025;
 }
 
-.apple-shop,
-.google-shop {
+.apple-shop img,
+.google-shop img {
   height: 32px;
 }
 
@@ -583,8 +597,11 @@ body {
   }
   .apple-shop,
   .google-shop {
-    height: 24px;
     margin-left: 15px;
+  }
+  .apple-shop img,
+  .google-shop img {
+    height: 24px;
   }
 }
 
@@ -593,11 +610,11 @@ body {
     width: 948px;
     height: 100px;
     background-position: 100% 45%;
-    background-size: 71% 1px;
+    background-size: 72% 1px;
     -ms-grid-columns: (1fr)[10];
         grid-template-columns: repeat(10, 1fr);
-    -ms-grid-rows: 45px 55px;
-        grid-template-rows: 45px 55px;
+    -ms-grid-rows: 45% 55%;
+        grid-template-rows: 45% 55%;
         grid-template-areas: 'logo logo . menu menu menu menu menu menu social' 'logo logo . phone phone phone . . app app';
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -611,6 +628,7 @@ body {
   }
   .header__phone {
     margin: 0px;
+    margin-left: -10px;
     font-size: 24px;
     -ms-grid-column-align: start;
         justify-self: start;
@@ -633,6 +651,7 @@ body {
   .menu__body {
     position: unset;
     margin: 0;
+    margin-left: -10px;
     padding: 0;
     height: auto;
     width: auto;
@@ -651,9 +670,36 @@ body {
   .menu__item:not(:first-child) {
     margin-top: 0;
   }
-  .apple-shop,
-  .google-shop {
+  .apple-shop img,
+  .google-shop img {
     height: 30px;
+  }
+}
+
+@media (min-width: 1279px) {
+  .header__container {
+    width: 1212px;
+    height: 140px;
+        grid-template-areas: 'logo logo . menu menu menu menu menu menu social' 'logo logo . phone phone phone . app app app';
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__phone {
+    font-size: 32px;
+  }
+  .logo-lion {
+    height: 90px;
+  }
+  .logo-text {
+    height: 84px;
+  }
+  .menu__item {
+    margin-right: 24px;
+  }
+  .apple-shop img,
+  .google-shop img {
+    height: 45px;
   }
 }
 
