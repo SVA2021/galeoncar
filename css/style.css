@@ -97,37 +97,8 @@ body {
 .wrapper {
   margin: 0 auto;
   position: relative;
-  width: 294px;
-}
-
-@media (min-width: 320px) {
-  .wrapper {
-    width: 100%;
-  }
-}
-
-@media (min-width: 767px) {
-  .wrapper {
-    width: 724px;
-  }
-}
-
-@media (min-width: 1023px) {
-  .wrapper {
-    width: 961px;
-  }
-}
-
-@media (min-width: 1335px) {
-  .wrapper {
-    width: 1170px;
-  }
-}
-
-@media (min-width: 1919px) {
-  .wrapper {
-    width: 1663px;
-  }
+  min-width: 320px;
+  width: 282px;
 }
 
 @font-face {
@@ -341,6 +312,153 @@ body {
   src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+.header {
+  margin: 0 auto;
+  width: 282px;
+  height: 60px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: 'logo social' 'logo phone';
+  background-color: #15171E;
+  color: #fff;
+}
+
+.header__logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__social {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: social;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 14px;
+}
+
+.header__social span {
+  margin: 0 2px;
+}
+
+.header__phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: phone;
+  margin-top: 4px;
+  font: bold 14px "Gilroy", sans-serif;
+  color: #EDC5A2;
+}
+
+.header__app-shop {
+  display: none;
+}
+
+.header__app-shop.app-shop__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 257px;
+  left: 32px;
+  row-gap: 20px;
+}
+
+.icon-menu {
+  display: block;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.logo-lion {
+  height: 30px;
+  color: #fff;
+}
+
+.logo-text {
+  height: 28px;
+}
+
+.menu__body {
+  position: absolute;
+  top: 60px;
+  display: none;
+  height: 309px;
+  width: 171px;
+  padding: 34px 32px 21px 32px;
+  background-color: #0A0C11;
+}
+
+.menu__body.menu__active {
+  display: block;
+}
+
+.menu__item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.menu a:link,
+.menu a:visited,
+.menu a:hover,
+.menu a:active {
+  font: normal 14px "Gilroy", sans-serif;
+  line-height: 17px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a:hover {
+  color: #EDC5A2;
+}
+
+.menu a:active {
+  color: #B72025;
+}
+
+.apple-shop {
+  width: 106px;
+}
+
+.google-shop {
+  width: 106px;
 }
 
 .main {
