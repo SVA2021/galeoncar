@@ -1,14 +1,19 @@
 body {
 	margin: 0 auto;
+  height: 100%;
 	padding: 0 6px;
 	font-size: $html-font-size;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
+  flex: 1 0 auto;
 	margin: 0 auto;
 	position: relative;
 	min-width: $mq-xxs;
 	width: $mq-xxs-container;
+	z-index: 1;
 
 	@include media-xs {
 		min-width: $mq-xs;

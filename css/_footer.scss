@@ -1,0 +1,144 @@
+.footer {
+	flex-shrink: 0;
+	margin: 0 auto;
+	height: $height-footer-xxs;
+	width: $mq-xxs;
+	z-index: $z-index-navigation;
+	text-align: center;
+	background-color: $color-pr2;
+	color: $color-white;
+	font: normal 13px $Gilroy;
+
+	// .footer__menu
+
+	&__menu {
+		display: none;
+	}
+
+	// .footer__copyright
+
+	&__copyright {
+		letter-spacing: 1px;
+		background-image: linear-gradient(180deg, #ffffff32, #ffffff32), linear-gradient(180deg, #ffffff32, #ffffff32);
+		background-repeat: no-repeat, no-repeat;
+		background-size: calc(50% - 78px) 1px;
+		background-position: center right, center left;
+
+		span {
+			font-weight: 700;
+		}
+
+	}
+
+	// .footer__confidential
+
+	&__confidential {
+		margin: 10px auto;
+		mix-blend-mode: normal;
+		opacity: 0.7;
+	}
+
+	// .footer__social
+
+	&__social {
+		margin-top: 14px;
+		font-size: 16px;
+
+		span {
+			margin: 0px 10px;
+		}
+	}
+}
+
+//**** XS container (410)  ********//////////
+
+@include media-xs {
+	.footer {
+		height: $height-footer-xs;
+		width: $mq-xs;
+	}
+
+	.footer__confidential {
+		font-size: 14px;
+	}
+}
+
+//**** SM container (768)  ********//////////
+
+@include media-sm {
+	.footer {
+		height: $height-footer-sm;
+		width: $mq-sm;
+
+		&__menu {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.menu {
+			margin-bottom: 13px;
+
+			// .menu__body
+
+			&__body {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+
+			// .menu__item
+			&__item {
+				margin: 0px 8px;
+			}
+
+		}
+
+	}
+}
+
+//**** MD container (1000)  ********//////////
+
+@include media-md {
+	.footer {
+		height: $height-footer-md;
+		width: $mq-md;
+
+		&__menu {
+			font-size: 18px;
+			margin: 16px auto;
+		}
+
+		&__confidential {
+			font-size: 16px;
+		}
+	}
+}
+
+//**** LG container (1280)  ********//////////
+
+@include media-lg {
+	.footer {
+		height: $height-footer-lg;
+		width: $mq-lg;
+
+		
+		&__menu {
+			margin-bottom: 32px;
+		}
+	}
+}
+
+//**** XL container (1920)  ********//////////
+
+@include media-xl {
+	.footer {
+		height: $height-footer-xl;
+		width: $mq-xl;
+
+		&__menu {
+			margin-bottom: 55px;
+		}
+
+	}
+}
