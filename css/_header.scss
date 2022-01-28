@@ -15,15 +15,10 @@
 		position: relative;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto;
 		grid-template-areas:
 			'logo social'
 			'logo phone';
 	}
-
-	// .header__menu-bar
-
-	&__menu-bar {}
 
 	// .header__logo
 
@@ -35,8 +30,21 @@
 	}
 
 	// .header__menu
+	&__menu {
+		display: none;
 
-	&__menu {}
+		position: absolute;
+		top: $height-header-xxs;
+		height: 309px;
+		width: 171px;
+		padding: 34px 32px 21px 32px;
+		background-color: $color-pr1;
+	}
+
+	&__menu.menu__active {
+		display: block;
+		z-index: $z-index-navigation;
+	}
 
 	// .header__social
 
@@ -51,6 +59,7 @@
 
 		span {
 			margin: 0 4px;
+			cursor: pointer;
 		}
 	}
 
@@ -61,6 +70,7 @@
 		margin-top: 4px;
 		font: bold 14px $Gilroy;
 		color: $color-pr4;
+		cursor: pointer;
 	}
 
 	// .header__app-shop
@@ -78,7 +88,6 @@
 		row-gap: 20px;
 		z-index: $z-index-navigation;
 
-		a {}
 	}
 
 }
@@ -98,23 +107,6 @@
 }
 
 .menu {
-
-	// .menu__body
-
-	&__body {
-		position: absolute;
-		top: $height-header-xxs;
-		display: none;
-		height: 309px;
-		width: 171px;
-		padding: 34px 32px 21px 32px;
-		background-color: $color-pr1;
-	}
-
-	&__body.menu__active {
-		display: block;
-		z-index: $z-index-navigation;
-	}
 
 	// .menu__item
 
@@ -144,7 +136,6 @@
 		color: $color-red6;
 	}
 
-	&__link {}
 }
 
 .apple-shop,
@@ -162,7 +153,7 @@
 		height: $height-header-xs;
 	}
 
-	.menu__body {
+	.header__menu {
 		top: $height-header-xs;
 	}
 
@@ -243,16 +234,16 @@
 		height: 42px;
 	}
 
+	.header__menu {
+		// top: $height-header-xs;
+
+		top: $height-header-sm;
+		left: 0px;
+		height: 249px;
+		padding: 32px;
+	}
+
 	.menu {
-
-		// .menu__body
-
-		&__body {
-			top: $height-header-sm;
-			left: 0px;
-			height: 249px;
-			padding: 32px;
-		}
 
 		// .menu__item
 
@@ -294,17 +285,20 @@
 			align-items: center;
 		}
 
-		// .header__menu-bar
-
-		&__menu-bar {}
-
-		// .header__logo
-
-		&__logo {}
-
 		// .header__menu
 
-		&__menu {}
+		&__menu {
+			grid-area: menu;
+
+			margin: 0;
+			margin-left: -10px;
+			padding: 0;
+			height: auto;
+			width: auto;
+			display: block;
+			position: unset;
+			background-color: inherit;
+		}
 
 		// .header__social
 
@@ -325,11 +319,6 @@
 			justify-self: start;
 		}
 
-		// .header__app-shop
-
-		&__app-shop {}
-
-
 	}
 
 	.icon-menu {
@@ -348,18 +337,9 @@
 
 		// .menu__body
 
-		grid-area: menu;
-
 		&__body {
-			position: unset;
-			margin: 0;
-			margin-left: -10px;
-			padding: 0;
-			height: auto;
-			width: auto;
 			display: flex;
 			flex-direction: row;
-			background-color: inherit;
 		}
 
 
@@ -372,7 +352,6 @@
 			margin-top: 0;
 		}
 
-		&__link {}
 	}
 
 	.apple-shop,
@@ -393,57 +372,19 @@
 			width: $mq-lg-container;
 			height: $height-header-lg;
 
-			// background-position: 100% 45%;
-			// background-size: 71% 1px;
-
-
-			// grid-template-columns: repeat(10, 1fr);
-			// grid-template-rows: 45px 55px;
 			grid-template-areas:
 				'logo logo . menu menu menu menu menu menu social'
 				'logo logo . phone phone phone . app app app';
 			align-items: center;
 		}
 
-		// .header__menu-bar
-
-		&__menu-bar {}
-
-		// .header__logo
-
-		&__logo {}
-
-		// .header__menu
-
-		&__menu {}
-
-		// .header__social
-
-		&__social {
-			// 	font-size: 16px;
-
-			span {
-				// margin: 0 5px;
-			}
-		}
-
 		// .header__phone
 
 		&__phone {
-			// margin: 0px;
 			font-size: 32px;
-			// justify-self: start;
 		}
 
-		// .header__app-shop
 
-		&__app-shop {}
-
-
-	}
-
-	.icon-menu {
-		// display: none;
 	}
 
 	.logo-lion {
@@ -456,26 +397,12 @@
 
 	.menu {
 
-		// .menu__body
-
-		&__body {}
-
-
 		// .menu__item
 		&__item {
 			margin-right: 24px;
 			font-size: 16px;
-
 		}
 
-		&__item:not(:first-child) {
-			// margin-top: 0;
-		}
-
-		&__link {
-			// font-size: 16px;
-
-		}
 	}
 
 	.apple-shop,
@@ -509,6 +436,5 @@
 	.menu__item {
 		font-size: 18px;
 	}
-
 
 }

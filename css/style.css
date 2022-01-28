@@ -368,8 +368,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
       grid-template-areas: 'logo social' 'logo phone';
 }
 
@@ -388,6 +386,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  height: 309px;
+  width: 171px;
+  padding: 34px 32px 21px 32px;
+  background-color: #0A0C11;
+}
+
+.header__menu.menu__active {
+  display: block;
+  z-index: 10;
 }
 
 .header__social {
@@ -413,6 +426,7 @@ body {
 
 .header__social span {
   margin: 0 4px;
+  cursor: pointer;
 }
 
 .header__phone {
@@ -422,6 +436,7 @@ body {
   margin-top: 4px;
   font: bold 14px "Gilroy", sans-serif;
   color: #EDC5A2;
+  cursor: pointer;
 }
 
 .header__app-shop {
@@ -455,21 +470,6 @@ body {
 
 .logo-text {
   height: 28px;
-}
-
-.menu__body {
-  position: absolute;
-  top: 60px;
-  display: none;
-  height: 309px;
-  width: 171px;
-  padding: 34px 32px 21px 32px;
-  background-color: #0A0C11;
-}
-
-.menu__body.menu__active {
-  display: block;
-  z-index: 10;
 }
 
 .menu__item {
@@ -507,7 +507,7 @@ body {
     width: 372px;
     height: 64px;
   }
-  .menu__body {
+  .header__menu {
     top: 64px;
   }
   .header__app-shop.app-shop__active {
@@ -589,7 +589,7 @@ body {
   .logo-text {
     height: 42px;
   }
-  .menu__body {
+  .header__menu {
     top: 80px;
     left: 0px;
     height: 249px;
@@ -623,6 +623,20 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header__menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-area: menu;
+    margin: 0;
+    margin-left: -10px;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: block;
+    position: unset;
+    background-color: inherit;
+  }
   .header__social {
     font-size: 16px;
   }
@@ -645,19 +659,7 @@ body {
   .logo-text {
     height: 56px;
   }
-  .menu {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 6;
-    grid-area: menu;
-  }
   .menu__body {
-    position: unset;
-    margin: 0;
-    margin-left: -10px;
-    padding: 0;
-    height: auto;
-    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -665,7 +667,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background-color: inherit;
   }
   .menu__item {
     margin-right: 16px;
