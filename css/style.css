@@ -120,30 +120,30 @@ body {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .wrapper {
-    min-width: 767px;
+    min-width: 768px;
     width: 720px;
   }
 }
 
-@media (min-width: 999px) {
+@media (min-width: 1000px) {
   .wrapper {
-    min-width: 999px;
+    min-width: 1000px;
     width: 948px;
   }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .wrapper {
-    min-width: 1279px;
+    min-width: 1280px;
     width: 1212px;
   }
 }
 
-@media (min-width: 1919px) {
+@media (min-width: 1920px) {
   .wrapper {
-    min-width: 1919px;
+    min-width: 1920px;
     width: 1440px;
   }
 }
@@ -537,7 +537,7 @@ body {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .header {
     background-image: none;
   }
@@ -620,7 +620,7 @@ body {
   }
 }
 
-@media (min-width: 999px) {
+@media (min-width: 1000px) {
   .header__container {
     width: 948px;
     height: 100px;
@@ -692,7 +692,7 @@ body {
   }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .header__container {
     width: 1212px;
     height: 140px;
@@ -720,7 +720,7 @@ body {
   }
 }
 
-@media (min-width: 1919px) {
+@media (min-width: 1920px) {
   .header__container {
     width: 1440px;
     height: 150px;
@@ -790,10 +790,10 @@ body {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .footer {
     height: 312px;
-    width: 767px;
+    width: 768px;
   }
   .footer__menu {
     display: block;
@@ -822,10 +822,10 @@ body {
   }
 }
 
-@media (min-width: 999px) {
+@media (min-width: 1000px) {
   .footer {
     height: 366px;
-    width: 999px;
+    width: 1000px;
   }
   .footer__menu {
     font-size: 18px;
@@ -836,24 +836,37 @@ body {
   }
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1280px) {
   .footer {
     height: 349px;
-    width: 1279px;
+    width: 1280px;
   }
   .footer__menu {
     margin-bottom: 32px;
   }
 }
 
-@media (min-width: 1919px) {
+@media (min-width: 1920px) {
   .footer {
     height: 409px;
-    width: 1919px;
+    width: 1920px;
   }
   .footer__menu {
     margin-bottom: 55px;
   }
+}
+
+.banner {
+  background: url("../img/kartinki24_ru_stpeterburg_39 1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+}
+
+.banner__inner {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
 }
 
 .main {
