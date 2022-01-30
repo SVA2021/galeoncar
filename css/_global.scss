@@ -5,6 +5,7 @@ body {
 	font-size: $html-font-size;
   display: flex;
   flex-direction: column;
+	background-color: $color-pr2;
 }
 
 .wrapper {
@@ -13,7 +14,7 @@ body {
 	position: relative;
 	min-width: $mq-xxs;
 	width: $mq-xxs-container;
-	z-index: 1;
+	// z-index: 1;
 
 	@include media-xs {
 		min-width: $mq-xs;

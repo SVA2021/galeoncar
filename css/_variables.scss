@@ -8,6 +8,9 @@ $color-pr3: #232731;
 $color-pr4: #EDC5A2;
 $color-red6: #B72025;
 $color-brown: #5E4139;
+//opacity 0.25
+$color-pr4-op25: #EDC5A240;
+$color-red6-op25: #B7202540;
 
 
 //**************MEDIA QUERIES ****************/
@@ -66,6 +69,14 @@ $height-header-md: 100px;
 $height-header-sm: 80px;
 $height-header-xs: 64px;
 $height-header-xxs: 60px; 
+
+//main banner section
+$height-banner-xl: 1200px;
+$height-banner-lg: 808px;
+$height-banner-md: 646px;
+$height-banner-sm: 572px;
+$height-banner-xs: 469px;
+$height-banner-xxs: 447px; 
 
 //footer
 $height-footer-xl: 409px;

@@ -10,18 +10,31 @@ const menuList = document.querySelector('.header__menu');
 let windowWidth = document.documentElement.clientWidth;
 let windWidth = document.documentElement.offsetWidth;
 
-// if (windowWidth < 1000) {
-	menuBtn.addEventListener('click', () => {
-		if (windowWidth <= 767) {
-			appShop.classList.toggle('app-shop__active');
-		}
-		menuList.classList.toggle('menu__active');
+menuBtn.addEventListener('click', () => {
+	if (windowWidth <= 767) {
+		appShop.classList.toggle('app-shop__active');
 	}
-	);
-// }
-console.log(windWidth);
-const warp = document.querySelector('.wrapper');
-const bod = document.body.offsetWidth;
-console.log(bod);
-let wd = warp.offsetWidth;
-console.log(wd);
+	menuList.classList.toggle('menu__active');
+}
+);
+
+//******* main search button for modal window functionality ************************//
+
+const openSearchModalBtn = document.querySelector('.search__open');
+const closeSearchModalBtn = document.querySelector('.search__close');
+const searchModalWindow = document.querySelector('.search__modal');
+
+openSearchModalBtn.addEventListener('click', () => {
+	searchModalWindow.style.display = 'block';
+})
+
+closeSearchModalBtn.addEventListener('click', () => {
+	searchModalWindow.style.display = 'none';
+})
+
+// console.log(windWidth);
+// const warp = document.querySelector('.wrapper');
+// const bod = document.body.offsetWidth;
+// console.log(bod);
+// let wd = warp.offsetWidth;
+// console.log(wd);
