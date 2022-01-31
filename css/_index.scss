@@ -107,12 +107,16 @@
 	&__modal {
 		display: none;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -200px;
-		margin-left: -200px;
-		height: 396px;
-		width: 400px;
+		// top: 50%;
+		// left: 50%;
+		// margin-top: -200px;
+		// margin-left: -200px;
+		top: 10px;
+		bottom: 10px;
+		right: 10px;
+		left: 10px;
+		// height: 396px;
+		// width: 400px;
 		z-index: $z-index-modal;
 		padding: 24px;
 		border-radius: 5px;
@@ -121,10 +125,11 @@
 
 	&__close {
 		position: absolute;
-		top: 24px;
-		right: 24px;
-		height: 14px;
-		width: 14px;
+		top: 10px;
+		right: 10px;
+		padding: 14px;
+		height: 42px;
+		width: 42px;
 		text-align: center;
 		font-size: 14px;
 		color: $color-white;
@@ -177,7 +182,7 @@
 		appearance: none;
 		margin: 12px auto;
 		padding: 7px 20px 12px 20px;
-		width: 300px;
+		width: 222px;
 		height: 45px;
 		border-radius: 5px;
 		font: 400 16px $Gilroy;
@@ -185,6 +190,7 @@
 		color: $color-white;
 		mix-blend-mode: normal;
 		opacity: 0.8;
+		cursor: pointer;
 
 		&:active {
 			color: $color-red6;
@@ -212,7 +218,8 @@
 
 	&__submit {
 		margin: 12px auto;
-		width: 300px;
+		width: 200px;
+		// width: 300px;
 		height: 45px;
 		border-radius: 5px;
 		font: bold 18px $Gilroy;
@@ -291,6 +298,31 @@
 			// min-width: $mq-xs;
 		}
 	}
+
+	.search {
+
+		// .search__modal
+
+		&__modal {
+			top: 50%;
+			left: 50%;
+			margin-top: -200px;
+			margin-left: -200px;
+			height: 396px;
+			width: 400px;
+		}
+
+		// search__select
+		&__select select {
+			width: 300px;
+		}
+
+		&__submit {
+			width: 300px;
+		}
+
+	}
+
 }
 
 @include media-sm {
