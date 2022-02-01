@@ -37,6 +37,7 @@ closeSearchModalBtn.addEventListener('click', () => {
 
 //******* main banner slider content loading***********************//
 
+//todo delete this comments later first version of carousel
 // function normalizeDigit(dig) {
 // 	if (dig > 9) return dig;
 // 	return '0' + dig;

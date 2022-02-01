@@ -860,7 +860,6 @@ body {
 }
 
 .banner {
-  outline: 1px solid red;
   background-image: url("../img/main/banner_320.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -881,7 +880,6 @@ body {
 }
 
 .banner__container {
-  outline: 1px solid red;
   margin: 0 auto;
   position: relative;
   width: 282px;
@@ -1371,6 +1369,52 @@ body {
   .slider .slide__next2 img,
   .slider .slide__prev2 img {
     height: 326px;
+  }
+}
+
+.section__header h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__header h2 span {
+  margin: 8px 0px;
+}
+
+.header__subtitle {
+  display: block;
+  font: 400 14px "Gilroy", sans-serif;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__title {
+  display: block;
+  font: 900 24px/31px "Gilroy", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #EDC5A2;
+}
+
+@media (min-width: 768px) {
+  .header__subtitle {
+    font-size: 18px;
+  }
+  .header__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__subtitle {
+    font-size: 24px;
+  }
+  .header__title {
+    font-size: 48px;
+    line-height: 61px;
   }
 }
 
