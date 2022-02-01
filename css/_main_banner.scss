@@ -1,0 +1,239 @@
+//*****banner section *****************////
+@import './main_search_modal';
+@import './main_slider_banner';
+
+.banner {
+	// outline: 1px solid red;
+	background-image: url('../img/main/banner_320.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: $height-banner-xxs;
+	position: relative;
+	padding-top: 40px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: $color-pr1;
+		opacity: 0.8;
+	}
+
+	// .banner__container
+
+	&__container {
+		// outline: 1px solid red;
+
+		margin: 0 auto;
+		position: relative;
+		width: $mq-xxs-container;
+		height: 100%;
+	}
+
+	// .banner__header
+
+	&__header {
+		text-transform: uppercase;
+		text-align: center;
+
+	}
+
+	// .banner__button
+
+	&__button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 24px;
+		width: 24px;
+		border-radius: 2.4px;
+		color: $color-pr1;
+		background-color: $color-pr4;
+		text-align: center;
+
+		&:focus {
+			background-color: $color-white;
+		}
+
+		&:active {
+			background-color: $color-red6;
+		}
+
+		span.icon-menu {
+			display: block;
+			padding: 7px 5px;
+			font-size: 10px;
+		}
+
+	}
+
+	// .banner__search
+
+	&__search {}
+
+	// .banner__slider
+
+	&__slider {
+		height: 100%;
+	}
+}
+
+.header {
+
+	// .header__hero
+
+	&__hero {
+		font: 900 $font-size-hero-xs $Gilroy;
+		letter-spacing: 0.1em;
+		line-height: 1.3em;
+		color: transparent;
+		-webkit-text-stroke: 0.74px $color-pr4;
+	}
+
+	// .header__subhero
+
+	&__subhero {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 8px;
+		font: 400 $font-size-subhero-xs $Gilroy;
+		line-height: 1.17em;
+		letter-spacing: 0.1em;
+		color: $color-white;
+	}
+}
+
+//**** XS container (410)  ********//////////
+
+@include media-xs {
+	.banner {
+		background-image: url('../img/main/banner_#{stripUnit($mq-xs)}.webp');
+		height: $height-banner-xs;
+
+		&__container {
+			width: $mq-xs-container;
+		}
+	}
+}
+
+//**** SM container (768)  ********//////////
+
+@include media-sm {
+	.banner {
+		background-image: url('../img/main/banner_#{stripUnit($mq-sm)}.webp');
+		height: $height-banner-sm;
+		padding-top: 80px;
+
+		&__container {
+			width: $mq-sm-container;
+		}
+
+		&__slider {
+			margin-top: 10px;
+		}
+	}
+
+	.header {
+
+		// .header__hero
+
+		&__hero {
+			font-size: $font-size-hero-sm;
+			-webkit-text-stroke: 1px $color-pr4;
+		}
+
+		// .header__subhero
+
+		&__subhero {
+			margin-bottom: 16px;
+			font-size: $font-size-hero-sm / 2;
+		}
+	}
+
+}
+
+//**** MD container (1000)  ********//////////
+
+@include media-md {
+	.banner {
+		background-image: url('../img/main/banner_#{stripUnit($mq-md)}.webp');
+		height: $height-banner-md;
+
+		&__container {
+			width: $mq-md-container;
+		}
+
+		&__slider {
+			margin-top: 30px;
+		}
+	}
+
+}
+
+//**** LG container (1280)  ********//////////
+
+@include media-lg {
+	.banner {
+		background-image: url('../img/main/banner_#{stripUnit($mq-lg)}.webp');
+		height: $height-banner-lg;
+		padding-top: 100px;
+
+		&__container {
+			width: $mq-lg-container;
+		}
+
+		&__slider {
+			margin-top: 40px;
+		}
+	}
+
+	.header {
+
+		// .header__hero
+
+		&__hero {
+			font-size: $font-size-hero-lg;
+		}
+
+		// .header__subhero
+
+		&__subhero {
+			margin-bottom: 24px;
+		}
+	}
+
+}
+
+//**** XL container (1920)  ********//////////
+
+@include media-xl {
+	.banner {
+		background-image: url('../img/main/banner_#{stripUnit($mq-xl)}.webp');
+		height: $height-banner-xl;
+		padding-top: 132px;
+
+		&__container {
+			width: $mq-xl-container;
+		}
+	}
+
+	.header {
+
+		// .header__hero
+
+		&__hero {
+			font-size: $font-size-hero-xl;
+		}
+
+		// .header__subhero
+
+		&__subhero {
+			margin-bottom: 16px;
+			font-size: $font-size-hero-xl / 2;
+		}
+	}
+
+}
