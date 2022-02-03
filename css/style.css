@@ -1656,14 +1656,38 @@ body {
     font-size: 24px;
   }
   .contacts__social {
-    margin-top: 12px;
+    margin-top: 28px;
+    font-size: 16px;
   }
   .contacts__social-text {
-    margin-right: 129px;
+    margin-right: 180px;
   }
   .contacts__social-icon {
     margin: 4px;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contacts {
+    height: 615px;
+    padding-top: 67px;
+  }
+  .contacts__inner {
+    margin-right: 34px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contacts__open {
+    position: absolute;
+    top: 175px;
+    left: 460px;
+  }
+  .contacts__inner {
+    margin-right: 367px;
+    padding: 26px 70px 84px 45px;
+    width: 604px;
   }
 }
 
