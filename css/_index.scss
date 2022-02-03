@@ -1,5 +1,6 @@
 @import './main_banner';
 @import './main_contacts';
+@import './main_rent_type';
 
 //*****common  components *****************////
 
@@ -32,7 +33,8 @@
 	h2 {
 		margin: 0 auto;
 		text-align: center;
-		span{
+
+		span {
 			margin: 8px 0px;
 		}
 	}
@@ -95,4 +97,47 @@
 		}
 	}
 
+}
+
+//********* buttons ***********************************//
+
+// .contacts__call
+
+.button__link {
+	// margin: 19px 0 12px 0;
+	width: 170px;
+	height: 37px;
+	display: block;
+	background-color: transparent;
+	border: 0.76px solid $color-white;
+	border-radius: 5px;
+	font: 700 13px $Gilroy;
+	text-transform: uppercase;
+	line-height: 120%;
+	color: $color-white;
+	cursor: pointer;
+
+	&:focus {
+		border-color: $color-pr4;
+		background-color: $color-pr4-op25;
+	}
+
+	&:active {
+		border-color: $color-red6;
+		background-color: $color-red6-op25;
+	}
+
+	@include media-sm {
+
+		width: 222px;
+		height: 48px;
+		border: 1px solid $color-white;
+		border-radius: 6px;
+		font-size: 18px;
+
+	}
+}
+
+.car-order {
+	outline: 1px solid green
 }
