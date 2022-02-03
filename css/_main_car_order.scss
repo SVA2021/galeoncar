@@ -1,0 +1,67 @@
+.car-order {
+	outline: 1px solid blue;
+	background-color: $color-pr2;
+	margin: 40px auto;
+	// .car-order__nav
+
+	&__nav {}
+
+	// .car-order__inner
+
+	&__inner {}
+
+	// .car-order__card
+
+	&__card {}
+
+	// .car-order__btn
+
+	&__btn {}
+}
+
+.section {
+
+	// .section__header
+
+	&__header {}
+}
+
+.header {
+
+	// .header__title
+
+	&__title {}
+}
+
+.breadcrumb {
+
+	// .breadcrumb__body
+
+	&__body {}
+
+	// .breadcrumb__item
+
+	&__item {}
+}
+
+.card {
+
+	// .card__premium
+
+	&__premium {}
+
+	// .card__business
+
+	&__business {}
+
+	// .card__sport
+
+	&__sport {}
+}
+
+.button {
+
+	// .button__link
+
+	&__link {}
+}
