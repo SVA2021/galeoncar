@@ -1,7 +1,6 @@
 //************************** contacts section  ********//////////
 
 .contacts {
-	// outline: 1px solid red;
 	position: relative;
 	padding-top: 153px;
 	height: $height-contacts-xxs;
@@ -17,6 +16,7 @@
 		position: absolute;
 		top: 40px;
 		left: 40px;
+		cursor: pointer;
 	}
 
 	// .contacts__pinmap
@@ -29,6 +29,7 @@
 	// .contacts__inner
 
 	&__inner {
+		display: block;
 		position: relative;
 		margin: 0 auto;
 		padding: 21px 16px 15px 15px;
@@ -151,7 +152,6 @@
 
 	&__call {
 		margin: 19px 0 12px 0;
-		// padding: 10px 20px;
 		width: 170px;
 		height: 37px;
 		display: block;
@@ -266,7 +266,6 @@
 
 	.contacts {
 		height: $height-contacts-sm;
-		// width: 595px;
 		padding-top: 254px;
 		font-size: 14px;
 
@@ -309,7 +308,6 @@
 		}
 
 		&__call {
-			// margin: 24px 0 0px 0;
 			width: 222px;
 			height: 48px;
 			border: 1px solid $color-white;
@@ -333,7 +331,6 @@
 
 		&__phone-order {
 			width: 220px;
-			// width: 100%;
 		}
 
 		&__phone {
@@ -365,34 +362,18 @@
 		height: $height-contacts-md;
 		padding-top: 67px;
 
-		&__pinmap {
-			// width: 98px;
-			// height: 111px;
-		}
-
 		&__inner {
-			// margin-left: 371px;
 			margin-right: 34px;
-			// padding: 26px 62px 84px 43px;
-			// height: 439px;
-			// width: 595px;
 		}
 	}
 
 }
-
-//**** LG container (1280)  ********//////////
-
-@include media-lg {}
 
 //**** XL container (1920)  ********//////////
 
 @include media-xl {
 
 	.contacts {
-		// height: $height-contacts-md;
-		// padding-top: 67px; 
-		// .contacts__open
 
 		&__open {
 			position: absolute;
@@ -400,16 +381,9 @@
 			left: 460px;
 		}
 
-		&__pinmap {
-			// width: 98px;
-			// height: 111px;
-		}
-
 		&__inner {
-			// margin-left: 371px;
 			margin-right: 367px;
 			padding: 26px 70px 84px 45px;
-			// height: 439px;
 			width: 604px;
 		}
 	}

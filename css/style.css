@@ -1375,6 +1375,7 @@ body {
   position: absolute;
   top: 40px;
   left: 40px;
+  cursor: pointer;
 }
 
 .contacts__pinmap {
@@ -1383,6 +1384,7 @@ body {
 }
 
 .contacts__inner {
+  display: block;
   position: relative;
   margin: 0 auto;
   padding: 21px 16px 15px 15px;
