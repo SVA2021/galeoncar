@@ -1694,14 +1694,14 @@ body {
 }
 
 .rent-type {
-  outline: 1px solid red;
-  background-color: #fff;
-  margin: 42px auto;
+  background-color: #0A0C11;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .rent-type__inner {
-  outline: 1px solid red;
   margin: 0 auto;
+  margin-top: 24px;
   width: 282px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1719,7 +1719,6 @@ body {
 }
 
 .rent-type__card {
-  margin: 12px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1733,9 +1732,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 1px solid red;
   height: 160px;
   width: 100%;
+}
+
+.rent-type__card:nth-child(2) {
+  margin: 24px auto;
 }
 
 .rent-type__btn.button__link {
@@ -1776,10 +1778,11 @@ body {
 
 @media (min-width: 768px) {
   .rent-type {
-    margin: 80px auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .rent-type__inner {
-    margin-top: 60px;
+    margin-top: 50px;
     width: 720px;
   }
   .rent-type__card {
@@ -1793,7 +1796,6 @@ body {
 
 @media (min-width: 1000px) {
   .rent-type__inner {
-    margin-top: 80px;
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1805,6 +1807,9 @@ body {
     height: 190px;
     width: 100%;
   }
+  .rent-type__card:nth-child(2) {
+    margin: 0px auto;
+  }
   .rent-type__btn {
     margin-bottom: 29px;
   }
@@ -1812,7 +1817,11 @@ body {
 
 @media (min-width: 1280px) {
   .rent-type {
-    margin: 100px auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .rent-type__inner {
+    margin-top: 70px;
   }
   .rent-type__card {
     height: 244px;
@@ -1824,7 +1833,8 @@ body {
 
 @media (min-width: 1920px) {
   .rent-type {
-    margin: 140px auto;
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
   .rent-type__card {
     height: 378px;
@@ -1832,6 +1842,74 @@ body {
   .rent-type__btn {
     margin-bottom: 40px;
   }
+}
+
+.car-order {
+  outline: 1px solid blue;
+  background-color: #15171E;
+  margin: 40px auto;
+}
+
+.car-order__inner {
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+}
+
+.car-order__wrapper {
+  height: 160px;
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.car-order__card {
+  margin: 0 auto;
+  height: 160px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.car-order__btn {
+  margin-bottom: 21px;
+}
+
+.card__premium {
+  background-image: url("../img/main/search_car_1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__business {
+  background-image: url("../img/main/search_car_2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__sport {
+  background-image: url("../img/main/search_car_3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .arrow {
@@ -1942,9 +2020,5 @@ body {
     border-radius: 6px;
     font-size: 18px;
   }
-}
-
-.car-order {
-  outline: 1px solid green;
 }
 /*# sourceMappingURL=style.css.map */

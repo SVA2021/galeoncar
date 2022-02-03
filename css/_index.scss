@@ -1,6 +1,7 @@
 @import './main_banner';
 @import './main_contacts';
 @import './main_rent_type';
+@import './main_car_order';
 
 //*****common  components *****************////
 
@@ -136,8 +137,4 @@
 		font-size: 18px;
 
 	}
-}
-
-.car-order {
-	outline: 1px solid green
 }

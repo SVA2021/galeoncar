@@ -1,13 +1,12 @@
 .rent-type {
-	outline: 1px solid red;
-	background-color: #fff;
-	margin: 42px auto;
+	background-color: $color-pr1;
+	padding-top: 30px;
+	padding-bottom: 40px;
 
 	// .rent-type__inner
-
 	&__inner {
-		outline: 1px solid red;
 		margin: 0 auto;
+		margin-top: 24px;
 		width: $mq-xxs-container;
 		display: flex;
 		flex-direction: column;
@@ -16,20 +15,20 @@
 	}
 
 	// .rent-type__card
-
 	&__card {
-		margin: 12px auto;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: center;
-		outline: 1px solid red;
 		height: 160px;
 		width: 100%;
+
+		&:nth-child(2) {
+		margin: 24px auto;
+		}
 	}
 
 	// .rent-type__btn
-
 	&__btn.button__link {
 		margin-bottom: 32px;
 		width: 222px;
@@ -40,7 +39,6 @@
 .card {
 
 	// .card__driver
-
 	&__driver {
 		background-image: url('../img/main/rent_type_1.webp');
 		background-repeat: no-repeat;
@@ -48,14 +46,12 @@
 	}
 
 	// .card__special
-
 	&__special {
 		background-image: url('../img/main/rent_type_3.webp');
 		background-repeat: no-repeat;
 		background-size: cover;}
 
 	// .card__nodriver
-
 	&__nodriver {
 		background-image: url('../img/main/rent_type_2.webp');
 		background-repeat: no-repeat;
@@ -66,38 +62,18 @@
 
 @include media-xs {
 	.rent-type {
-		// outline: 1px solid red;
-		// margin: 42px auto;
-	
 		// .rent-type__inner
-	
 		&__inner {
-			// outline: 1px solid red;
-			// margin: 24px auto 40px auto;
 			width: $mq-xs-container;
-			// display: flex;
-			// flex-direction: column;
-			// align-items: center;
-			// justify-content: center;
 		}
 	
 		// .rent-type__card
-	
 		&__card {
-			// margin: 12px auto;
-			// display: flex;
-			// flex-direction: column;
-			// justify-content: flex-end;
-			// align-items: center;
-			// outline: 1px solid red;
 			height: 213px;
-			// width: 100%;
 		}
 	
 		// .rent-type__btn
-	
 		&__btn {
-			// margin: 0 auto;
 			margin-bottom: 40px;
 		}
 	}
@@ -108,39 +84,23 @@
 
 @include media-sm {
 	.rent-type {
-		// outline: 1px solid red;
-		margin: 80px auto;
-	
+		padding-top: 80px;
+		padding-bottom: 80px;
+
 		// .rent-type__inner
-	
 		&__inner {
-			margin-top: 60px;
-			// outline: 1px solid red;
-			// margin: 24px auto 40px auto;
+			margin-top: 50px;
 			width: $mq-sm-container;
-			// display: flex;
-			// flex-direction: column;
-			// align-items: center;
-			// justify-content: center;
 		}
 	
 		// .rent-type__card
-	
 		&__card {
-			// margin: 12px auto;
-			// display: flex;
-			// flex-direction: column;
-			// justify-content: flex-end;
-			// align-items: center;
-			// outline: 1px solid red;
 			height: 260px;
 			width: 456px;
 		}
 	
 		// .rent-type__btn
-	
 		&__btn {
-			// margin: 0 auto;
 			margin-bottom: 24px;
 		}
 	}
@@ -151,39 +111,25 @@
 
 @include media-md {
 	.rent-type {
-		// outline: 1px solid red;
-		// margin: 80px auto;
-	
 		// .rent-type__inner
-	
 		&__inner {
-			margin-top: 80px;
-			// outline: 1px solid red;
-			// margin: 24px auto 40px auto;
 			width: 100%;
-			// display: flex;
 			flex-direction: row;
-			// align-items: center;
-			// justify-content: center;
 		}
 	
 		// .rent-type__card
-	
 		&__card {
 			margin: 0px auto;
-			// display: flex;
-			// flex-direction: column;
-			// justify-content: flex-end;
-			// align-items: center;
-			// outline: 1px solid red;
 			height: 190px;
 			width: 100%;
+			
+		&:nth-child(2) {
+			margin: 0px auto;
+			}
 		}
 	
 		// .rent-type__btn
-	
 		&__btn {
-			// margin: 0 auto;
 			margin-bottom: 29px;
 		}
 	}
@@ -194,38 +140,21 @@
 
 @include media-lg {
 	.rent-type {
-		// outline: 1px solid red;
-		margin: 100px auto;
+		padding-top: 100px;
+		padding-bottom: 100px;
 	
 		// .rent-type__inner
-	
 		&__inner {
-			// outline: 1px solid red;
-			// margin: 24px auto 40px auto;
-			// width: 100%;
-			// display: flex;
-			// flex-direction: row;
-			// align-items: center;
-			// justify-content: center;
+			margin-top: 70px;
 		}
 	
 		// .rent-type__card
-	
 		&__card {
-			// margin: 12px auto;
-			// display: flex;
-			// flex-direction: column;
-			// justify-content: flex-end;
-			// align-items: center;
-			// outline: 1px solid red;
 			height: 244px;
-			// width: 100%;
 		}
 	
 		// .rent-type__btn
-	
 		&__btn {
-			// margin: 0 auto;
 			margin-bottom: 25px;
 		}
 	}
@@ -236,38 +165,16 @@
 
 @include media-xl {
 	.rent-type {
-		// outline: 1px solid red;
-		margin: 140px auto;
-	
-		// .rent-type__inner
-	
-		&__inner {
-			// outline: 1px solid red;
-			// margin: 24px auto 40px auto;
-			// width: 100%;
-			// display: flex;
-			// flex-direction: row;
-			// align-items: center;
-			// justify-content: center;
-		}
-	
+		padding-top: 140px;
+		padding-bottom: 140px;
+
 		// .rent-type__card
-	
 		&__card {
-			// margin: 12px auto;
-			// display: flex;
-			// flex-direction: column;
-			// justify-content: flex-end;
-			// align-items: center;
-			// outline: 1px solid red;
 			height: 378px;
-			// width: 100%;
 		}
 	
 		// .rent-type__btn
-	
 		&__btn {
-			// margin: 0 auto;
 			margin-bottom: 40px;
 		}
 	}

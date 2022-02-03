@@ -8,15 +8,43 @@
 
 	// .car-order__inner
 
-	&__inner {}
+	&__inner {
+		margin: 0 auto;
+		width: $mq-xxs;
+		position: relative;
+		// display: flex;
+		// flex-direction: row;
+		// align-items: center;
+		// justify-content: center;
+	}
+
+	&__wrapper {
+		height: 160px;
+		width: 300%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		// width: 100%;
+		// justify-content: center;
+	}
 
 	// .car-order__card
 
-	&__card {}
+	&__card {
+		margin: 0 auto;
+		height: 160px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
 	// .car-order__btn
 
-	&__btn {}
+	&__btn {
+margin-bottom: 21px;
+	}
 }
 
 .section {
@@ -48,15 +76,27 @@
 
 	// .card__premium
 
-	&__premium {}
+	&__premium {
+		background-image: url('../img/main/search_car_1.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	// .card__business
 
-	&__business {}
+	&__business {
+		background-image: url('../img/main/search_car_2.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	// .card__sport
 
-	&__sport {}
+	&__sport {
+		background-image: url('../img/main/search_car_3.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 .button {
