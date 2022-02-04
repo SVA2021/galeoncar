@@ -1,0 +1,133 @@
+.rent-terms {
+	padding: 40px 0;
+	background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url('../img/main/road_320.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: $height-road-xxs;
+	font: 400 13px $Gilroy;
+	color: $color-white;
+
+	// .rent-terms__inner
+
+	&__inner {
+		// outline: 1px solid red;
+		margin-top: 49px;
+	}
+
+	// .rent-terms__table
+
+	&__table {
+		// outline: 1px solid yellow;
+		position: relative;
+		background-color: $color-pr3;
+		// background-image: linear-gradient(180deg, #ffffff32, #ffffff32);
+		// background-repeat: no-repeat;
+		// background-size: 225px 1px;
+		// background-position: 50% 0%;
+		// background: linear-gradient(#000, #000) no-repeat center/2px 100%;
+		&::after {
+			content:"";
+			width: 298px;
+			height: 276px;
+			position: absolute;
+			top: -16px;
+			left: 21px;
+			border: 1px solid $color-pr4;
+		}
+
+		&::before {
+			content:"";
+			position: absolute;
+			z-index: 2;
+			top: 22px;
+			bottom: 29px;
+			left: 52%;
+			border-left: 1px solid #ffffff7F;
+			transform: translate(-50%);
+		}
+
+		width: 320px;
+		height: 276px;
+		padding-right: 8px;
+		padding: 18px 28px 31px 34px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 15px;
+
+	}
+
+	// .rent-terms__table-item
+
+	&__table-item {
+		position: relative;
+		padding-left: 25px;
+	}
+
+	&__table-text {
+		display: block;
+		margin-top: 8px;
+	}
+
+	&__table-icon {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 18px;
+	}
+
+	// .rent-terms__table-subtitle
+
+	&__table-subtitle {
+		// display: block;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+
+	// .rent-terms__list
+
+	&__list {}
+}
+
+.accordeon {
+
+	// .accordeon__body
+
+	&__body {}
+
+	// .accordeon__title
+
+	&__title {}
+
+	// .accordeon__item
+
+	&__item {}
+}
+
+
+//**** XS container (410)  ********//////////
+
+@include media-xs {}
+
+
+//**** SM container (768)  ********//////////
+
+@include media-sm {}
+
+
+//**** MD container (1000)  ********//////////
+
+@include media-md {}
+
+
+//**** LG container (1280)  ********//////////
+
+@include media-lg {}
+
+
+//**** XL container (1920)  ********//////////
+
+@include media-xl {}

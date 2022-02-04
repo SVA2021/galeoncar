@@ -78,6 +78,13 @@ $height-banner-sm: 572px;
 $height-banner-xs: 469px;
 $height-banner-xxs: 447px; 
 
+$height-road-xl: 1271px;
+$height-road-lg: 1191px;
+$height-road-md: 1152px;
+$height-road-sm: 1455px;
+$height-road-xs: 1439px;
+$height-road-xxs: 1296px; 
+
 //main contacts 
 $height-contacts-md: 615px;
 $height-contacts-sm: 775px;
@@ -96,3 +103,38 @@ $height-footer-xxs: 252px;
 $z-index-navigation: 10;
 $z-index-notification: 100;
 $z-index-modal: 1000;
+
+
+// //**** XS container (410)  ********//////////
+
+// @include media-xs {
+// }
+
+
+// //**** SM container (768)  ********//////////
+
+// @include media-sm {
+
+// }
+
+
+// //**** MD container (1000)  ********//////////
+
+// @include media-md {
+
+// }
+
+
+// //**** LG container (1280)  ********//////////
+
+// @include media-lg {
+
+
+// }
+
+
+// //**** XL container (1920)  ********//////////
+
+// @include media-xl {
+
+// }
