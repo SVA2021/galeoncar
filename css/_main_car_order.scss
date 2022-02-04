@@ -1,81 +1,77 @@
 .car-order {
-	outline: 1px solid blue;
 	background-color: $color-pr2;
-	margin: 40px auto;
-	// .car-order__nav
-
-	&__nav {}
+	padding: 40px 0;
+	border: 0.64px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
 
 	// .car-order__inner
-
 	&__inner {
 		margin: 0 auto;
 		width: $mq-xxs;
 		position: relative;
-		// display: flex;
-		// flex-direction: row;
-		// align-items: center;
-		// justify-content: center;
 	}
 
 	&__wrapper {
-		height: 160px;
+		margin-top: 34px;
 		width: 300%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		// width: 100%;
-		// justify-content: center;
 	}
 
 	// .car-order__card
-
 	&__card {
 		margin: 0 auto;
 		height: 160px;
-		width: 100%;
+		width: $mq-xxs;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
+
+		flex: none;
+		order: 3;
+		flex-grow: 0;
+		margin: 0px 0px;
 	}
 
 	// .car-order__btn
-
 	&__btn {
-margin-bottom: 21px;
+		margin-bottom: 21px;
 	}
-}
-
-.section {
-
-	// .section__header
-
-	&__header {}
-}
-
-.header {
-
-	// .header__title
-
-	&__title {}
 }
 
 .breadcrumb {
 
 	// .breadcrumb__body
-
-	&__body {}
+	&__body {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font: 400 14px $Gilroy;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: $color-white;
+	}
 
 	// .breadcrumb__item
-
-	&__item {}
+	&__item {
+		&:nth-child(2) {
+			margin: 0 24px;
+			padding: 0 24px;
+			border-left: 1px solid $color-white;
+			border-right: 1px solid $color-white;
+		}
+	}
 }
 
 .card {
 
 	// .card__premium
-
 	&__premium {
 		background-image: url('../img/main/search_car_1.webp');
 		background-repeat: no-repeat;
@@ -83,7 +79,6 @@ margin-bottom: 21px;
 	}
 
 	// .card__business
-
 	&__business {
 		background-image: url('../img/main/search_car_2.webp');
 		background-repeat: no-repeat;
@@ -91,7 +86,6 @@ margin-bottom: 21px;
 	}
 
 	// .card__sport
-
 	&__sport {
 		background-image: url('../img/main/search_car_3.webp');
 		background-repeat: no-repeat;
@@ -99,9 +93,164 @@ margin-bottom: 21px;
 	}
 }
 
-.button {
+//**** XS container (410)  ********//////////
 
-	// .button__link
+@include media-xs {
+	.car-order {
 
-	&__link {}
+		padding: 40px 0;
+
+		&__inner {
+			width: $mq-xs;
+		}
+
+		&__wrapper {
+			margin-top: 42px;
+		}
+
+		&__card {
+			height: 203px;
+			width: 353px;
+		}
+
+		&__btn {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
+//**** SM container (768)  ********//////////
+
+@include media-sm {
+	.car-order {
+
+		padding: 80px 0;
+
+		&__inner {
+			width: $mq-sm;
+		}
+
+		&__wrapper {
+			margin-top: 49px;
+		}
+
+		&__card {
+			height: 191px;
+			width: 333px;
+		}
+	}
+	
+.breadcrumb {
+
+	// .breadcrumb__body
+	&__body {
+		font: 400 18px $Gilroy;
+		line-height: 140%;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+	}
+}
+}
+
+
+//**** MD container (1000)  ********//////////
+
+@include media-md {
+	.car-order {
+
+		&__inner {
+			width: $mq-md;
+		}
+
+		&__wrapper {
+			margin-top: 57px;
+		}
+	}
+
+	
+.breadcrumb {
+
+	// .breadcrumb__body
+	&__body {
+		font: 400 18px $Gilroy;
+		line-height: 140%;
+		text-transform: capitalize;
+	}
+}
+}
+
+//**** LG container (1280)  ********//////////
+
+@include media-lg {
+	.car-order {
+
+		padding: 100px 0;
+
+		&__inner {
+			width: $mq-lg;
+		}
+
+		&__wrapper {
+			margin-top: 80px;
+		}
+
+		&__card {
+			height: 244px;
+			width: 426px;
+		}
+
+		&__btn {
+			margin-bottom: 25px;
+		}
+	}
+
+	
+.breadcrumb {
+
+	// .breadcrumb__body
+	&__body {
+		margin-top: 16px;
+		font: 400 24px $CeraPro;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+}
+
+}
+
+
+//**** XL container (1920)  ********//////////
+
+@include media-xl {
+	.car-order {
+
+		padding: 140px 0;
+
+		&__inner {
+			width: $mq-xl;
+		}
+
+		&__wrapper {
+			margin-top: 58px;
+		}
+
+		&__card {
+			height: 379px;
+			width: 660px;
+		}
+
+		&__btn {
+			margin-bottom: 40px;
+		}
+	}
+
+	
+.breadcrumb {
+
+	// .breadcrumb__body
+	&__body {
+		margin-top: 42px;
+	}
+}
 }

@@ -1845,9 +1845,11 @@ body {
 }
 
 .car-order {
-  outline: 1px solid blue;
   background-color: #15171E;
-  margin: 40px auto;
+  padding: 40px 0;
+  border: 0.64px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
 }
 
 .car-order__inner {
@@ -1857,7 +1859,7 @@ body {
 }
 
 .car-order__wrapper {
-  height: 160px;
+  margin-top: 34px;
   width: 300%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1874,7 +1876,7 @@ body {
 .car-order__card {
   margin: 0 auto;
   height: 160px;
-  width: 100%;
+  width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1888,10 +1890,47 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 0px;
 }
 
 .car-order__btn {
   margin-bottom: 21px;
+}
+
+.breadcrumb__body {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: 400 14px "Gilroy", sans-serif;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.breadcrumb__item:nth-child(2) {
+  margin: 0 24px;
+  padding: 0 24px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 .card__premium {
@@ -1910,6 +1949,108 @@ body {
   background-image: url("../img/main/search_car_3.webp");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 410px) {
+  .car-order {
+    padding: 40px 0;
+  }
+  .car-order__inner {
+    width: 410px;
+  }
+  .car-order__wrapper {
+    margin-top: 42px;
+  }
+  .car-order__card {
+    height: 203px;
+    width: 353px;
+  }
+  .car-order__btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .car-order {
+    padding: 80px 0;
+  }
+  .car-order__inner {
+    width: 768px;
+  }
+  .car-order__wrapper {
+    margin-top: 49px;
+  }
+  .car-order__card {
+    height: 191px;
+    width: 333px;
+  }
+  .breadcrumb__body {
+    font: 400 18px "Gilroy", sans-serif;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 1000px) {
+  .car-order__inner {
+    width: 1000px;
+  }
+  .car-order__wrapper {
+    margin-top: 57px;
+  }
+  .breadcrumb__body {
+    font: 400 18px "Gilroy", sans-serif;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 1280px) {
+  .car-order {
+    padding: 100px 0;
+  }
+  .car-order__inner {
+    width: 1280px;
+  }
+  .car-order__wrapper {
+    margin-top: 80px;
+  }
+  .car-order__card {
+    height: 244px;
+    width: 426px;
+  }
+  .car-order__btn {
+    margin-bottom: 25px;
+  }
+  .breadcrumb__body {
+    margin-top: 16px;
+    font: 400 24px "Cera Pro", sans-serif;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1920px) {
+  .car-order {
+    padding: 140px 0;
+  }
+  .car-order__inner {
+    width: 1920px;
+  }
+  .car-order__wrapper {
+    margin-top: 58px;
+  }
+  .car-order__card {
+    height: 379px;
+    width: 660px;
+  }
+  .car-order__btn {
+    margin-bottom: 40px;
+  }
+  .breadcrumb__body {
+    margin-top: 42px;
+  }
 }
 
 .arrow {
