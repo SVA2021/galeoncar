@@ -2369,6 +2369,7 @@ body {
   background-image: linear-gradient(to right, #15171E 190px, #0A0C11 190px);
   height: 656px;
   padding: 40px 0;
+  color: #fff;
 }
 
 .testimonial__inner {
@@ -2376,6 +2377,7 @@ body {
   position: relative;
   margin: 0 auto;
   margin-top: 24px;
+  padding-top: 58px;
 }
 
 .testimonial__userlist {
@@ -2412,19 +2414,73 @@ body {
 .testimonial__username {
   display: block;
   padding: 4px 0;
-  font: 700 18px "Gilroy", sans-serif;
+  font: 700 14px "Gilroy", sans-serif;
   line-height: 120%;
   text-transform: uppercase;
-  color: #fff;
 }
 
 .testimonial__userinfo {
-  font: 400 16px "Gilroy", sans-serif;
+  font: 400 14px "Gilroy", sans-serif;
   line-height: 160%;
   letter-spacing: 0.05em;
-  color: #fff;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+
+.testimonial__detail {
+  margin-top: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.testimonial__navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 190px;
+  height: 45px;
+  font-size: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testimonial__navigation-prev {
+  opacity: 0.3;
+}
+
+.testimonial__navigation-prev::before {
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.testimonial__navigation-center {
+  opacity: 0.3;
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.testimonial__navigation-next {
+  display: inline-block;
+  opacity: 0.3;
+}
+
+.testimonial__detailed-username {
+  font: 700 18px "Gilroy", sans-serif;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+.testimonial__detailed-text {
+  margin-top: 24px;
 }
 
 @media (min-width: 410px) {
@@ -2449,6 +2505,19 @@ body {
   .testimonial__usercard {
     margin-right: 83px;
   }
+  .testimonial__username {
+    font-size: 18px;
+  }
+  .testimonial__userinfo {
+    font-size: 16px;
+  }
+  .testimonial__detail {
+    margin-top: 80px;
+    width: 300px;
+  }
+  .testimonial__detailed-username {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -2457,6 +2526,9 @@ body {
   }
   .testimonial__inner {
     width: 948px;
+  }
+  .testimonial__detail {
+    width: 375px;
   }
 }
 
@@ -2474,6 +2546,12 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .testimonial__detail {
+    width: 488px;
+  }
+  .testimonial__detailed-username {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -2483,6 +2561,9 @@ body {
   }
   .testimonial__inner {
     width: 1440px;
+  }
+  .testimonial__detail {
+    width: 630px;
   }
 }
 

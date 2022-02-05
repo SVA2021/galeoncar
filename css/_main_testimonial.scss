@@ -3,7 +3,7 @@
 	background-image: linear-gradient(to right, $color-pr2 190px, $color-pr1 190px);
 	height: $height-testimoinal-xxs;
 	padding: 40px 0;
-
+	color: $color-white;
 	// .testimonial__inner
 
 	&__inner {
@@ -11,6 +11,7 @@
 		position: relative;
 		margin: 0 auto;
 		margin-top: 24px;
+		padding-top: 58px;
 	}
 
 	// .testimonial__userlist
@@ -48,50 +49,100 @@
 	&__username {
 		display: block;
 		padding: 4px 0;
-		font: 700 18px $Gilroy;
+		font: 700 14px $Gilroy;
 		line-height: 120%;
 		text-transform: uppercase;
-		color: $color-white;
 	}
 
 	// .testimonial__userinfo
 
 	&__userinfo {
-		font: 400 16px $Gilroy;
+		font: 400 14px $Gilroy;
 		line-height: 160%;
 		letter-spacing: 0.05em;
-		color: $color-white;
 		mix-blend-mode: normal;
 		opacity: 0.8;
 	}
 
 	// .testimonial__detail
 
-	&__detail {}
+	&__detail {
+		margin-top: 24px;
+		position: relative;
+		width: 100%;
+	}
 
 	// .testimonial__navigation
 
-	&__navigation {}
+	&__navigation {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 190px;
+		height: 45px;
+		font-size: 45px;
+		display: flex;
+		align-items:center;
+		justify-content: space-evenly;
+	}
 
 	// .testimonial__navigation-prev
 
-	&__navigation-prev {}
+	&__navigation-prev {
+		// display: inline-block;
+		opacity: 0.3;
+	}
+
+	&__navigation-prev::before {
+		display: inline-block;
+		transform: rotate(180deg);
+	}
 
 	// .testimonial__navigation-center
 
-	&__navigation-center {}
+	&__navigation-center {
+		// margin-top: 50%;
+		// display: inline-block;
+		// position: relative;
+		opacity: 0.3;
+		width: 60px;
+		height: 1px;
+		background-color: $color-white;
+		// border-bottom: 1px solid $color-white;
+
+		// &::before {
+		// 	content: "";
+		// 	position: absolute;
+		// width: 60px;
+		// top: 50%;
+		// border-top: 1px solid $color-white;
+
+		// }
+	}
 
 	// .testimonial__navigation-next
 
-	&__navigation-next {}
+	&__navigation-next {
+		display: inline-block;
+		opacity: 0.3;
+	}
+	&__navigation-next::before {
+		// display: inline-block;
+	}
 
 	// .testimonial__detailed-username
 
-	&__detailed-username {}
+	&__detailed-username {
+		font: 700 18px $Gilroy;
+		line-height: 120%;
+		letter-spacing: 0.05em;
+	}
 
 	// .testimonial__detailed-text
 
-	&__detailed-text {}
+	&__detailed-text {
+		margin-top: 24px;
+	}
 
 	// .testimonial__detailed-raiting
 
@@ -217,15 +268,23 @@
 
 		// .testimonial__username
 
-		&__username {}
+		&__username {
+			font-size: 18px;
+		}
 
 		// .testimonial__userinfo
 
-		&__userinfo {}
+		&__userinfo {
+			font-size: 16px;
+		}
 
 		// .testimonial__detail
 
-		&__detail {}
+		&__detail {
+			margin-top: 80px;
+			width: 300px;
+
+		}
 
 		// .testimonial__navigation
 
@@ -245,7 +304,9 @@
 
 		// .testimonial__detailed-username
 
-		&__detailed-username {}
+		&__detailed-username {
+			font-size: 24px;
+		}
 
 		// .testimonial__detailed-text
 
@@ -303,7 +364,9 @@
 
 		// .testimonial__detail
 
-		&__detail {}
+		&__detail {
+			width: 375px;
+		}
 
 		// .testimonial__navigation
 
@@ -384,7 +447,9 @@
 
 		// .testimonial__detail
 
-		&__detail {}
+		&__detail {
+			width: 488px;
+		}
 
 		// .testimonial__navigation
 
@@ -404,7 +469,9 @@
 
 		// .testimonial__detailed-username
 
-		&__detailed-username {}
+		&__detailed-username {
+			font-size: 36px;
+		}
 
 		// .testimonial__detailed-text
 
@@ -462,7 +529,9 @@
 
 		// .testimonial__detail
 
-		&__detail {}
+		&__detail {
+			width: 630px;
+		}
 
 		// .testimonial__navigation
 
