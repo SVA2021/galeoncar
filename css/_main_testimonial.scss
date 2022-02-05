@@ -1,0 +1,486 @@
+.testimonial {
+	position: relative;
+	background-color: $color-pr2;
+	height: $height-testimoinal-xxs;
+	padding: 40px 0;
+
+	&::before {
+		content: "";
+		background-color: $color-pr1;
+		position: absolute;
+		top: 0;
+		left: 189px;
+		width: 2000px;
+		height: 2000px;
+		overflow: hidden;
+	}
+
+	// .testimonial__inner
+
+	&__inner {
+		width: $mq-xxs-container;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	// .testimonial__userlist
+
+	&__userlist {}
+
+	// .testimonial__usercard
+
+	&__usercard {}
+
+	// .testimonial__userpic
+
+	&__userpic {
+		height: 80px;
+	}
+
+	// .testimonial__username
+
+	&__username {}
+
+	// .testimonial__userinfo
+
+	&__userinfo {}
+
+	// .testimonial__detail
+
+	&__detail {}
+
+	// .testimonial__navigation
+
+	&__navigation {}
+
+	// .testimonial__navigation-prev
+
+	&__navigation-prev {}
+
+	// .testimonial__navigation-center
+
+	&__navigation-center {}
+
+	// .testimonial__navigation-next
+
+	&__navigation-next {}
+
+	// .testimonial__detailed-username
+
+	&__detailed-username {}
+
+	// .testimonial__detailed-text
+
+	&__detailed-text {}
+
+	// .testimonial__detailed-raiting
+
+	&__detailed-raiting {}
+
+	// .testimonial__detailed-expand
+
+	&__detailed-expand {}
+
+	// .testimonial__video
+
+	&__video {}
+}
+
+
+//**** XS container (410)  ********//////////
+
+@include media-xs {
+
+	.testimonial {
+		height: $height-testimoinal-xs;
+
+		// .testimonial__inner
+	
+		&__inner {
+			width: $mq-xs-container;
+		}
+	
+		// .testimonial__userlist
+	
+		&__userlist {}
+	
+		// .testimonial__usercard
+	
+		&__usercard {}
+	
+		// .testimonial__userpic
+	
+		&__userpic {
+		}
+	
+		// .testimonial__username
+	
+		&__username {}
+	
+		// .testimonial__userinfo
+	
+		&__userinfo {}
+	
+		// .testimonial__detail
+	
+		&__detail {}
+	
+		// .testimonial__navigation
+	
+		&__navigation {}
+	
+		// .testimonial__navigation-prev
+	
+		&__navigation-prev {}
+	
+		// .testimonial__navigation-center
+	
+		&__navigation-center {}
+	
+		// .testimonial__navigation-next
+	
+		&__navigation-next {}
+	
+		// .testimonial__detailed-username
+	
+		&__detailed-username {}
+	
+		// .testimonial__detailed-text
+	
+		&__detailed-text {}
+	
+		// .testimonial__detailed-raiting
+	
+		&__detailed-raiting {}
+	
+		// .testimonial__detailed-expand
+	
+		&__detailed-expand {}
+	
+		// .testimonial__video
+	
+		&__video {}
+	}
+	
+
+}
+
+
+//**** SM container (768)  ********//////////
+
+@include media-sm {
+
+	.testimonial {
+		height: $height-testimoinal-sm;
+		padding: 80px 0;
+	
+		&::before {
+			left: 249px;
+		}
+	
+		// .testimonial__inner
+	
+		&__inner {
+			width: $mq-sm-container;
+		}
+	
+		// .testimonial__userlist
+	
+		&__userlist {}
+	
+		// .testimonial__usercard
+	
+		&__usercard {}
+	
+		// .testimonial__userpic
+	
+		&__userpic {
+		}
+	
+		// .testimonial__username
+	
+		&__username {}
+	
+		// .testimonial__userinfo
+	
+		&__userinfo {}
+	
+		// .testimonial__detail
+	
+		&__detail {}
+	
+		// .testimonial__navigation
+	
+		&__navigation {}
+	
+		// .testimonial__navigation-prev
+	
+		&__navigation-prev {}
+	
+		// .testimonial__navigation-center
+	
+		&__navigation-center {}
+	
+		// .testimonial__navigation-next
+	
+		&__navigation-next {}
+	
+		// .testimonial__detailed-username
+	
+		&__detailed-username {}
+	
+		// .testimonial__detailed-text
+	
+		&__detailed-text {}
+	
+		// .testimonial__detailed-raiting
+	
+		&__detailed-raiting {}
+	
+		// .testimonial__detailed-expand
+	
+		&__detailed-expand {}
+	
+		// .testimonial__video
+	
+		&__video {}
+	}
+	
+
+}
+
+
+//**** MD container (1000)  ********//////////
+
+@include media-md {
+
+	.testimonial {
+		height: $height-testimoinal-md;
+
+		// .testimonial__inner
+	
+		&__inner {
+			width: $mq-md-container;
+		}
+	
+		// .testimonial__userlist
+	
+		&__userlist {}
+	
+		// .testimonial__usercard
+	
+		&__usercard {}
+	
+		// .testimonial__userpic
+	
+		&__userpic {
+		}
+	
+		// .testimonial__username
+	
+		&__username {}
+	
+		// .testimonial__userinfo
+	
+		&__userinfo {}
+	
+		// .testimonial__detail
+	
+		&__detail {}
+	
+		// .testimonial__navigation
+	
+		&__navigation {}
+	
+		// .testimonial__navigation-prev
+	
+		&__navigation-prev {}
+	
+		// .testimonial__navigation-center
+	
+		&__navigation-center {}
+	
+		// .testimonial__navigation-next
+	
+		&__navigation-next {}
+	
+		// .testimonial__detailed-username
+	
+		&__detailed-username {}
+	
+		// .testimonial__detailed-text
+	
+		&__detailed-text {}
+	
+		// .testimonial__detailed-raiting
+	
+		&__detailed-raiting {}
+	
+		// .testimonial__detailed-expand
+	
+		&__detailed-expand {}
+	
+		// .testimonial__video
+	
+		&__video {}
+	}
+	
+}
+
+
+//**** LG container (1280)  ********//////////
+
+@include media-lg {
+
+	.testimonial {
+		height: $height-testimoinal-lg;
+		padding: 100px 0;
+	
+		// .testimonial__inner
+	
+		&__inner {
+			width: $mq-lg-container;
+		}
+	
+		// .testimonial__userlist
+	
+		&__userlist {}
+	
+		// .testimonial__usercard
+	
+		&__usercard {}
+	
+		// .testimonial__userpic
+	
+		&__userpic {
+		}
+	
+		// .testimonial__username
+	
+		&__username {}
+	
+		// .testimonial__userinfo
+	
+		&__userinfo {}
+	
+		// .testimonial__detail
+	
+		&__detail {}
+	
+		// .testimonial__navigation
+	
+		&__navigation {}
+	
+		// .testimonial__navigation-prev
+	
+		&__navigation-prev {}
+	
+		// .testimonial__navigation-center
+	
+		&__navigation-center {}
+	
+		// .testimonial__navigation-next
+	
+		&__navigation-next {}
+	
+		// .testimonial__detailed-username
+	
+		&__detailed-username {}
+	
+		// .testimonial__detailed-text
+	
+		&__detailed-text {}
+	
+		// .testimonial__detailed-raiting
+	
+		&__detailed-raiting {}
+	
+		// .testimonial__detailed-expand
+	
+		&__detailed-expand {}
+	
+		// .testimonial__video
+	
+		&__video {}
+	}
+	
+}
+
+
+//**** XL container (1920)  ********//////////
+
+@include media-xl {
+
+	.testimonial {
+		height: $height-testimoinal-xl;
+		padding: 140px 0;
+
+		// .testimonial__inner
+	
+		&__inner {
+			width: $mq-xl-container;
+		}
+	
+		// .testimonial__userlist
+	
+		&__userlist {}
+	
+		// .testimonial__usercard
+	
+		&__usercard {}
+	
+		// .testimonial__userpic
+	
+		&__userpic {
+		}
+	
+		// .testimonial__username
+	
+		&__username {}
+	
+		// .testimonial__userinfo
+	
+		&__userinfo {}
+	
+		// .testimonial__detail
+	
+		&__detail {}
+	
+		// .testimonial__navigation
+	
+		&__navigation {}
+	
+		// .testimonial__navigation-prev
+	
+		&__navigation-prev {}
+	
+		// .testimonial__navigation-center
+	
+		&__navigation-center {}
+	
+		// .testimonial__navigation-next
+	
+		&__navigation-next {}
+	
+		// .testimonial__detailed-username
+	
+		&__detailed-username {}
+	
+		// .testimonial__detailed-text
+	
+		&__detailed-text {}
+	
+		// .testimonial__detailed-raiting
+	
+		&__detailed-raiting {}
+	
+		// .testimonial__detailed-expand
+	
+		&__detailed-expand {}
+	
+		// .testimonial__video
+	
+		&__video {}
+	}
+	
+}

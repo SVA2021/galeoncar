@@ -2364,6 +2364,85 @@ body {
   }
 }
 
+.testimonial {
+  position: relative;
+  background-color: #15171E;
+  height: 656px;
+  padding: 40px 0;
+}
+
+.testimonial::before {
+  content: "";
+  background-color: #0A0C11;
+  position: absolute;
+  top: 0;
+  left: 189px;
+  width: 2000px;
+  height: 2000px;
+  overflow: hidden;
+}
+
+.testimonial__inner {
+  width: 282px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.testimonial__userpic {
+  height: 80px;
+}
+
+@media (min-width: 410px) {
+  .testimonial {
+    height: 733px;
+  }
+  .testimonial__inner {
+    width: 372px;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonial {
+    height: 733px;
+    padding: 80px 0;
+  }
+  .testimonial::before {
+    left: 249px;
+  }
+  .testimonial__inner {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .testimonial {
+    height: 724px;
+  }
+  .testimonial__inner {
+    width: 948px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .testimonial {
+    height: 827px;
+    padding: 100px 0;
+  }
+  .testimonial__inner {
+    width: 1212px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .testimonial {
+    height: 883px;
+    padding: 140px 0;
+  }
+  .testimonial__inner {
+    width: 1440px;
+  }
+}
+
 .arrow {
   display: inline-block;
   margin-bottom: 4px;
