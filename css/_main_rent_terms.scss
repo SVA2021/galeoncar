@@ -3,30 +3,27 @@
 	background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url('../img/main/road_320.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: $height-road-xxs;
+	// height: $height-road-xxs;
 	font: 400 13px $Gilroy;
 	color: $color-white;
 
 	// .rent-terms__inner
 
 	&__inner {
-		// outline: 1px solid red;
+		margin: 0 auto;
 		margin-top: 49px;
+		width: $mq-xxs-container;
 	}
 
 	// .rent-terms__table
 
 	&__table {
-		// outline: 1px solid yellow;
 		position: relative;
+		margin-left: -18px;
 		background-color: $color-pr3;
-		// background-image: linear-gradient(180deg, #ffffff32, #ffffff32);
-		// background-repeat: no-repeat;
-		// background-size: 225px 1px;
-		// background-position: 50% 0%;
-		// background: linear-gradient(#000, #000) no-repeat center/2px 100%;
+
 		&::after {
-			content:"";
+			content: "";
 			width: 298px;
 			height: 276px;
 			position: absolute;
@@ -36,7 +33,7 @@
 		}
 
 		&::before {
-			content:"";
+			content: "";
 			position: absolute;
 			z-index: 2;
 			top: 22px;
@@ -46,7 +43,7 @@
 			transform: translate(-50%);
 		}
 
-		width: 320px;
+		width: 312px;
 		height: 276px;
 		padding-right: 8px;
 		padding: 18px 28px 31px 34px;
@@ -80,7 +77,6 @@
 	// .rent-terms__table-subtitle
 
 	&__table-subtitle {
-		// display: block;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 120%;
@@ -89,7 +85,12 @@
 
 	// .rent-terms__list
 
-	&__list {}
+	&__list {
+		margin: 0 auto;
+		margin-top: 24px;
+		width: $mq-xxs-container;
+		color: $color-white;
+	}
 }
 
 .accordeon {
@@ -98,15 +99,69 @@
 
 	&__body {}
 
-	// .accordeon__title
-
-	&__title {}
-
 	// .accordeon__item
 
-	&__item {}
-}
+	&__item {
+		position: relative;
+		padding: 16px 0;
+		border-bottom: 1px solid #ffffff32;
 
+		.arrow {
+			float: right;
+			margin: 0.5em 0.5em 0 0;
+		}
+	}
+
+	// .accordeon__title
+
+	&__title {
+		font: 700 14px $Gilroy;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+
+	// .accordeon__sublist
+
+	&__sublist {
+		display: none;
+		margin-top: 16px;
+	}
+
+	// .accordeon__subitem
+
+	&__subitem {
+		margin-top: 16px;
+		margin-left: 23px;
+		position: relative;
+
+		font: 400 13px $Gilroy;
+		line-height: 120%;
+		letter-spacing: 0.05em;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 8px;
+			left: -23px;
+			width: 15px;
+			border-top: 1px solid $color-white;
+		}
+	}
+
+	// .accordeon__active
+
+	&__active {
+
+		.accordeon__sublist {
+			display: block;
+		}
+
+		.arrow {
+			transform: rotate(-135deg);
+		}
+
+	}
+}
 
 //**** XS container (410)  ********//////////
 

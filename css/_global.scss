@@ -14,31 +14,37 @@ body {
 	margin: 0 auto;
 	position: relative;
 	min-width: $mq-xxs;
-	width: $mq-xxs-container;
+	// width: $mq-xxs-container;
+	width: $mq-xxs;
 	// z-index: 1;
 
 	@include media-xs {
-		min-width: $mq-xs;
-		width: $mq-xs-container;
+		// min-width: $mq-xs;
+		// width: $mq-xs-container;
+		width: $mq-xs;
 	}
 
 	@include media-sm {
-		min-width: $mq-sm;
-		width: $mq-sm-container;
+		// min-width: $mq-sm;
+		// width: $mq-sm-container;
+		width: $mq-sm;
 	}
 
 	@include media-md {
-		min-width: $mq-md;
-		width: $mq-md-container;
+		// min-width: $mq-md;
+		// width: $mq-md-container;
+		width: $mq-md;
 	}
 
 	@include media-lg {
-		min-width: $mq-lg;
-		width: $mq-lg-container;
+		// min-width: $mq-lg;
+		// width: $mq-lg-container;
+		width: $mq-lg;
 	}
 
 	@include media-xl {
-		min-width: $mq-xl;
-		width: $mq-xl-container;
+		// min-width: $mq-xl;
+		// width: $mq-xl-container;
+		width: $mq-xl;
 	}
 }

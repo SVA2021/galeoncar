@@ -111,41 +111,36 @@ body {
   margin: 0 auto;
   position: relative;
   min-width: 320px;
-  width: 282px;
+  width: 320px;
 }
 
 @media (min-width: 410px) {
   .wrapper {
-    min-width: 410px;
-    width: 372px;
+    width: 410px;
   }
 }
 
 @media (min-width: 768px) {
   .wrapper {
-    min-width: 768px;
-    width: 720px;
+    width: 768px;
   }
 }
 
 @media (min-width: 1000px) {
   .wrapper {
-    min-width: 1000px;
-    width: 948px;
+    width: 1000px;
   }
 }
 
 @media (min-width: 1280px) {
   .wrapper {
-    min-width: 1280px;
-    width: 1212px;
+    width: 1280px;
   }
 }
 
 @media (min-width: 1920px) {
   .wrapper {
-    min-width: 1920px;
-    width: 1440px;
+    width: 1920px;
   }
 }
 
@@ -2060,19 +2055,21 @@ body {
   background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_320.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1296px;
   font: 400 13px "Gilroy", sans-serif;
   color: #fff;
 }
 
 .rent-terms__inner {
+  margin: 0 auto;
   margin-top: 49px;
+  width: 282px;
 }
 
 .rent-terms__table {
   position: relative;
+  margin-left: -18px;
   background-color: #232731;
-  width: 320px;
+  width: 312px;
   height: 276px;
   padding-right: 8px;
   padding: 18px 28px 31px 34px;
@@ -2130,6 +2127,62 @@ body {
   font-size: 14px;
   line-height: 120%;
   text-transform: uppercase;
+}
+
+.rent-terms__list {
+  margin: 0 auto;
+  margin-top: 24px;
+  width: 282px;
+  color: #fff;
+}
+
+.accordeon__item {
+  position: relative;
+  padding: 16px 0;
+  border-bottom: 1px solid #ffffff32;
+}
+
+.accordeon__item .arrow {
+  float: right;
+  margin: 0.5em 0.5em 0 0;
+}
+
+.accordeon__title {
+  font: 700 14px "Gilroy", sans-serif;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.accordeon__sublist {
+  display: none;
+  margin-top: 16px;
+}
+
+.accordeon__subitem {
+  margin-top: 16px;
+  margin-left: 23px;
+  position: relative;
+  font: 400 13px "Gilroy", sans-serif;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+}
+
+.accordeon__subitem::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -23px;
+  width: 15px;
+  border-top: 1px solid #fff;
+}
+
+.accordeon__active .accordeon__sublist {
+  display: block;
+}
+
+.accordeon__active .arrow {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .arrow {
