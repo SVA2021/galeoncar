@@ -281,10 +281,10 @@ const accordeonItems = accordeon.querySelectorAll('.accordeon__item');
 
 for (const item of accordeonItems) {
 	item.addEventListener('click', function () {
-		for (const item of accordeonItems) {
-			item.classList.remove('accordeon__active');
-		}
-		item.classList.add('accordeon__active');
+		// for (const item of accordeonItems) {
+		// 	item.classList.remove('accordeon__active');
+		// }
+		item.classList.toggle('accordeon__active');
 	})
 }
 

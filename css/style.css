@@ -2055,8 +2055,8 @@ body {
   background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_320.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  font: 400 13px "Gilroy", sans-serif;
   color: #fff;
+  font: 400 13px "Gilroy", sans-serif;
 }
 
 .rent-terms__inner {
@@ -2079,7 +2079,8 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
 }
 
 .rent-terms__table::after {
@@ -2092,26 +2093,22 @@ body {
   border: 1px solid #EDC5A2;
 }
 
-.rent-terms__table::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 22px;
-  bottom: 29px;
-  left: 52%;
-  border-left: 1px solid #ffffff7F;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-}
-
 .rent-terms__table-item {
   position: relative;
-  padding-left: 25px;
+  padding: 0 4px 16px 25px;
+  border-right: 1px solid #ffffff7F;
+}
+
+.rent-terms__table-item:nth-child(2n) {
+  border-right: none;
 }
 
 .rent-terms__table-text {
   display: block;
   margin-top: 8px;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
 }
 
 .rent-terms__table-icon {
@@ -2163,7 +2160,7 @@ body {
   margin-left: 23px;
   position: relative;
   font: 400 13px "Gilroy", sans-serif;
-  line-height: 120%;
+  line-height: 140%;
   letter-spacing: 0.05em;
 }
 
@@ -2183,6 +2180,188 @@ body {
 .accordeon__active .arrow {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
+}
+
+@media (min-width: 410px) {
+  .rent-terms {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_410.webp");
+    background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_410.webp");
+  }
+  .rent-terms__inner {
+    margin-top: 40px;
+    width: 372px;
+  }
+  .rent-terms__table {
+    width: 410px;
+    height: 298px;
+  }
+  .rent-terms__table::after {
+    width: 389px;
+    height: 298px;
+    top: -16px;
+    left: 21px;
+  }
+  .rent-terms__table-item {
+    padding-left: 25px;
+  }
+  .rent-terms__table-text {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .rent-terms__list {
+    width: 372px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rent-terms {
+    padding: 80px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_768.webp");
+    background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_768.webp");
+  }
+  .rent-terms__inner {
+    margin-top: 84px;
+    width: 720px;
+  }
+  .rent-terms__table {
+    width: 721px;
+    height: 262px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-column-gap: 36px;
+            column-gap: 36px;
+  }
+  .rent-terms__table::after {
+    width: 697px;
+    height: 262px;
+    top: -24px;
+    left: 24px;
+  }
+  .rent-terms__table-item {
+    padding-left: 25px;
+  }
+  .rent-terms__table-item:nth-child(2n) {
+    border-right: 1px solid #ffffff7F;
+  }
+  .rent-terms__table-item:nth-child(3n) {
+    border-right: none;
+  }
+  .rent-terms__table-text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 8px;
+  }
+  .rent-terms__table-subtitle {
+    font-size: 18px;
+  }
+  .rent-terms__list {
+    width: 720px;
+  }
+  .accordeon__subitem {
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rent-terms {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_1000.webp");
+    background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_1000.webp");
+  }
+  .rent-terms__inner {
+    margin-top: 60px;
+    width: 948px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rent-terms__table {
+    margin-left: 25px;
+    padding: 43px 48px;
+    width: 330px;
+    height: 658px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rent-terms__table::after {
+    width: 306px;
+    height: 706px;
+  }
+  .rent-terms__table-item {
+    padding: 0;
+    padding-left: 32px;
+    margin-bottom: 42px;
+    border-right: none;
+  }
+  .rent-terms__table-item:nth-child(2n) {
+    border-right: none;
+  }
+  .rent-terms__table-text {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .rent-terms__table-subtitle {
+    font-size: 18px;
+  }
+  .rent-terms__list {
+    margin-top: 0px;
+    width: 612px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rent-terms {
+    padding: 100px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_1280.webp");
+    background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_1280.webp");
+  }
+  .rent-terms__inner {
+    margin-top: 80px;
+    width: 1212px;
+  }
+  .rent-terms__table {
+    width: 391px;
+  }
+  .rent-terms__table::after {
+    width: 391px;
+  }
+  .rent-terms__list {
+    width: 697px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .rent-terms {
+    padding: 140px 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_1920.webp");
+    background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_1920.webp");
+  }
+  .rent-terms__inner {
+    width: 1440px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .rent-terms__table {
+    margin-left: 179px;
+  }
+  .rent-terms__list {
+    width: 870px;
+  }
 }
 
 .arrow {
