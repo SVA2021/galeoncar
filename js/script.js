@@ -1,6 +1,6 @@
 'use strict';
 
-//******* header functionality ************************//
+//******* header ************************//
 // menu hamburger button expand/collapse
 const menuBtn = document.querySelector('.header__menu-bar');
 const appShop = document.querySelector('.header__app-shop');
@@ -260,16 +260,32 @@ function setSlider(sliderWrapper) {
 
 setSlider(bannerSliderWrapper);
 
-//******* contacts hide menu functionality ************************//
+//******* contacts hide menu  ************************//
 
 const contactsBlock = document.querySelector('.contacts__inner');
 const contactsOpen = document.querySelector('.contacts__open');
 const contactsClose = document.querySelector('.contacts__close');
 
-contactsClose.addEventListener('click', function(e) {
+contactsClose.addEventListener('click', function (e) {
 	contactsBlock.style.display = 'none';
 })
 
-contactsOpen.addEventListener('click', function(e) {
+contactsOpen.addEventListener('click', function (e) {
 	contactsBlock.style.display = 'block';
 })
+
+//******* faq accordeon ************************//
+
+const accordeon = document.querySelector('.accordeon__body');
+const accordeonItems = accordeon.querySelectorAll('.accordeon__item');
+
+for (const item of accordeonItems) {
+	item.addEventListener('click', function () {
+		for (const item of accordeonItems) {
+			item.classList.remove('accordeon__active');
+		}
+		item.classList.add('accordeon__active');
+	})
+}
+
+console.log(accordeonItems);

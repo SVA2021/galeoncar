@@ -1,6 +1,6 @@
 .rent-terms {
 	padding: 40px 0;
-	background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url('../img/main/road_320.webp');
+	background: $gradient-section, url('../img/main/road_320.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	// height: $height-road-xxs;
@@ -105,7 +105,7 @@
 		position: relative;
 		padding: 16px 0;
 		border-bottom: 1px solid #ffffff32;
-
+		
 		.arrow {
 			float: right;
 			margin: 0.5em 0.5em 0 0;
