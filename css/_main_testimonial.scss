@@ -82,14 +82,13 @@
 		height: 45px;
 		font-size: 45px;
 		display: flex;
-		align-items:center;
+		align-items: center;
 		justify-content: space-evenly;
 	}
 
 	// .testimonial__navigation-prev
 
 	&__navigation-prev {
-		// display: inline-block;
 		opacity: 0.3;
 	}
 
@@ -101,23 +100,10 @@
 	// .testimonial__navigation-center
 
 	&__navigation-center {
-		// margin-top: 50%;
-		// display: inline-block;
-		// position: relative;
 		opacity: 0.3;
 		width: 60px;
-		height: 1px;
+		height: 2px;
 		background-color: $color-white;
-		// border-bottom: 1px solid $color-white;
-
-		// &::before {
-		// 	content: "";
-		// 	position: absolute;
-		// width: 60px;
-		// top: 50%;
-		// border-top: 1px solid $color-white;
-
-		// }
 	}
 
 	// .testimonial__navigation-next
@@ -126,8 +112,25 @@
 		display: inline-block;
 		opacity: 0.3;
 	}
-	&__navigation-next::before {
-		// display: inline-block;
+
+	&__navigation-prev:hover,
+	// &__navigation-center:hover,
+	&__navigation-next:hover {
+		color: $color-pr4;
+		opacity: 1;
+	}
+
+	&__navigation-prev:focus,
+	// &__navigation-center:focus,
+	&__navigation-next:focus {
+		opacity: 1;
+	}
+
+	&__navigation-prev:active,
+	// &__navigation-center:active,
+	&__navigation-next:active {
+		color: $color-red6;
+		opacity: 1;
 	}
 
 	// .testimonial__detailed-username

@@ -2464,13 +2464,27 @@ body {
 .testimonial__navigation-center {
   opacity: 0.3;
   width: 60px;
-  height: 1px;
+  height: 2px;
   background-color: #fff;
 }
 
 .testimonial__navigation-next {
   display: inline-block;
   opacity: 0.3;
+}
+
+.testimonial__navigation-prev:hover, .testimonial__navigation-next:hover {
+  color: #EDC5A2;
+  opacity: 1;
+}
+
+.testimonial__navigation-prev:focus, .testimonial__navigation-next:focus {
+  opacity: 1;
+}
+
+.testimonial__navigation-prev:active, .testimonial__navigation-next:active {
+  color: #B72025;
+  opacity: 1;
 }
 
 .testimonial__detailed-username {
