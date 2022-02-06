@@ -38,3 +38,9 @@
 	border: solid $color;
 	border-width: 0 $width $width 0;
 }
+
+//******************** gradient ***********************/
+
+@mixin gradient2color($endColor: 100px) {
+	background-image:linear-gradient(to right, $color-pr2 $endColor, $color-pr1 $endColor);
+} 
