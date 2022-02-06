@@ -2400,6 +2400,11 @@ body {
 .testimonial__usercard {
   width: 221px;
   height: 58px;
+  opacity: 0.5;
+}
+
+.testimonial__usercard-active {
+  opacity: 1;
 }
 
 .testimonial__userpic {
@@ -2431,6 +2436,10 @@ body {
   margin-top: 24px;
   position: relative;
   width: 100%;
+}
+
+.testimonial__slider-list-item {
+  display: none;
 }
 
 .testimonial__navigation {

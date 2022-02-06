@@ -288,4 +288,43 @@ for (const item of accordeonItems) {
 	})
 }
 
-console.log(accordeonItems);
+//******* testimonial slider ************************//
+
+const testimonialSlider = document.querySelector('.testimonial__slider-body');
+const testimonialNextBtn = document.querySelector('.testimonial__navigation-next');
+const testimonialPrevBtn = document.querySelector('.testimonial__navigation-prev');
+const userList = document.querySelectorAll('.testimonial__usercard');
+const testimonialList = testimonialSlider.querySelectorAll('.testimonial__slider-list-item');
+
+let activeUser = 0;
+let userQty = userList.length;
+
+function setActiveTestimonial(index) {
+	let userCardActive = userList[index];
+	let testimonialActive = testimonialList[index];
+	userCardActive.classList.add('testimonial__usercard-active');
+	testimonialActive.style.display = 'block';
+}
+
+function clearActiveTestimonial(index) {
+	let userCardActive = userList[index];
+	let testimonialActive = testimonialList[index];
+	userCardActive.classList.remove('testimonial__usercard-active');
+	testimonialActive.style.display = 'none';
+}
+
+setActiveTestimonial(activeUser);
+
+testimonialNextBtn.addEventListener('click', function () {
+	clearActiveTestimonial(activeUser);
+	(activeUser == userQty - 1) ? activeUser = 0 : activeUser++;
+	setActiveTestimonial(activeUser);
+});
+
+
+testimonialPrevBtn.addEventListener('click', function () {
+	clearActiveTestimonial(activeIndex);
+	(activeUser == 0) ? activeUser = userQty - 1 : activeUser--;
+	setActiveTestimonial(activeUser);
+});
+// console.log(userList);

@@ -32,6 +32,12 @@
 	&__usercard {
 		width: 221px;
 		height: 58px;
+		opacity: 0.5;
+	}
+	// .testimonial__usercard-active
+
+	&__usercard-active {
+		opacity: 1;
 	}
 
 	// .testimonial__userpic
@@ -72,7 +78,11 @@
 		position: relative;
 		width: 100%;
 	}
+	// .testimonial__slider-list-item
 
+	&__slider-list-item {
+		display: none;
+	}
 	// .testimonial__navigation
 
 	&__navigation {
