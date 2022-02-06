@@ -1,0 +1,77 @@
+@import './main_contacts';
+
+.bank {
+
+	// .bank__inner
+	&__inner {
+		color: $color-white;
+
+		@include media-sm {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		@include media-lg {
+			margin-left: auto;
+			margin-right: auto;
+			width: 1067px;
+		}
+	}
+
+	// .bank__item
+	&__item {
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		margin: 4px 0;
+
+		@include media-sm {
+			margin: 8px 0;
+			flex-direction: column;
+		}
+
+		@include media-md {
+			align-items: flex-start;
+		}
+	}
+
+	// .bank__parameter
+	&__parameter {
+		margin-right: 8px;
+		font: 400 14px $Gilroy;
+		line-height: 120%;
+	}
+
+	// .bank__value
+	&__value {
+
+		font: 700 14px $Gilroy;
+		line-height: 160%;
+
+		@include media-sm {
+			font-size: 18px;
+			line-height: 160%;
+		}
+	}
+
+	// .bank__tax
+	&__tax {
+		flex: 1 1;
+	}
+
+	// .bank__account
+	&__account {
+		margin: 24px 0;
+		flex: 1 1;
+
+		@include media-sm {
+			margin: 0px 24px;
+		}
+	}
+
+	// .bank__address
+	&__address {
+		flex: 1 1;
+	}
+}

@@ -144,6 +144,252 @@ body {
   }
 }
 
+.arrow {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 4px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.down {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.left {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.up {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.header__hero {
+  font: 900 26px "Gilroy", sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 0.74px #EDC5A2;
+}
+
+.header__subhero {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  font: 400 18px "Gilroy", sans-serif;
+  line-height: 1.17em;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.section__header h2 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__header h2 span {
+  margin: 8px 0px;
+}
+
+.header__subtitle {
+  display: block;
+  font: 400 14px "Gilroy", sans-serif;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header__title {
+  display: block;
+  font: 900 24px/31px "Gilroy", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #EDC5A2;
+}
+
+@media (min-width: 768px) {
+  .header__subtitle {
+    font-size: 18px;
+  }
+  .header__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .header__hero {
+    font-size: 48px;
+    -webkit-text-stroke: 1px #EDC5A2;
+  }
+  .header__subhero {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header__subtitle {
+    font-size: 24px;
+  }
+  .header__title {
+    font-size: 48px;
+    line-height: 61px;
+  }
+  .header__hero {
+    font-size: 64px;
+  }
+  .header__subhero {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header__hero {
+    font-size: 72px;
+  }
+  .header__subhero {
+    margin-bottom: 16px;
+    font-size: 36px;
+  }
+}
+
+.button__link {
+  width: 170px;
+  height: 37px;
+  display: block;
+  background-color: transparent;
+  border: 0.76px solid #fff;
+  border-radius: 5px;
+  font: 700 13px "Gilroy", sans-serif;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button__link:focus {
+  border-color: #EDC5A2;
+  background-color: #EDC5A240;
+}
+
+.button__link:active {
+  border-color: #B72025;
+  background-color: #B7202540;
+}
+
+@media (min-width: 768px) {
+  .button__link {
+    width: 222px;
+    height: 48px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 18px;
+  }
+}
+
+.section__offset {
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+@media (min-width: 410px) {
+  .section__offset {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .section__offset {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section__offset {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .section__offset {
+    padding: 140px 0;
+  }
+}
+
+.wrapper__container {
+  margin: 0 auto;
+  width: 282px;
+}
+
+@media (min-width: 410px) {
+  .wrapper__container {
+    width: 372px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper__container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wrapper__container {
+    width: 948px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper__container {
+    width: 1212px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper__container {
+    width: 1440px;
+  }
+}
+
+.wrapper__inner {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .wrapper__inner {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wrapper__inner {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper__inner {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper__inner {
+    margin-top: 180px;
+  }
+}
+
 @font-face {
   font-family: "galeoncar";
   src: url("../fonts/iconmoon/galeoncar.ttf?wytpmi") format("truetype"), url("../fonts/iconmoon/galeoncar.woff?wytpmi") format("woff"), url("../fonts/iconmoon/galeoncar.svg?wytpmi#galeoncar") format("svg");
@@ -2754,116 +3000,6 @@ body {
   }
   .testimonial .icon-play-solid::before {
     font-size: 36px;
-  }
-}
-
-.arrow {
-  display: inline-block;
-  margin-bottom: 4px;
-  padding: 4px;
-  border: solid #fff;
-  border-width: 0 1px 1px 0;
-  mix-blend-mode: normal;
-  opacity: 0.8;
-}
-
-.down {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.right {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.left {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.up {
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-
-.section__header h2 {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section__header h2 span {
-  margin: 8px 0px;
-}
-
-.header__subtitle {
-  display: block;
-  font: 400 14px "Gilroy", sans-serif;
-  line-height: 120%;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.header__title {
-  display: block;
-  font: 900 24px/31px "Gilroy", sans-serif;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #EDC5A2;
-}
-
-@media (min-width: 768px) {
-  .header__subtitle {
-    font-size: 18px;
-  }
-  .header__title {
-    font-size: 36px;
-    line-height: 46px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .header__subtitle {
-    font-size: 24px;
-  }
-  .header__title {
-    font-size: 48px;
-    line-height: 61px;
-  }
-}
-
-.button__link {
-  width: 170px;
-  height: 37px;
-  display: block;
-  background-color: transparent;
-  border: 0.76px solid #fff;
-  border-radius: 5px;
-  font: 700 13px "Gilroy", sans-serif;
-  text-transform: uppercase;
-  line-height: 120%;
-  color: #fff;
-  cursor: pointer;
-}
-
-.button__link:focus {
-  border-color: #EDC5A2;
-  background-color: #EDC5A240;
-}
-
-.button__link:active {
-  border-color: #B72025;
-  background-color: #B7202540;
-}
-
-@media (min-width: 768px) {
-  .button__link {
-    width: 222px;
-    height: 48px;
-    border: 1px solid #fff;
-    border-radius: 6px;
-    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
