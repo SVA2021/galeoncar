@@ -1102,103 +1102,23 @@ body {
   }
 }
 
-.contacts {
-  position: relative;
-  padding-top: 153px;
-  height: 536px;
-  background-image: url("../img/main/map.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  font: 400 13px "Gilroy", sans-serif;
-}
-
-.contacts__open {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  cursor: pointer;
-}
-
-.contacts__pinmap {
-  width: 74px;
-  height: 83px;
-}
-
-.contacts__inner {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  padding: 21px 16px 15px 15px;
-  height: 363px;
-  width: 282px;
-  background-color: #232731;
-  color: #fff;
-}
-
-.contacts__header {
-  margin-bottom: 12px;
-}
-
-.contacts__subtitle {
-  display: block;
-  line-height: 120%;
-  letter-spacing: 0.05em;
-  opacity: 0.5;
-}
-
-.contacts__title {
-  margin-bottom: 4px;
-  font: 900 18px "Gilroy", sans-serif;
-  text-transform: uppercase;
-  line-height: 120%;
-}
-
-.contacts__close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 14px;
-  height: 42px;
-  width: 42px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  opacity: 0.75;
-  cursor: pointer;
-}
-
-.contacts__close:hover {
-  opacity: 1;
-}
-
-.contacts__close::before, .contacts__close::after {
-  position: absolute;
-  content: ' ';
-  height: 14px;
-  width: 1px;
-  background-color: #fff;
-}
-
-.contacts__close::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.contacts__close::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.contacts__main {
-  padding: 12px 0 12px 0;
+.car-order {
+  background-color: #15171E;
+  padding: 40px 0;
   border: 0.64px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
 }
 
-.contacts__item {
-  margin: 8px 0;
+.car-order__inner {
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+}
+
+.car-order__wrapper {
+  margin-top: 34px;
+  width: 300%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1206,332 +1126,188 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.contacts__icon {
-  font-size: 16px;
-  color: #EDC5A2;
+.car-order__card {
+  margin: 0 auto;
+  height: 160px;
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 0px;
 }
 
-.contacts__address {
-  margin-left: 6px;
-  font-weight: 600;
+.car-order__btn {
+  margin-bottom: 21px;
 }
 
-.contacts__footer {
-  margin: 13px 0 0 0;
-}
-
-.contacts__phone {
-  display: block;
-  font: 900 18px "Cera Pro", sans-serif;
+.breadcrumb__body {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: 400 14px "Gilroy", sans-serif;
   line-height: 120%;
-  cursor: pointer;
-}
-
-.contacts__call {
-  margin: 19px 0 12px 0;
-  width: 170px;
-  height: 37px;
-  display: block;
-  background-color: transparent;
-  border: 0.76px solid #fff;
-  border-radius: 5px;
-  font: 700 13px "Gilroy", sans-serif;
   text-transform: uppercase;
-  line-height: 120%;
   color: #fff;
-  cursor: pointer;
 }
 
-.contacts__call:focus {
-  border-color: #EDC5A2;
-  background-color: #EDC5A240;
+.breadcrumb__item:nth-child(2) {
+  margin: 0 24px;
+  padding: 0 24px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
-.contacts__call:active {
-  border-color: #B72025;
-  background-color: #B7202540;
+.card__premium {
+  background-image: url("../img/main/search_car_1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.contacts__social {
-  font: 600 13px "Gilroy", sans-serif;
-  line-height: 160%;
+.card__business {
+  background-image: url("../img/main/search_car_2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.contacts__social-text {
-  margin-right: 54px;
-}
-
-.contacts__social-icon {
-  margin: 4px;
-  cursor: pointer;
+.card__sport {
+  background-image: url("../img/main/search_car_3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 410px) {
-  .contacts {
-    padding-top: 191px;
-    font: 400 13px "Gilroy", sans-serif;
+  .car-order {
+    padding: 40px 0;
   }
-  .contacts__pinmap {
-    width: 84px;
-    height: 93px;
+  .car-order__inner {
+    width: 410px;
   }
-  .contacts__inner {
-    padding: 16px 5px 15px 27px;
-    height: 321px;
-    width: 372px;
+  .car-order__wrapper {
+    margin-top: 42px;
   }
-  .contacts__header {
-    margin-bottom: 12px;
+  .car-order__card {
+    height: 203px;
+    width: 353px;
   }
-  .contacts__title {
-    padding-bottom: 10px;
-  }
-  .contacts__item {
-    margin: 12px 0;
-  }
-  .contacts__footer {
-    margin: 4px 0 0 0;
-  }
-  .contacts__footer-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .contacts__phone-order {
-    width: 152px;
-  }
-  .contacts__phone {
-    font-size: 16px;
-  }
-  .contacts__social {
-    margin-top: 12px;
-  }
-  .contacts__social-text {
-    margin-right: 129px;
-  }
-  .contacts__social-icon {
-    margin: 4px;
-    cursor: pointer;
+  .car-order__btn {
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 768px) {
-  .contacts {
-    height: 775px;
-    padding-top: 254px;
-    font-size: 14px;
+  .car-order {
+    padding: 80px 0;
   }
-  .contacts__pinmap {
-    width: 98px;
-    height: 111px;
+  .car-order__inner {
+    width: 768px;
   }
-  .contacts__inner {
-    padding: 26px 62px 84px 43px;
-    height: 439px;
-    width: 595px;
+  .car-order__wrapper {
+    margin-top: 49px;
   }
-  .contacts__header {
-    margin-bottom: 16px;
+  .car-order__card {
+    height: 191px;
+    width: 333px;
   }
-  .contacts__icon {
-    font-size: 30px;
-  }
-  .contacts__title {
-    font-size: 30px;
-    padding-bottom: 10px;
-  }
-  .contacts__main {
-    border-width: 1px;
-    margin: 16px 0;
-  }
-  .contacts__item {
-    margin: 15px 0 28px 0;
-  }
-  .contacts__address {
-    margin-left: 16px;
-  }
-  .contacts__call {
-    width: 222px;
-    height: 48px;
-    border: 1px solid #fff;
-    border-radius: 6px;
-    font-size: 18px;
-  }
-  .contacts__footer {
-    margin: 4px 0 0 0;
-  }
-  .contacts__footer-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .contacts__phone-order {
-    width: 220px;
-  }
-  .contacts__phone {
-    font-size: 24px;
-  }
-  .contacts__social {
-    margin-top: 28px;
-    font-size: 16px;
-  }
-  .contacts__social-text {
-    margin-right: 180px;
-  }
-  .contacts__social-icon {
-    margin: 4px;
-    cursor: pointer;
+  .breadcrumb__body {
+    font: 400 18px "Gilroy", sans-serif;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
   }
 }
 
 @media (min-width: 1000px) {
-  .contacts {
-    height: 615px;
-    padding-top: 67px;
+  .car-order__inner {
+    width: 1000px;
   }
-  .contacts__inner {
-    margin-right: 34px;
+  .car-order__wrapper {
+    margin-top: 57px;
   }
-}
-
-@media (min-width: 1920px) {
-  .contacts__open {
-    position: absolute;
-    top: 175px;
-    left: 460px;
-  }
-  .contacts__inner {
-    margin-right: 367px;
-    padding: 26px 70px 84px 45px;
-    width: 604px;
-  }
-}
-
-.bank__inner {
-  color: #fff;
-}
-
-@media (min-width: 768px) {
-  .bank__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .breadcrumb__body {
+    font: 400 18px "Gilroy", sans-serif;
+    line-height: 140%;
+    text-transform: capitalize;
   }
 }
 
 @media (min-width: 1280px) {
-  .bank__inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1067px;
+  .car-order {
+    padding: 100px 0;
+  }
+  .car-order__inner {
+    width: 1280px;
+  }
+  .car-order__wrapper {
+    margin-top: 80px;
+  }
+  .car-order__card {
+    height: 244px;
+    width: 426px;
+  }
+  .car-order__btn {
+    margin-bottom: 25px;
+  }
+  .breadcrumb__body {
+    margin-top: 16px;
+    font: 400 24px "Cera Pro", sans-serif;
+    line-height: 120%;
+    text-transform: uppercase;
   }
 }
 
-.bank__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 4px 0;
-}
-
-@media (min-width: 768px) {
-  .bank__item {
-    margin: 8px 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media (min-width: 1920px) {
+  .car-order {
+    padding: 140px 0;
+  }
+  .car-order__inner {
+    width: 1920px;
+  }
+  .car-order__wrapper {
+    margin-top: 58px;
+  }
+  .car-order__card {
+    height: 379px;
+    width: 660px;
+  }
+  .car-order__btn {
+    margin-bottom: 40px;
+  }
+  .breadcrumb__body {
+    margin-top: 42px;
   }
 }
-
-@media (min-width: 1000px) {
-  .bank__item {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-.bank__parameter {
-  margin-right: 8px;
-  font: 400 14px "Gilroy", sans-serif;
-  line-height: 120%;
-}
-
-.bank__value {
-  font: 700 14px "Gilroy", sans-serif;
-  line-height: 160%;
-}
-
-@media (min-width: 768px) {
-  .bank__value {
-    font-size: 18px;
-    line-height: 160%;
-  }
-}
-
-.bank__tax {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-}
-
-.bank__account {
-  margin: 24px 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-}
-
-@media (min-width: 768px) {
-  .bank__account {
-    margin: 0px 24px;
-  }
-}
-
-.bank__address {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
-}
-/*# sourceMappingURL=style_bank.css.map */
+/*# sourceMappingURL=style_business_rent.css.map */
