@@ -1,9 +1,10 @@
 .testimonial {
 	position: relative;
-	background-image: linear-gradient(to right, $color-pr2 190px, $color-pr1 190px);
+	@include gradient2color(190px);
 	height: $height-testimoinal-xxs;
 	padding: 40px 0;
 	color: $color-white;
+
 	// .testimonial__inner
 
 	&__inner {
@@ -109,12 +110,6 @@
 		background-color: $color-white;
 	}
 
-	// .testimonial__navigation-next
-
-	// &__navigation-next {
-	// 	opacity: 0.3;
-	// }
-
 	&__navigation-prev:hover,
 	&__navigation-next:hover {
 		color: $color-pr4;
@@ -200,15 +195,22 @@
 	}
 
 	&__video-btn {
-		// position: absolute;
-		// top: 50%;
-		// left: 50%;
-		// transform: translate(-40px, -40px);
 		height: 80px;
 		width: 80px;
 		color: $color-white;
 		border: 1px solid $color-white;
 		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover {
+			border-color: $color-pr4;
+			color: $color-pr4;
+		}
+
+		&:active {
+			border-color: $color-red6;
+			color: $color-red6;
+		}
 	}
 
 	.icon-play-solid::before {
@@ -229,86 +231,30 @@
 		height: $height-testimoinal-xs;
 
 		// .testimonial__inner
-
 		&__inner {
 			width: $mq-xs-container;
 		}
 
-		// .testimonial__userlist
-
-		&__userlist {}
-
-		// .testimonial__usercard
-
-		&__usercard {}
-
-		// .testimonial__userpic
-
-		&__userpic {}
-
-		// .testimonial__username
-
-		&__username {}
-
-		// .testimonial__userinfo
-
-		&__userinfo {}
-
-		// .testimonial__detail
-
-		&__detail {}
-
-		// .testimonial__navigation
-
-		&__navigation {}
-
-		// .testimonial__navigation-prev
-
-		&__navigation-prev {}
-
-		// .testimonial__navigation-center
-
-		&__navigation-center {}
-
-		// .testimonial__navigation-next
-
-		&__navigation-next {}
-
-		// .testimonial__detailed-username
-
-		&__detailed-username {}
-
 		// .testimonial__detailed-text
-
 		&__detailed-text {
 			padding-right: 8px;
 			font-size: 14px;
 			line-height: 160%;
 		}
 
-		// .testimonial__detailed-raiting
-
-		&__detailed-raiting {}
-
-		// .testimonial__detailed-expand
-
-		&__detailed-expand {}
-
 		// .testimonial__video
-
 		&__video {
 			margin-top: 56px;
 			height: 200px;
 			background-image: url('../img/main/video_cover_410.webp');
 			background-size: contain;
-	
+
 			&::before {
 				width: 382px;
 				height: 200px;
 			}
 		}
 	}
-
 
 }
 
@@ -323,82 +269,41 @@
 		@include gradient2color(250px);
 
 		// .testimonial__inner
-
 		&__inner {
 			margin-top: 60px;
 			width: $mq-sm-container;
-			// display: grid;
-			// grid-template-columns: 1fr 1fr;
-			// grid-template-rows: auto;
-			// grid-template-areas: 
-			// 'userlist userlist',
-			// 'comment video';
-		}
-
-		// .testimonial__userlist
-
-		&__userlist {
-			// grid-area: userlist;
 		}
 
 		// .testimonial__usercard
-
 		&__usercard {
 			margin-right: 83px;
 		}
-
-		// .testimonial__userpic
-
-		&__userpic {}
-
-		// .testimonial__username
 
 		&__username {
 			font-size: 18px;
 		}
 
 		// .testimonial__userinfo
-
 		&__userinfo {
 			font-size: 16px;
 		}
 
 		// .testimonial__detail
-
 		&__detail {
 			margin-top: 80px;
 			margin-right: 24px;
 			width: 338px;
 			float: left;
-			// grid-area: comment;
 
 		}
 
-		// .testimonial__navigation
-
-		&__navigation {}
-
-		// .testimonial__navigation-prev
-
-		&__navigation-prev {}
-
-		// .testimonial__navigation-center
-
-		&__navigation-center {}
-
-		// .testimonial__navigation-next
-
-		&__navigation-next {}
-
 		// .testimonial__detailed-username
-
 		&__detailed-username {
 			margin-top: 32px;
 			font-size: 24px;
 		}
 
 		// .testimonial__detailed-text
-
 		&__detailed-text {
 			padding-right: 2px;
 			font-size: 14px;
@@ -409,34 +314,20 @@
 			margin-top: 20px;
 		}
 
-		// .testimonial__detailed-raiting
-
-		&__detailed-raiting {}
-
-		// .testimonial__detailed-expand
-
-		&__detailed-expand {}
-
 		// .testimonial__video
-
 		&__video {
-			// grid-area: video;
-			// float: right;
-
 			margin-top: 80px;
-			// margin-left: 24px;
 			height: 374px;
-			background-image: url('../img/main/video_cover.webp'); 
+			background-image: url('../img/main/video_cover.webp');
 			background-position: top center;
 			background-size: cover;
-	
+
 			&::before {
 				width: 358px;
 				height: 370px;
 			}
 		}
 	}
-
 
 }
 
@@ -449,75 +340,20 @@
 		height: $height-testimoinal-md;
 
 		// .testimonial__inner
-
 		&__inner {
 			width: $mq-md-container;
 		}
 
-		// .testimonial__userlist
-
-		&__userlist {}
-
-		// .testimonial__usercard
-
-		&__usercard {}
-
-		// .testimonial__userpic
-
-		&__userpic {}
-
-		// .testimonial__username
-
-		&__username {}
-
-		// .testimonial__userinfo
-
-		&__userinfo {}
-
 		// .testimonial__detail
-
 		&__detail {
 			width: 375px;
 		}
-
-		// .testimonial__navigation
-
-		&__navigation {}
-
-		// .testimonial__navigation-prev
-
-		&__navigation-prev {}
-
-		// .testimonial__navigation-center
-
-		&__navigation-center {}
-
-		// .testimonial__navigation-next
-
-		&__navigation-next {}
-
-		// .testimonial__detailed-username
-
-		&__detailed-username {}
-
-		// .testimonial__detailed-text
-
-		&__detailed-text {}
 
 		&__detailed-footer {
 			margin-top: 36px;
 		}
 
-		// .testimonial__detailed-raiting
-
-		&__detailed-raiting {}
-
-		// .testimonial__detailed-expand
-
-		&__detailed-expand {}
-
 		// .testimonial__video
-
 		&__video {
 			height: 366px;
 
@@ -527,7 +363,6 @@
 			}
 		}
 	}
-
 }
 
 
@@ -541,64 +376,27 @@
 		@include gradient2color(320px);
 
 		// .testimonial__inner
-
 		&__inner {
 			margin-top: 80px;
 			width: $mq-lg-container;
 		}
 
 		// .testimonial__userlist
-
 		&__userlist {
 			justify-content: space-between;
 		}
 
-		// .testimonial__usercard
-
-		&__usercard {}
-
-		// .testimonial__userpic
-
-		&__userpic {}
-
-		// .testimonial__username
-
-		&__username {}
-
-		// .testimonial__userinfo
-
-		&__userinfo {}
-
 		// .testimonial__detail
-
 		&__detail {
 			width: 488px;
 		}
 
-		// .testimonial__navigation
-
-		&__navigation {}
-
-		// .testimonial__navigation-prev
-
-		&__navigation-prev {}
-
-		// .testimonial__navigation-center
-
-		&__navigation-center {}
-
-		// .testimonial__navigation-next
-
-		&__navigation-next {}
-
 		// .testimonial__detailed-username
-
 		&__detailed-username {
 			font-size: 36px;
 		}
 
 		// .testimonial__detailed-text
-
 		&__detailed-text {
 			margin-top: 16px;
 			font: 400 16px $Gilroy;
@@ -606,27 +404,21 @@
 			letter-spacing: 0.05em;
 		}
 
-		// .testimonial__detailed-raiting
-
+		// .testimonial__detailed-raitin
 		&__detailed-footer {
 			margin-top: 24px;
 		}
 
-		&__detailed-raiting {}
-
 		// .testimonial__detailed-expand
-
 		&__detailed-expand {
 			font-size: 18px;
 		}
 
 		// .testimonial__video
-
 		&__video {
 			height: 407px;
 
 			&::before {
-				// width: 708px;
 				height: 405px;
 			}
 		}
@@ -645,73 +437,16 @@
 		@include gradient2color(460px);
 
 		// .testimonial__inner
-
 		&__inner {
 			width: $mq-xl-container;
 		}
 
-		// .testimonial__userlist
-
-		&__userlist {}
-
-		// .testimonial__usercard
-
-		&__usercard {}
-
-		// .testimonial__userpic
-
-		&__userpic {}
-
-		// .testimonial__username
-
-		&__username {}
-
-		// .testimonial__userinfo
-
-		&__userinfo {}
-
 		// .testimonial__detail
-
 		&__detail {
 			width: 630px;
 		}
 
-		// .testimonial__navigation
-
-		&__navigation {}
-
-		// .testimonial__navigation-prev
-
-		&__navigation-prev {}
-
-		// .testimonial__navigation-center
-
-		&__navigation-center {}
-
-		// .testimonial__navigation-next
-
-		&__navigation-next {}
-
-		// .testimonial__detailed-username
-
-		&__detailed-username {}
-
-		// .testimonial__detailed-text
-
-		&__detailed-text {
-			padding-right: 48px;
-		}
-
-		// .testimonial__detailed-raiting
-
-		&__detailed-raiting {}
-
-		// .testimonial__detailed-expand
-
-		&__detailed-expand {}
-
 		// .testimonial__video
-
 		&__video {
 			height: 421px;
 			width: auto;
@@ -722,19 +457,14 @@
 			}
 		}
 
-		
-	&__video-btn {
-		height: 114px;
-		width: 114px;
-	}
+		&__video-btn {
+			height: 114px;
+			width: 114px;
+		}
 
-	.icon-play-solid::before {
-		position: absolute;
-		font-size: 24px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-0.25em, -0.5em);
-	}
+		.icon-play-solid::before {
+			font-size: 36px;
+		}
 	}
 
 }

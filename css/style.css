@@ -2560,6 +2560,17 @@ body {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonial__video-btn:hover {
+  border-color: #EDC5A2;
+  color: #EDC5A2;
+}
+
+.testimonial__video-btn:active {
+  border-color: #B72025;
+  color: #B72025;
 }
 
 .testimonial .icon-play-solid::before {
@@ -2720,9 +2731,6 @@ body {
   .testimonial__detail {
     width: 630px;
   }
-  .testimonial__detailed-text {
-    padding-right: 48px;
-  }
   .testimonial__video {
     height: 421px;
     width: auto;
@@ -2736,12 +2744,7 @@ body {
     width: 114px;
   }
   .testimonial .icon-play-solid::before {
-    position: absolute;
-    font-size: 24px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-0.25em, -0.5em);
-            transform: translate(-0.25em, -0.5em);
+    font-size: 36px;
   }
 }
 
