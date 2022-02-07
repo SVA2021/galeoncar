@@ -1,26 +1,18 @@
 @import './main_car_order';
- 
-.businesscar {
 
-	// .businesscar__inner
+.nodriver {
+
+	// .nodriver__inner
 	&__inner {
 		margin-top: 24px;
 		position: relative;
 
 		@include media-xs {
-			margin-top: 52px;
+			margin-top: 42px;
 		}
 
 		@include media-sm {
 			margin-top: 60px;
-		}
-
-		@include media-md {
-			margin-top: 60px;
-		}
-
-		@include media-lg {
-			margin-top: 65px;
 		}
 
 		@include media-xl {
@@ -28,174 +20,133 @@
 		}
 	}
 
-	// .businesscar__table
+	// .nodriver__table
 	&__table {
 		position: relative;
-		padding: 10px 24px 10px 36px;
-		margin-top: 40px;
-		width: 323px;
-		height: 458px;
+		width: 320px;
+		height: 354px;
+		padding-left: 82px;
+		padding-top: 20px;
 		background-color: $color-pr3;
 		color: $color-white;
 
 		&::before {
-			content: "";
 			position: absolute;
-			top: -16px;
-			left: 16px;
-			width: 301px;
-			height: 458px;
+			content: "";
 			border: 1px solid $color-pr4;
+			top: -12px;
+			left: 20px;
+			width: 301px;
+			height: 381px;
 		}
 
 		@include media-xs {
-			margin-top: 0px;
 			width: 410px;
-			height: 420px;
+			height: 462px;
+			padding-left: 122px;
+			padding-top: 32px;
 
 			&::before {
-				width: 396px;
-				height: 419px;
+				top: -18px;
+				width: 392px;
+				height: 498px;
 			}
 		}
 
 		@include media-sm {
-			padding-top: 20px;
-			padding-left: 40px;
-			width: 311px;
-			height: 519px;
 			position: absolute;
-			top: 45px;
-			right: 0;
+			top: 48px;
+			right: 24px;
+			width: 331px;
+			height: 506px;
+			padding-left: 80px;
+			padding-top: 42px;
 
 			&::before {
-				width: 298px;
-				height: 519px;
+				top: -20px;
+				width: 283px;
+				height: 546px;
 			}
 		}
 
 		@include media-md {
-			padding-top: 72px;
-			padding-right: 30px;
-			width: 407px;
-			height: 504px;
-			top: 34px;
-
-			&::before {
-				width: 393px;
-				height: 504px;
-			}
+			top: 32px;
+			right: 0px;
 		}
 
 		@include media-lg {
-			padding-top: 40px;
-			padding-left: 50px;
-			padding-right: 36px;
-			width: 525px;
-			height: 632px;
-			top: 45px;
+			top: 64px;
+
+			width: 409px;
+			height: 596px;
+			padding-top: 50px;
 
 			&::before {
-				width: 507px;
-				height: 632px;
+				top: -24px;
+				left: 24px;
+				width: 340px;
+				height: 644px;
 			}
 		}
 
 		@include media-xl {
-			padding: 50px 280px 50px 90px;
-			width: 825px;
-			height: 632px;
-			top: 52px;
-
-			&::before {
-				width: 584px;
-				height: 632px;
-			}
+			top: 72px;
+			width: 581px;
+			height: 596px;
 		}
-
 	}
 
-	// .businesscar__table-header
-	&__table-header {
-		font: 900 14px $CeraPro;
+	// .nodriver__table-item
+	&__table-item {
+		position: relative;
+		margin-bottom: 8px;
+		padding-left: 32px;
+
+		@include media-xs {
+			margin-bottom: 16px;
+		}
+
+		@include media-sm {
+			margin-bottom: 24px;
+		}
+
+		@include media-lg {
+			margin-bottom: 32px;
+		}
+	}
+
+	// .nodriver__table-icon
+	&__table-icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 18px;
+	}
+
+	// .nodriver__table-subtitle
+	&__table-subtitle {
+		display: block;
+		margin-bottom: 8px;
+		font: 700 14px $Gilroy;
 		line-height: 120%;
 		text-transform: uppercase;
 
 		@include media-xs {
-			line-height: 120%;
 			font-size: 18px;
-		}
-
-		@include media-lg {
 			line-height: 120%;
-			font-size: 24px;
 		}
-
 	}
 
-	// .businesscar__list
-	&__list {
-		padding-left: 24px;
-		margin-top: 16px;
-
-		@include media-md {
-			margin-top: 24px;
-		}
-
-	}
-
-	// .businesscar__item
-	&__item {
-		margin: 10px 0;
-		position: relative;
+	// .nodriver__table-text
+	&__table-text {
 		font: 400 14px $Gilroy;
-		line-height: 120%;
+		line-height: 160%;
+		letter-spacing: 0.05em;
 
-		&::before {
-			content: "";
-			position: absolute;
-			top: 8px;
-			left: -23px;
-			width: 15px;
-			border-top: 1px solid $color-white;
-		}
-
-		@include media-lg {
-			margin: 16px 0;
-			width: 462px;
+		@include media-xs {
 			font-size: 16px;
 			line-height: 160%;
 			letter-spacing: 0.05em;
-		}
-
-	}
-
-	// .businesscar__footer
-	&__footer {
-		margin-top: 24px;
-		font: 400 14px $ProximaNova;
-		line-height: 120%;
-
-		span {
-			color: $color-pr4;
-		}
-
-		@include media-xs {
-			margin-top: 0px;
-		}
-
-		@include media-md {
-			margin-top: 12px;
-
-			span {
-				font-size: 24px;
-				line-height: 120%;
-				font-weight: 700;
-			}
-		}
-
-		@include media-xl {
-			margin-top: 24px;
 		}
 	}
 }
