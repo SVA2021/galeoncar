@@ -188,6 +188,7 @@ body {
   display: block;
   margin: 0 auto;
   margin-bottom: 8px;
+  text-align: center;
   text-transform: uppercase;
   font: 400 18px "Gilroy", sans-serif;
   line-height: 1.17em;
