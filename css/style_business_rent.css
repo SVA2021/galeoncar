@@ -1349,7 +1349,7 @@ body {
 
 .businesscar__table {
   position: relative;
-  padding: 10px 23px 36px 36px;
+  padding: 10px 24px 10px 36px;
   margin-top: 40px;
   width: 323px;
   height: 458px;
@@ -1381,8 +1381,13 @@ body {
 
 @media (min-width: 768px) {
   .businesscar__table {
+    padding-top: 20px;
+    padding-left: 40px;
     width: 311px;
     height: 519px;
+    position: absolute;
+    top: 45px;
+    right: 0;
   }
   .businesscar__table::before {
     width: 298px;
@@ -1392,8 +1397,11 @@ body {
 
 @media (min-width: 1000px) {
   .businesscar__table {
+    padding-top: 72px;
+    padding-right: 30px;
     width: 407px;
     height: 504px;
+    top: 34px;
   }
   .businesscar__table::before {
     width: 393px;
@@ -1403,8 +1411,12 @@ body {
 
 @media (min-width: 1280px) {
   .businesscar__table {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 36px;
     width: 525px;
     height: 632px;
+    top: 45px;
   }
   .businesscar__table::before {
     width: 507px;
@@ -1414,8 +1426,10 @@ body {
 
 @media (min-width: 1920px) {
   .businesscar__table {
+    padding: 50px 280px 50px 90px;
     width: 825px;
     height: 632px;
+    top: 52px;
   }
   .businesscar__table::before {
     width: 584px;
@@ -1429,13 +1443,33 @@ body {
   text-transform: uppercase;
 }
 
+@media (min-width: 410px) {
+  .businesscar__table-header {
+    line-height: 120%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .businesscar__table-header {
+    line-height: 120%;
+    font-size: 24px;
+  }
+}
+
 .businesscar__list {
   padding-left: 24px;
   margin-top: 16px;
 }
 
+@media (min-width: 1000px) {
+  .businesscar__list {
+    margin-top: 24px;
+  }
+}
+
 .businesscar__item {
-  margin: 8px 0;
+  margin: 10px 0;
   position: relative;
   font: 400 14px "Gilroy", sans-serif;
   line-height: 120%;
@@ -1450,6 +1484,16 @@ body {
   border-top: 1px solid #fff;
 }
 
+@media (min-width: 1280px) {
+  .businesscar__item {
+    margin: 16px 0;
+    width: 462px;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+  }
+}
+
 .businesscar__footer {
   margin-top: 24px;
   font: 400 14px "Proxima Nova", sans-serif;
@@ -1458,5 +1502,28 @@ body {
 
 .businesscar__footer span {
   color: #EDC5A2;
+}
+
+@media (min-width: 410px) {
+  .businesscar__footer {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .businesscar__footer {
+    margin-top: 12px;
+  }
+  .businesscar__footer span {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1920px) {
+  .businesscar__footer {
+    margin-top: 24px;
+  }
 }
 /*# sourceMappingURL=style_business_rent.css.map */

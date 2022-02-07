@@ -3,7 +3,6 @@
 .businesscar {
 
 	// .businesscar__inner
-
 	&__inner {
 		margin-top: 24px;
 		position: relative;
@@ -29,15 +28,10 @@
 		}
 	}
 
-	// .businesscar__img
-
-	&__img {}
-
 	// .businesscar__table
-
 	&__table {
 		position: relative;
-		padding: 10px 23px 36px 36px;
+		padding: 10px 24px 10px 36px;
 		margin-top: 40px;
 		width: 323px;
 		height: 458px;
@@ -63,12 +57,16 @@
 				width: 396px;
 				height: 419px;
 			}
-
 		}
 
 		@include media-sm {
+			padding-top: 20px;
+			padding-left: 40px;
 			width: 311px;
 			height: 519px;
+			position: absolute;
+			top: 45px;
+			right: 0;
 
 			&::before {
 				width: 298px;
@@ -77,8 +75,11 @@
 		}
 
 		@include media-md {
+			padding-top: 72px;
+			padding-right: 30px;
 			width: 407px;
 			height: 504px;
+			top: 34px;
 
 			&::before {
 				width: 393px;
@@ -87,8 +88,12 @@
 		}
 
 		@include media-lg {
+			padding-top: 40px;
+			padding-left: 50px;
+			padding-right: 36px;
 			width: 525px;
 			height: 632px;
+			top: 45px;
 
 			&::before {
 				width: 507px;
@@ -97,8 +102,10 @@
 		}
 
 		@include media-xl {
+			padding: 50px 280px 50px 90px;
 			width: 825px;
 			height: 632px;
+			top: 52px;
 
 			&::before {
 				width: 584px;
@@ -109,30 +116,40 @@
 	}
 
 	// .businesscar__table-header
-
 	&__table-header {
 		font: 900 14px $CeraPro;
 		line-height: 120%;
 		text-transform: uppercase;
 
+		@include media-xs {
+			line-height: 120%;
+			font-size: 18px;
+		}
+
+		@include media-lg {
+			line-height: 120%;
+			font-size: 24px;
+		}
+
 	}
 
 	// .businesscar__list
-
 	&__list {
 		padding-left: 24px;
 		margin-top: 16px;
+
+		@include media-md {
+			margin-top: 24px;
+		}
+
 	}
 
 	// .businesscar__item
-
 	&__item {
-		// padding-left: 60px;
-		margin: 8px 0;
+		margin: 10px 0;
 		position: relative;
 		font: 400 14px $Gilroy;
 		line-height: 120%;
-		// letter-spacing: 0.05em;
 
 		&::before {
 			content: "";
@@ -142,34 +159,43 @@
 			width: 15px;
 			border-top: 1px solid $color-white;
 		}
+
+		@include media-lg {
+			margin: 16px 0;
+			width: 462px;
+			font-size: 16px;
+			line-height: 160%;
+			letter-spacing: 0.05em;
+		}
+
 	}
 
 	// .businesscar__footer
-
 	&__footer {
 		margin-top: 24px;
 		font: 400 14px $ProximaNova;
 		line-height: 120%;
-		span{
+
+		span {
 			color: $color-pr4;
 		}
+
+		@include media-xs {
+			margin-top: 0px;
+		}
+
+		@include media-md {
+			margin-top: 12px;
+
+			span {
+				font-size: 24px;
+				line-height: 120%;
+				font-weight: 700;
+			}
+		}
+
+		@include media-xl {
+			margin-top: 24px;
+		}
 	}
-}
-
-.section {
-
-	// .section__offset
-
-	&__offset {}
-}
-
-.header {
-
-	// .header__subhero
-
-	&__subhero {}
-
-	// .header__hero
-
-	&__hero {}
 }
