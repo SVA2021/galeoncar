@@ -4,35 +4,30 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-@include media-xs {
-	background-image: url('../img/special/special_banner_410.webp');
-	height: 445px;
+	@include media-xs {
+		background-image: url('../img/special/special_banner_410.webp');
+		height: 445px;
+	}
 
-}
+	@include media-sm {
+		background-image: url('../img/special/special_banner_768.webp');
+		height: 472px;
+	}
 
-@include media-sm {
-	background-image: url('../img/special/special_banner_768.webp');
-	height: 472px;
+	@include media-md {
+		background-image: url('../img/special/special_banner_1000.webp');
+		height: 608px;
+	}
 
-}
+	@include media-lg {
+		background-image: url('../img/special/special_banner_1280.webp');
+		height: 800px;
+	}
 
-@include media-md {
-	background-image: url('../img/special/special_banner_1000.webp');
-	height: 608px;
-
-}
-
-@include media-lg {
-	background-image: url('../img/special/special_banner_1280.webp');
-	height: 800px;
-
-}
-
-@include media-xl {
-	background-image: url('../img/special/special_banner_1920.webp');
-	height: 975px;
-
-}
+	@include media-xl {
+		background-image: url('../img/special/special_banner_1920.webp');
+		height: 975px;
+	}
 
 	// .special-banner__header
 
@@ -47,42 +42,47 @@
 			padding-top: 80px;
 		}
 
-		@include media-md {
-			// margin-top: 60px;
-		}
-
 		@include media-lg {
 			padding-top: 100px;
-		}
-
-		@include media-xl {
-			// margin-top: 180px;
 		}
 	}
 
 	// .special-banner__inner
 
-	&__inner {}
-}
-
-.header {
-
-	// .header__subhero
-
-	&__subhero {}
-
-	// .header__hero
-
-	&__hero {}
+	&__inner {
+		// color: $color-white;
+	}
 }
 
 .special {
 
 	// .special__list
 
-	&__list {}
+	&__list {
+		margin: 0 auto;
+		margin-top: 174px;
+		margin-left: 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
 	// .special__link
 
-	&__link {}
+	&__link {
+		display: inline-block;
+		margin: 16px auto;
+		a {
+			padding: 8px 22px;
+			font: 500 14px $Gilroy;
+			line-height: 120%;
+			text-transform: uppercase;
+			color: $color-white;
+			background-color: $color-pr3;
+
+			span {
+				padding-right: 8px;
+			}
+		}
+	}
 }
