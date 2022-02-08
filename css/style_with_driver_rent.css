@@ -1312,142 +1312,143 @@ body {
   }
 }
 
-.nodriver__inner {
+.driver__inner {
   margin-top: 24px;
   position: relative;
 }
 
 @media (min-width: 410px) {
-  .nodriver__inner {
+  .driver__inner {
     margin-top: 42px;
   }
 }
 
 @media (min-width: 768px) {
-  .nodriver__inner {
+  .driver__inner {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 1920px) {
-  .nodriver__inner {
+  .driver__inner {
     margin-top: 80px;
   }
 }
 
-.nodriver__table {
+.driver__table {
   position: relative;
-  width: 320px;
-  height: 354px;
+  width: 324px;
+  height: 328px;
   padding-left: 82px;
-  padding-top: 20px;
+  padding-top: 36px;
   background-color: #232731;
   color: #fff;
 }
 
-.nodriver__table::before {
+.driver__table::before {
   position: absolute;
   content: "";
   border: 1px solid #EDC5A2;
   top: -12px;
   left: 20px;
-  width: 301px;
-  height: 381px;
+  width: 302px;
+  height: 357px;
 }
 
 @media (min-width: 410px) {
-  .nodriver__table {
-    width: 410px;
-    height: 462px;
-    padding-left: 122px;
+  .driver__table {
+    width: 414px;
+    height: 411px;
+    padding-left: 112px;
     padding-top: 32px;
   }
-  .nodriver__table::before {
-    top: -18px;
+  .driver__table::before {
+    top: -20px;
     width: 392px;
-    height: 498px;
+    height: 452px;
   }
 }
 
 @media (min-width: 768px) {
-  .nodriver__table {
+  .driver__table {
     position: absolute;
-    top: 48px;
-    right: 24px;
-    width: 331px;
-    height: 506px;
-    padding-left: 80px;
-    padding-top: 42px;
+    top: 80px;
+    right: 0px;
+    width: 308px;
+    height: 411px;
+    padding-left: 38px;
+    padding-top: 50px;
   }
-  .nodriver__table::before {
-    top: -20px;
-    width: 283px;
-    height: 546px;
+  .driver__table::before {
+    width: 316px;
+    height: 452px;
   }
 }
 
 @media (min-width: 1000px) {
-  .nodriver__table {
-    top: 32px;
-    right: 0px;
+  .driver__table {
+    top: 48px;
+    padding-left: 75px;
+    width: 334px;
+    height: 472px;
+  }
+  .driver__table::before {
+    top: -24px;
+    left: 24px;
+    width: 343px;
+    height: 519px;
   }
 }
 
 @media (min-width: 1280px) {
-  .nodriver__table {
-    top: 64px;
-    width: 409px;
-    height: 596px;
+  .driver__table {
+    top: 124px;
+    width: 411px;
+    height: 472px;
     padding-top: 50px;
-  }
-  .nodriver__table::before {
-    top: -24px;
-    left: 24px;
-    width: 340px;
-    height: 644px;
   }
 }
 
 @media (min-width: 1920px) {
-  .nodriver__table {
-    top: 72px;
-    width: 581px;
-    height: 596px;
+  .driver__table {
+    top: 130px;
+    width: 582px;
+    height: 472px;
   }
 }
 
-.nodriver__table-item {
+.driver__table-item {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   padding-left: 32px;
 }
 
 @media (min-width: 410px) {
-  .nodriver__table-item {
-    margin-bottom: 16px;
-  }
-}
-
-@media (min-width: 768px) {
-  .nodriver__table-item {
+  .driver__table-item {
     margin-bottom: 24px;
   }
 }
 
-@media (min-width: 1280px) {
-  .nodriver__table-item {
+@media (min-width: 1000px) {
+  .driver__table-item {
     margin-bottom: 32px;
   }
 }
 
-.nodriver__table-icon {
+@media (min-width: 1280px) {
+  .driver__table-item {
+    margin-bottom: 32px;
+  }
+}
+
+.driver__table-icon {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 18px;
 }
 
-.nodriver__table-subtitle {
+.driver__table-subtitle {
   display: block;
   margin-bottom: 8px;
   font: 700 14px "Gilroy", sans-serif;
@@ -1456,23 +1457,31 @@ body {
 }
 
 @media (min-width: 410px) {
-  .nodriver__table-subtitle {
+  .driver__table-subtitle {
     font-size: 18px;
     line-height: 120%;
   }
 }
 
-.nodriver__table-text {
+.driver__table-text {
+  display: inline-block;
+  width: 206px;
   font: 400 14px "Gilroy", sans-serif;
   line-height: 160%;
   letter-spacing: 0.05em;
 }
 
 @media (min-width: 410px) {
-  .nodriver__table-text {
+  .driver__table-text {
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.05em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .driver__table-text {
+    width: 238px;
   }
 }
 /*# sourceMappingURL=style_with_driver_rent.css.map */
