@@ -1,0 +1,152 @@
+@import './main_car_order';
+
+.nodriver {
+
+	// .nodriver__inner
+	&__inner {
+		margin-top: 24px;
+		position: relative;
+
+		@include media-xs {
+			margin-top: 42px;
+		}
+
+		@include media-sm {
+			margin-top: 60px;
+		}
+
+		@include media-xl {
+			margin-top: 80px;
+		}
+	}
+
+	// .nodriver__table
+	&__table {
+		position: relative;
+		width: 320px;
+		height: 354px;
+		padding-left: 82px;
+		padding-top: 20px;
+		background-color: $color-pr3;
+		color: $color-white;
+
+		&::before {
+			position: absolute;
+			content: "";
+			border: 1px solid $color-pr4;
+			top: -12px;
+			left: 20px;
+			width: 301px;
+			height: 381px;
+		}
+
+		@include media-xs {
+			width: 410px;
+			height: 462px;
+			padding-left: 122px;
+			padding-top: 32px;
+
+			&::before {
+				top: -18px;
+				width: 392px;
+				height: 498px;
+			}
+		}
+
+		@include media-sm {
+			position: absolute;
+			top: 48px;
+			right: 24px;
+			width: 331px;
+			height: 506px;
+			padding-left: 80px;
+			padding-top: 42px;
+
+			&::before {
+				top: -20px;
+				width: 283px;
+				height: 546px;
+			}
+		}
+
+		@include media-md {
+			top: 32px;
+			right: 0px;
+		}
+
+		@include media-lg {
+			top: 64px;
+
+			width: 409px;
+			height: 596px;
+			padding-top: 50px;
+
+			&::before {
+				top: -24px;
+				left: 24px;
+				width: 340px;
+				height: 644px;
+			}
+		}
+
+		@include media-xl {
+			top: 72px;
+			width: 581px;
+			height: 596px;
+		}
+	}
+
+	// .nodriver__table-item
+	&__table-item {
+		position: relative;
+		margin-bottom: 8px;
+		padding-left: 32px;
+
+		@include media-xs {
+			margin-bottom: 16px;
+		}
+
+		@include media-sm {
+			margin-bottom: 24px;
+		}
+
+		@include media-lg {
+			margin-bottom: 32px;
+		}
+	}
+
+	// .nodriver__table-icon
+	&__table-icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 18px;
+	}
+
+	// .nodriver__table-subtitle
+	&__table-subtitle {
+		display: block;
+		margin-bottom: 8px;
+		font: 700 14px $Gilroy;
+		line-height: 120%;
+		text-transform: uppercase;
+
+		@include media-xs {
+			font-size: 18px;
+			line-height: 120%;
+		}
+	}
+
+	// .nodriver__table-text
+	&__table-text {
+		font: 400 14px $Gilroy;
+		line-height: 160%;
+		letter-spacing: 0.05em;
+
+		@include media-xs {
+			font-size: 16px;
+			line-height: 160%;
+			letter-spacing: 0.05em;
+		}
+	}
+}
