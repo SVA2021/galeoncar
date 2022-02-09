@@ -1,31 +1,31 @@
 .special-banner {
 	height: 538px;
-	background-image: url('../img/special/special_banner_320.webp');
+	background-image: $gradient-section, url('../img/special/special_banner_320.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@include media-xs {
-		background-image: url('../img/special/special_banner_410.webp');
+		background-image: $gradient-section, url('../img/special/special_banner_410.webp');
 		height: 445px;
 	}
 
 	@include media-sm {
-		background-image: url('../img/special/special_banner_768.webp');
+		background-image: $gradient-section, url('../img/special/special_banner_768.webp');
 		height: 472px;
 	}
 
 	@include media-md {
-		background-image: url('../img/special/special_banner_1000.webp');
+		background-image: $gradient-section, url('../img/special/special_banner_1000.webp');
 		height: 608px;
 	}
 
 	@include media-lg {
-		background-image: url('../img/special/special_banner_1280.webp');
+		background-image: $gradient-section, url('../img/special/special_banner_1280.webp');
 		height: 800px;
 	}
 
 	@include media-xl {
-		background-image: url('../img/special/special_banner_1920.webp');
+		background-image: $gradient-section, url('../img/special/special_banner_1920.webp');
 		height: 975px;
 	}
 
@@ -72,6 +72,7 @@
 	&__link {
 		display: inline-block;
 		margin: 16px auto;
+
 		a {
 			padding: 8px 22px;
 			font: 500 14px $Gilroy;
