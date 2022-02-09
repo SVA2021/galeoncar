@@ -1105,42 +1105,48 @@ body {
 
 .special-banner {
   height: 538px;
-  background-image: url("../img/special/special_banner_320.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/special_banner_320.webp");
+  background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/special_banner_320.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 410px) {
   .special-banner {
-    background-image: url("../img/special/special_banner_410.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/special_banner_410.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/special_banner_410.webp");
     height: 445px;
   }
 }
 
 @media (min-width: 768px) {
   .special-banner {
-    background-image: url("../img/special/special_banner_768.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/special_banner_768.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/special_banner_768.webp");
     height: 472px;
   }
 }
 
 @media (min-width: 1000px) {
   .special-banner {
-    background-image: url("../img/special/special_banner_1000.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/special_banner_1000.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/special_banner_1000.webp");
     height: 608px;
   }
 }
 
 @media (min-width: 1280px) {
   .special-banner {
-    background-image: url("../img/special/special_banner_1280.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/special_banner_1280.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/special_banner_1280.webp");
     height: 800px;
   }
 }
 
 @media (min-width: 1920px) {
   .special-banner {
-    background-image: url("../img/special/special_banner_1920.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/special_banner_1920.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/special_banner_1920.webp");
     height: 975px;
   }
 }
@@ -1167,36 +1173,47 @@ body {
   }
 }
 
-.special-banner__inner {
-  color: #fff;
-}
-
 .special__list {
   margin: 0 auto;
+  margin-top: 174px;
+  margin-left: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.special__link {
+.special__list-item {
   display: inline-block;
-  margin: 16px auto;
-}
-
-.special__link a {
-  padding: 8px 22px;
-  font: 500 14px "Gilroy", sans-serif;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  font: 400 14px "Gilroy", sans-serif;
   line-height: 120%;
   text-transform: uppercase;
-  color: #fff;
   background-color: #232731;
 }
 
-.special__link a span {
+.special__link {
+  color: #fff;
+}
+
+.special__link span {
   padding-right: 8px;
+}
+
+.special__btn {
+  display: none;
 }
 /*# sourceMappingURL=style_special.css.map */
