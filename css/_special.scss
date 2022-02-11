@@ -50,7 +50,6 @@
 	// .special-banner__inner
 
 	&__inner {
-		// color: $color-white;
 	}
 }
 
@@ -73,31 +72,29 @@
 		@include media-xs {
 			margin-top: 80px;
 			column-gap: 24px;
-			// row-gap: 16px;
 		}
 
-		// @include media-sm {
+		@include media-sm {
 
-		// }
+		}
 
-		// @include media-md {
+		@include media-md {
 
-		// }
+		}
 
-		// @include media-lg {
+		@include media-lg {
 
-		// }
+		}
 
-		// @include media-xl {
+		@include media-xl {
 
-		// }
+		}
 	}
 
 	// .special__link
 
 	&__list-item {
 		display: inline-block;
-		// margin: 0 16px 16px 0;
 		padding: 8px 12px;
 		border-radius: 5px;
 		font: 400 14px $Gilroy;
@@ -115,25 +112,24 @@
 		}
 
 		@include media-xs {
-			// margin: 0 24px 16px 0;
 			padding: 12px 20px;
 		}
 
-		// @include media-sm {
+		@include media-sm {
 
-		// }
+		}
 
-		// @include media-md {
+		@include media-md {
 
-		// }
+		}
 
-		// @include media-lg {
+		@include media-lg {
 
-		// }
+		}
 
-		// @include media-xl {
+		@include media-xl {
 
-		// }
+		}
 
 	}
 
@@ -171,23 +167,21 @@
 	}
 }
 
-// @include media-sm {
+@include media-sm {
 
-// }
+}
 
-// @include media-md {
+@include media-md {
 
-// }
+}
 
-// @include media-lg {
+@include media-lg {
 
-// }
+}
 
-// @include media-xl {
+@include media-xl {
 
-// }
+}
 
 	}
 }
-
-// }
