@@ -1,31 +1,31 @@
 .special-banner {
 	height: 538px;
-	background-image: $gradient-section, url('../img/special/special_banner_320.webp');
+	background-image: url('../img/special/special_banner_320.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@include media-xs {
-		background-image: $gradient-section, url('../img/special/special_banner_410.webp');
+		background-image: url('../img/special/special_banner_410.webp');
 		height: 445px;
 	}
 
 	@include media-sm {
-		background-image: $gradient-section, url('../img/special/special_banner_768.webp');
+		background-image: url('../img/special/special_banner_768.webp');
 		height: 472px;
 	}
 
 	@include media-md {
-		background-image: $gradient-section, url('../img/special/special_banner_1000.webp');
+		background-image: url('../img/special/special_banner_1000.webp');
 		height: 608px;
 	}
 
 	@include media-lg {
-		background-image: $gradient-section, url('../img/special/special_banner_1280.webp');
+		background-image: url('../img/special/special_banner_1280.webp');
 		height: 800px;
 	}
 
 	@include media-xl {
-		background-image: $gradient-section, url('../img/special/special_banner_1920.webp');
+		background-image: url('../img/special/special_banner_1920.webp');
 		height: 975px;
 	}
 
@@ -49,8 +49,7 @@
 
 	// .special-banner__inner
 
-	&__inner {
-	}
+	&__inner {}
 }
 
 .special {
@@ -69,31 +68,42 @@
 		column-gap: 16px;
 		row-gap: 16px;
 
+
 		@include media-xs {
 			margin-top: 80px;
 			column-gap: 24px;
 		}
 
 		@include media-sm {
-
+			margin-top: 150px;
+			margin-left: 24px;
+			row-gap: 24px;
 		}
 
 		@include media-md {
+			margin-top: 220px;
+			margin-left: 40px;
 
 		}
 
 		@include media-lg {
-
+			margin: 310px 28px 0px 36px;
+			justify-content: space-between;
 		}
 
 		@include media-xl {
-
+			margin: 0 auto;
+			margin-top: 350px;
+			// margin: 350px 0px 0px 0px;
+			width: 1260px;
+			justify-content: center;
 		}
 	}
 
 	// .special__link
 
 	&__list-item {
+		order: 5;
 		display: inline-block;
 		padding: 8px 12px;
 		border-radius: 5px;
@@ -102,7 +112,7 @@
 		text-transform: uppercase;
 		background-color: $color-pr3;
 		cursor: pointer;
-		
+
 		&:hover {
 			background-color: $color-pr4-op25;
 		}
@@ -115,21 +125,23 @@
 			padding: 12px 20px;
 		}
 
-		@include media-sm {
-
-		}
+		// @include media-sm {}
 
 		@include media-md {
+			font-size: 18px;
+			line-height: 120%;
+			padding: 18px 24px;
 
 		}
 
 		@include media-lg {
+			font-size: 24px;
+			line-height: 120%;
+			padding: 26px 24px;
 
 		}
 
-		@include media-xl {
-
-		}
+		// @include media-xl {}
 
 	}
 
@@ -144,44 +156,66 @@
 	&__btn {
 		display: none;
 
-@include media-xs {
-	display: inline-block;
+		@include media-xs {
+			display: inline-block;
+			width: 136px;
+			height: 41px;
+			text-align: center;
+			order: 8;
+			// padding: 12px 36px;
+			border-radius: 6px;
+			font: 400 14px $Gilroy;
+			line-height: 41px;
+			// line-height: 120%;
+			text-transform: uppercase;
+			background-color: $color-pr4-op25;
+			border: 1px solid $color-pr4;
 
-	padding: 12px 36px;
-	border-radius: 6px;
-	font: 400 14px $Gilroy;
-	line-height: 120%;
-	text-transform: uppercase;
-	background-color: $color-pr4-op25;
-	border: 1px solid $color-pr4;
-	a {
-		color: $color-white;
+			a {
+				color: $color-white;
+			}
+
+			&:hover {
+				background-color: $color-pr4-op25;
+			}
+
+			&:active {
+				border-color: $color-red6;
+				background-color: $color-red6-op25;
+			}
+		}
+
+		// @include media-sm {}
+
+		@include media-md {
+			width: 182px;
+			height: 57px;
+			font-size: 18px;
+			line-height: 57px;
+		}
+
+		@include media-lg {
+			width: 244px;
+			height: 80px;
+			font-size: 24px;
+			line-height: 80px;
+		}
+
+		@include media-xl {
+			width: 260px;
+		}
+
 	}
-	&:hover {
-		background-color: $color-pr4-op25;
+
+	&__list-item__order1 {
+		@include media-xs {
+			order: 1;
+		}
 	}
 
-	&:active {
-		border-color: $color-red6;
-		background-color: $color-red6-op25;
-	}
-}
-
-@include media-sm {
-
-}
-
-@include media-md {
-
-}
-
-@include media-lg {
-
-}
-
-@include media-xl {
-
-}
-
+	&__list-item__order2 {
+		@include media-xs {
+			order: 2;
+		}
 	}
 }
