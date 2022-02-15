@@ -224,141 +224,120 @@
 
 .transfer {
 
+	height: 857px;
+	background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_320.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-xs {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_410.webp');
+		height: 941px;
+	}
+
+	@include media-sm {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_768.webp');
+		height: 857px;
+	}
+
+	@include media-md {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1000.webp');
+		height: 934px;
+	}
+
+	@include media-lg {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1280.webp');
+		height: 1111px;
+	}
+
+	@include media-xl {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1920.webp');
+		height: 1371px;
+	}
+
 	// .transfer__img
 
-	&__img {
-	}
+	&__img {}
 
 	// .transfer__list
 
-	&__list {
-	}
+	&__list {}
 
 	// .transfer__slider
 
-	&__slider {
-	}
+	&__slider {}
 }
-.section {
 
-	// .section__offset
 
-	&__offset {
-	}
 
-	// .section__header
+//**** THIS SAME FOR ALL SECTIONS *********//
 
-	&__header {
-	}
-}
-.header {
 
-	// .header__subtitle
-
-	&__subtitle {
-	}
-
-	// .header__title
-
-	&__title {
-	}
-}
-.wrapper {
-
-	// .wrapper__container
-
-	&__container {
-	}
-}
 .checklist {
 
 	// .checklist__description
 
-	&__description {
-	}
+	&__description {}
 
 	// .checklist__title
 
-	&__title {
-	}
+	&__title {}
 
 	// .checklist__body
 
-	&__body {
-	}
+	&__body {}
 
 	// .checklist__item
 
-	&__item {
-	}
+	&__item {}
 }
+
 .card-slider {
 
 	// .card-slider__navigation
 
-	&__navigation {
-	}
+	&__navigation {}
 
 	// .card-slider__navigation-prev
 
-	&__navigation-prev {
-	}
+	&__navigation-prev {}
 
 	// .card-slider__navigation-center
 
-	&__navigation-center {
-	}
+	&__navigation-center {}
 
 	// .card-slider__navigation-next
 
-	&__navigation-next {
-	}
+	&__navigation-next {}
 
 	// .card-slider__body
 
-	&__body {
-	}
+	&__body {}
 
 	// .card-slider__item
 
-	&__item {
-	}
+	&__item {}
 
 	// .card-slider__title
 
-	&__title {
-	}
+	&__title {}
 
 	// .card-slider__img
 
-	&__img {
-	}
+	&__img {}
 
 	// .card-slider__detail
 
-	&__detail {
-	}
+	&__detail {}
 
 	// .card-slider__detail-item
 
-	&__detail-item {
-	}
+	&__detail-item {}
 
 	// .card-slider__icon
 
-	&__icon {
-	}
+	&__icon {}
 
 	// .card-slider__text
 
-	&__text {
-	}
-}
-.icon-arrow {
-}
-.icon-car {
-}
-.icon-engine {
-}
-.icon-chrome {
+	&__text {}
 }

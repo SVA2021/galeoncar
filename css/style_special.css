@@ -1357,4 +1357,52 @@ body {
             order: 2;
   }
 }
+
+.transfer {
+  height: 857px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
+  background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 410px) {
+  .transfer {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_410.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_410.webp");
+    height: 941px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transfer {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_768.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_768.webp");
+    height: 857px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .transfer {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1000.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1000.webp");
+    height: 934px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .transfer {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1280.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1280.webp");
+    height: 1111px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .transfer {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
+    height: 1371px;
+  }
+}
 /*# sourceMappingURL=style_special.css.map */
