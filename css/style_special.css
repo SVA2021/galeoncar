@@ -330,6 +330,7 @@ body {
 }
 
 .wrapper__container {
+  outline: 1px solid aqua;
   margin: 0 auto;
   width: 282px;
 }
@@ -1403,6 +1404,138 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
     background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
     height: 1371px;
+  }
+}
+
+.transfer__inner {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .transfer__inner {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .transfer__inner {
+    margin-top: 100px;
+  }
+}
+
+.transfer__flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .transfer__flex-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.transfer__img {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.transfer__img::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #EDC5A2;
+  top: -16px;
+  left: 16px;
+  width: 291px;
+  height: 192px;
+}
+
+@media (min-width: 410px) {
+  .transfer__img::before {
+    width: 381px;
+    height: 230px;
+  }
+}
+
+@media (min-width: 768px) {
+  .transfer__img::before {
+    top: -20px;
+    left: 24px;
+    width: 417px;
+    height: 327px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .transfer__img::before {
+    top: -24px;
+    width: 558px;
+    height: 404px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .transfer__img::before {
+    top: -20px;
+    width: 725px;
+    height: 518px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .transfer__img::before {
+    top: -24px;
+    width: 1166px;
+    height: 648px;
+  }
+}
+
+.transfer__list {
+  margin-top: 40px;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (min-width: 768px) {
+  .transfer__list {
+    margin-top: 0px;
+    width: 290px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .transfer__list {
+    width: 380px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .transfer__list {
+    margin-right: 75px;
+    width: 444px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .transfer__list {
+    margin-right: 45px;
   }
 }
 /*# sourceMappingURL=style_special.css.map */
