@@ -405,21 +405,98 @@
 
 .checklist {
 
+	font: 400 14px $Gilroy;
+	line-height: 120%;
+	color: $color-white;
+
+	// @include media-xs {
+
+	// }
+
+	// @include media-sm {
+
+	// }
+
+	@include media-md {
+		font-size: 16px;
+		line-height: 160%;
+		letter-spacing: 0.05em;
+	}
+
+	@include media-lg {
+		font-size: 18px;
+		line-height: 160%;
+	}
+
+	// @include media-xl {
+
+	// }
+
+
 	// .checklist__description
 
 	&__description {}
 
 	// .checklist__title
 
-	&__title {}
+	&__title {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 16px;
+
+		// @include media-xs {
+
+		// }
+
+		@include media-sm {
+			font-size: 18px;
+		}
+
+		// @include media-md {
+
+		// }
+
+		@include media-lg {
+			font-weight: 900;
+			font-size: 24px;
+		}
+
+		// @include media-xl {
+
+		// }
+
+	}
 
 	// .checklist__body
 
-	&__body {}
+	&__body {
+		padding-left: 48px;
+	}
 
 	// .checklist__item
 
-	&__item {}
+	&__item {
+		margin-left: 24px;
+		padding-left: 48px;
+
+		&::before {
+		color: $color-pr4;
+		margin-left: -36px;
+			margin-top: 12px;
+			font-size: 24px;
+		}
+	}
+
+	&__icon {
+		// color: $color-pr4;
+		// font-size: 24px;
+		// display: inline-block;
+
+		// &::before {
+		// 	margin-left: -36px;
+		// 	margin-top: 12px;
+		// }
+	}
 }
 
 .card-slider {
