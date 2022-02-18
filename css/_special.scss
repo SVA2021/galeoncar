@@ -287,9 +287,7 @@
 
 		@include media-sm {
 			flex-direction: row;
-			// column-gap: 24px;
-			align-items: flex-start;
-			// justify-content: flex-start;
+			align-items: center;
 			flex-wrap: nowrap;
 		}
 
@@ -315,7 +313,7 @@
 
 		@include media-sm {
 			// float: right;
-			margin-top: 20px;
+			// margin-top: 20px;
 		}
 
 		&::before {
@@ -374,7 +372,6 @@
 			margin-top: 0px;
 			width: 290px;
 			margin-right: 24px;
-			// float: left;
 		}
 
 		@include media-md {
@@ -459,7 +456,7 @@
 		// }
 
 		@include media-lg {
-			margin-bottom: 32px;
+			margin-bottom: 42px;
 			font-weight: 900;
 			font-size: 24px;
 		}
@@ -489,7 +486,7 @@
 		}
 
 		@include media-sm {
-			// margin-bottom: 16px;
+			margin-bottom: 16px;
 		}
 
 		// @include media-md {
@@ -511,12 +508,9 @@
 		font-size: 24px;
 		height: 32px;
 		width: 32px;
-		// display: inline-block;
 
 		&::before {
 			position: absolute;
-			// height: 32px;
-			// width: 32px;
 			top: 0.5em;
 			left: 0.25em;
 		}
