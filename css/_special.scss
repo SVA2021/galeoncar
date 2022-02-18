@@ -288,7 +288,7 @@
 		@include media-sm {
 			flex-direction: row;
 			// column-gap: 24px;
-			align-items: center;
+			align-items: flex-start;
 			// justify-content: flex-start;
 			flex-wrap: nowrap;
 		}
@@ -315,7 +315,7 @@
 
 		@include media-sm {
 			// float: right;
-			// margin-left: 24px;
+			margin-top: 20px;
 		}
 
 		&::before {
@@ -388,7 +388,7 @@
 
 		@include media-xl {
 			margin-right: 45px;
-
+			align-self: flex-end;
 		}
 
 	}
@@ -450,6 +450,7 @@
 		// }
 
 		@include media-sm {
+			margin-bottom: 24px;
 			font-size: 18px;
 		}
 
@@ -458,6 +459,7 @@
 		// }
 
 		@include media-lg {
+			margin-bottom: 32px;
 			font-weight: 900;
 			font-size: 24px;
 		}
@@ -479,25 +481,42 @@
 
 	&__item {
 		position: relative;
-		// margin-left: 24px;
-		// margin-bottom: 8px;
 		padding-left: 48px;
 
-		&::before {
-		// color: $color-pr4;
-		// margin-left: -36px;
-		// 	margin-top: 12px;
-		// 	font-size: 24px;
+
+		@include media-xs {
+			margin-bottom: 8px;
 		}
+
+		@include media-sm {
+			// margin-bottom: 16px;
+		}
+
+		// @include media-md {
+
+		// }
+
+		@include media-lg {
+			margin-bottom: 24px;
+		}
+
+		// @include media-xl {
+
+		// }
+
 	}
 
 	&__icon {
 		color: $color-pr4;
 		font-size: 24px;
+		height: 32px;
+		width: 32px;
 		// display: inline-block;
 
 		&::before {
 			position: absolute;
+			// height: 32px;
+			// width: 32px;
 			top: 0.5em;
 			left: 0.25em;
 		}

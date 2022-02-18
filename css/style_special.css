@@ -1439,9 +1439,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -1452,6 +1452,12 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+
+@media (min-width: 768px) {
+  .transfer__img {
+    margin-top: 20px;
+  }
 }
 
 .transfer__img::before {
@@ -1536,6 +1542,8 @@ body {
 @media (min-width: 1920px) {
   .transfer__list {
     margin-right: 45px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 
@@ -1569,12 +1577,14 @@ body {
 
 @media (min-width: 768px) {
   .checklist__title {
+    margin-bottom: 24px;
     font-size: 18px;
   }
 }
 
 @media (min-width: 1280px) {
   .checklist__title {
+    margin-bottom: 32px;
     font-weight: 900;
     font-size: 24px;
   }
@@ -1585,9 +1595,23 @@ body {
   padding-left: 48px;
 }
 
+@media (min-width: 410px) {
+  .checklist__item {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .checklist__item {
+    margin-bottom: 24px;
+  }
+}
+
 .checklist__icon {
   color: #EDC5A2;
   font-size: 24px;
+  height: 32px;
+  width: 32px;
 }
 
 .checklist__icon::before {
