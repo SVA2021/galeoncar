@@ -17,3 +17,5 @@ menuBtn.addEventListener('click', () => {
 	menuList.classList.toggle('menu__active');
 }
 );
+
+console.log(menuList.parentElement.offsetWidth);

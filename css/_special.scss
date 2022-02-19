@@ -508,7 +508,7 @@
 
 		@include media-sm {
 			position: absolute;
-			top: -45px;
+			top: -54px;
 			right: 0;
 			width: 190px;
 			height: 45px;
@@ -569,9 +569,13 @@
 	// .card-slider__body
 
 	&__body {
-		margin-top: 24px;
+		position: absolute;
+		left: 0;
+		// margin-top: 24px;
 		display: flex;
 		flex-direction: row;
+
+		// transition: left 0.5s ease-out;
 	}
 
 	// .card-slider__item
@@ -593,7 +597,6 @@
 
 		@include media-sm {
 			width: 286px;
-
 		}
 
 		@include media-md {
@@ -606,8 +609,11 @@
 
 		@include media-xl {
 			width: 340px;
-
 		}
+
+		// .card-slider__item-active {
+		// 	display: block;
+		// }
 
 	}
 
@@ -658,7 +664,5 @@
 
 	&__text {
 		margin-left: 8px;
-		// font: 400 14px $Gilroy;
-		// line-height: 120%;
 	}
 }

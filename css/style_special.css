@@ -1662,7 +1662,7 @@ body {
 @media (min-width: 768px) {
   .card-slider__navigation {
     position: absolute;
-    top: -45px;
+    top: -54px;
     right: 0;
     width: 190px;
     height: 45px;
@@ -1714,7 +1714,8 @@ body {
 }
 
 .card-slider__body {
-  margin-top: 24px;
+  position: absolute;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
