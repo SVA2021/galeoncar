@@ -395,10 +395,7 @@
 	&__slider {}
 }
 
-
-
 //**** THIS SAME FOR ALL SECTIONS *********//
-
 
 .checklist {
 
@@ -521,7 +518,9 @@
 
 	// .card-slider__navigation
 
-	&__navigation {}
+	&__navigation {
+		display: none;
+	}
 
 	// .card-slider__navigation-prev
 
@@ -537,27 +536,61 @@
 
 	// .card-slider__body
 
-	&__body {}
+	&__body {
+		margin-top: 24px;
+		display: flex;
+		flex-direction: row;
+	}
 
 	// .card-slider__item
 
-	&__item {}
+	&__item {
+		outline: 0.25px solid red;
+		position: relative;
+		width: 282px;
+		height: 154px;
+		flex: 0 0 auto;
+		margin-right: 24px;
+		padding-top: 16px;
+		// padding: 16px;
+		border-radius: 5px;
+		color: $color-white;
+		background-color: $color-pr3;
+	}
 
 	// .card-slider__title
 
-	&__title {}
+	&__title {
+		margin: 0px 0px 24px 16px;
+		font: 700 18px $Gilroy;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
 
 	// .card-slider__img
 
-	&__img {}
+	&__img {
+		margin-left: 10px;
+		width: 156px;
+	}
 
 	// .card-slider__detail
 
-	&__detail {}
+	&__detail {
+		position: absolute;
+		top: 56px;
+		right: 14px;
+		display: flex;
+		flex-direction: column;
+	}
 
 	// .card-slider__detail-item
 
-	&__detail-item {}
+	&__detail-item {
+		font: 400 14px $Gilroy;
+		line-height: 120%;
+		margin-bottom: 8px;
+	}
 
 	// .card-slider__icon
 
@@ -565,5 +598,9 @@
 
 	// .card-slider__text
 
-	&__text {}
+	&__text {
+		margin-left: 8px;
+		// font: 400 14px $Gilroy;
+		// line-height: 120%;
+	}
 }
