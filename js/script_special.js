@@ -18,17 +18,17 @@ menuBtn.addEventListener('click', () => {
 
 //******* car cards slider ****************************//
 
-// function hideOuterElement(min, max, array) {
-// 	for (const element of array) {
-// 		let coordinates = element.getBoundingClientRect();
-// 		element.style.display = 'block';
-// 		if (coordinates.left < min || coordinates.left > max) {
-// 			element.style.height = 0;
-// 		}
-// 		console.log(min, max, coordinates.left, coordinates.right);
-// 	}
-// 	console.log('divider');
-// }
+function hideOuterElement(min, max, array) {
+	for (const element of array) {
+		let coordinates = element.getBoundingClientRect();
+		element.style.zIndex = 10;
+		if (coordinates.left < min || coordinates.left > max) {
+			element.style.zIndex = -10;
+		}
+		console.log(min, max, coordinates.left, coordinates.right);
+	}
+	console.log('divider');
+}
 
 function setSlidePosition(sliderWrapper) {
 
@@ -46,7 +46,7 @@ function setSlidePosition(sliderWrapper) {
 	const minPosition = wrapperCoordinate.left;
 	const maxPosition = wrapperCoordinate.right;
 
-	// hideOuterElement(minPosition, maxPosition, items);
+	hideOuterElement(minPosition, maxPosition, items);
 
 	prevBtn.addEventListener('click', function () {
 		let position = parseInt(slider.style.left) || 0;
@@ -54,7 +54,7 @@ function setSlidePosition(sliderWrapper) {
 		let newPosition = sliderItemWidth + position + gap;
 		slider.style.left = newPosition + 'px';
 
-		// hideOuterElement(minPosition, maxPosition, items);
+		hideOuterElement(minPosition, maxPosition, items);
 
 	})
 
@@ -64,7 +64,7 @@ function setSlidePosition(sliderWrapper) {
 		if (parentWidth + gap + Math.abs(position) >= sliderWidth) return false;
 		slider.style.left = newPosition + 'px';
 
-		// hideOuterElement(minPosition, maxPosition, items);
+		hideOuterElement(minPosition, maxPosition, items);
 
 	})
 }
