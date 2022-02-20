@@ -1572,6 +1572,219 @@ body {
   }
 }
 
+.meeting {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
+  height: 857px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
+  background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 410px) {
+  .meeting {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_410.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_410.webp");
+    height: 941px;
+  }
+}
+
+@media (min-width: 768px) {
+  .meeting {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_768.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_768.webp");
+    height: 857px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meeting {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1000.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1000.webp");
+    height: 934px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .meeting {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1280.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1280.webp");
+    height: 1111px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .meeting {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
+    height: 1371px;
+  }
+}
+
+.meeting__inner {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .meeting__inner {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .meeting__inner {
+    margin-top: 100px;
+  }
+}
+
+.meeting__flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .meeting__flex-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.meeting__img {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.meeting__img::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #EDC5A2;
+  top: -16px;
+  left: 16px;
+  width: 291px;
+  height: 192px;
+}
+
+@media (min-width: 410px) {
+  .meeting__img::before {
+    width: 381px;
+    height: 230px;
+  }
+}
+
+@media (min-width: 768px) {
+  .meeting__img::before {
+    top: -20px;
+    left: 24px;
+    width: 417px;
+    height: 327px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meeting__img::before {
+    top: -24px;
+    width: 558px;
+    height: 404px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .meeting__img::before {
+    top: -20px;
+    width: 725px;
+    height: 518px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .meeting__img::before {
+    top: -24px;
+    width: 1166px;
+    height: 648px;
+  }
+}
+
+.meeting__list {
+  margin-top: 40px;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (min-width: 768px) {
+  .meeting__list {
+    margin-top: 0px;
+    width: 290px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meeting__list {
+    width: 380px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .meeting__list {
+    margin-right: 75px;
+    width: 444px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .meeting__list {
+    margin-right: 45px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.meeting__slider {
+  margin-top: 24px;
+}
+
+@media (min-width: 410px) {
+  .meeting__slider {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .meeting__slider {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meeting__slider {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .meeting__slider {
+    margin-top: 120px;
+  }
+}
+
 .checklist {
   font: 400 14px "Gilroy", sans-serif;
   line-height: 120%;

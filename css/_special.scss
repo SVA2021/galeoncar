@@ -380,6 +380,167 @@
 	}
 }
 
+//*************** MEETING SECTION  ***********//
+
+.meeting {
+
+	@include gradientborder;
+	height: 857px;
+	background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_320.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-xs {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_410.webp');
+		height: 941px;
+	}
+
+	@include media-sm {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_768.webp');
+		height: 857px;
+	}
+
+	@include media-md {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1000.webp');
+		height: 934px;
+	}
+
+	@include media-lg {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1280.webp');
+		height: 1111px;
+	}
+
+	@include media-xl {
+		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1920.webp');
+		height: 1371px;
+	}
+
+	// .transfer__inner
+
+	&__inner {
+		margin-top: 40px;
+
+		@include media-sm {
+			margin-top: 60px;
+		}
+
+		@include media-lg {
+			margin-top: 100px;
+		}
+
+	}
+
+	// .transfer__flex-wrapper
+
+	&__flex-wrapper {
+		display: flex;
+		flex-direction: column-reverse;
+
+		@include media-sm {
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+
+	}
+
+	// .transfer__img
+	&__img {
+		position: relative;
+		flex: 0 0 auto;
+
+		&::before {
+			content: "";
+			position: absolute;
+			border: 1px solid $color-pr4;
+			top: -16px;
+			left: 16px;
+			width: 291px;
+			height: 192px;
+
+			@include media-xs {
+				width: 381px;
+				height: 230px;
+			}
+
+			@include media-sm {
+				top: -20px;
+				left: 24px;
+				width: 417px;
+				height: 327px;
+			}
+
+			@include media-md {
+				top: -24px;
+				width: 558px;
+				height: 404px;
+			}
+
+			@include media-lg {
+				top: -20px;
+				width: 725px;
+				height: 518px;
+			}
+
+			@include media-xl {
+				top: -24px;
+				width: 1166px;
+				height: 648px;
+			}
+		}
+	}
+
+	// .transfer__list
+	&__list {
+		margin-top: 40px;
+		width: 100%;
+		flex: 0 0 auto;
+
+		@include media-sm {
+			margin-top: 0px;
+			width: 290px;
+			margin-right: 24px;
+		}
+
+		@include media-md {
+			width: 380px;
+		}
+
+		@include media-lg {
+			margin-right: 75px;
+			width: 444px;
+		}
+
+		@include media-xl {
+			margin-right: 45px;
+			align-self: flex-end;
+		}
+
+	}
+
+	// .transfer__slider
+	&__slider {
+		margin-top: 24px;
+
+		@include media-xs {
+			margin-top: 60px;
+		}
+
+		@include media-sm {
+			margin-top: 40px;
+		}
+
+		@include media-md {
+			margin-top: 80px;
+		}
+
+		@include media-xl {
+			margin-top: 120px;
+		}
+	}
+}
+
+
 //**** THIS SAME FOR ALL SECTIONS *********//
 
 .checklist {
