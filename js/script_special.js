@@ -21,9 +21,9 @@ menuBtn.addEventListener('click', () => {
 function hideOuterElement(min, max, array) {
 	for (const element of array) {
 		let coordinates = element.getBoundingClientRect();
-		element.style.zIndex = 10;
+		element.style.visibility = 'visible';
 		if (coordinates.left < min || coordinates.left > max) {
-			element.style.zIndex = -10;
+			element.style.visibility = 'hidden';
 		}
 		console.log(min, max, coordinates.left, coordinates.right);
 	}
@@ -70,4 +70,6 @@ function setSlidePosition(sliderWrapper) {
 }
 
 const transferSlider = document.querySelector('.transfer__slider');
+const meetingSlider = document.querySelector('.meeting__slider');
 setSlidePosition(transferSlider);
+setSlidePosition(meetingSlider);
