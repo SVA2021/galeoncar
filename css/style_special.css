@@ -1576,49 +1576,47 @@ body {
   border: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
-  height: 857px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
-  background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
+  height: 908px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_410.webp");
+  background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_410.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 410px) {
   .meeting {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_410.webp");
-    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_410.webp");
-    height: 941px;
+    height: 964px;
   }
 }
 
 @media (min-width: 768px) {
   .meeting {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_768.webp");
-    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_768.webp");
-    height: 857px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_768.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_768.webp");
+    height: 948px;
   }
 }
 
 @media (min-width: 1000px) {
   .meeting {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1000.webp");
-    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1000.webp");
-    height: 934px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1000.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1000.webp");
+    height: 1009px;
   }
 }
 
 @media (min-width: 1280px) {
   .meeting {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1280.webp");
-    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1280.webp");
-    height: 1111px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1280.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1280.webp");
+    height: 1142px;
   }
 }
 
 @media (min-width: 1920px) {
   .meeting {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
-    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_1920.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1920.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1920.webp");
     height: 1371px;
   }
 }
@@ -1644,9 +1642,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -1668,6 +1666,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  margin-left: -16px;
 }
 
 .meeting__img::before {
@@ -1675,7 +1674,7 @@ body {
   position: absolute;
   border: 1px solid #EDC5A2;
   top: -16px;
-  left: 16px;
+  right: 16px;
   width: 291px;
   height: 192px;
 }
@@ -1721,7 +1720,7 @@ body {
 }
 
 .meeting__list {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -1804,6 +1803,42 @@ body {
     font-size: 18px;
     line-height: 160%;
   }
+}
+
+.checklist__quote {
+  position: relative;
+}
+
+.checklist__quote::before {
+  position: absolute;
+  content: "";
+  height: 87px;
+  width: 304px;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+  background-color: #232731;
+}
+
+.checklist__quote-text {
+  position: relative;
+  padding: 15px 0px 0px 45px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #EDC5A2;
+}
+
+.checklist__quote-title {
+  position: relative;
+  margin-top: -8px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-align: end;
+}
+
+.checklist__description {
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 .checklist__title {

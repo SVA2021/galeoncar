@@ -385,37 +385,36 @@
 .meeting {
 
 	@include gradientborder;
-	height: 857px;
-	background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_320.webp');
+	height: 908px;
+	background-image: $gradient-section, url('../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_410.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@include media-xs {
-		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_410.webp');
-		height: 941px;
+		height: 964px;
 	}
 
 	@include media-sm {
-		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_768.webp');
-		height: 857px;
+		background-image: $gradient-section, url('../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_768.webp');
+		height: 948px;
 	}
 
 	@include media-md {
-		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1000.webp');
-		height: 934px;
+		background-image: $gradient-section, url('../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1000.webp');
+		height: 1009px;
 	}
 
 	@include media-lg {
-		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1280.webp');
-		height: 1111px;
+		background-image: $gradient-section, url('../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1280.webp');
+		height: 1142px;
 	}
 
 	@include media-xl {
-		background-image: $gradient-section, url('../img/special/airplane-taking-off-from-the-airport_1920.webp');
+		background-image: $gradient-section, url('../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_1920.webp');
 		height: 1371px;
 	}
 
-	// .transfer__inner
+	// .meeting__inner
 
 	&__inner {
 		margin-top: 40px;
@@ -430,11 +429,11 @@
 
 	}
 
-	// .transfer__flex-wrapper
+	// .meeting__flex-wrapper
 
 	&__flex-wrapper {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 
 		@include media-sm {
 			flex-direction: row;
@@ -444,17 +443,19 @@
 
 	}
 
-	// .transfer__img
+	// .meeting__img
 	&__img {
 		position: relative;
 		flex: 0 0 auto;
+		// float: right;
+		margin-left: -16px;
 
 		&::before {
 			content: "";
 			position: absolute;
 			border: 1px solid $color-pr4;
 			top: -16px;
-			left: 16px;
+			right: 16px;
 			width: 291px;
 			height: 192px;
 
@@ -490,9 +491,9 @@
 		}
 	}
 
-	// .transfer__list
+	// .meeting__list
 	&__list {
-		margin-top: 40px;
+		margin-top: 20px;
 		width: 100%;
 		flex: 0 0 auto;
 
@@ -518,7 +519,7 @@
 
 	}
 
-	// .transfer__slider
+	// .meeting__slider
 	&__slider {
 		margin-top: 24px;
 
@@ -572,10 +573,48 @@
 
 	// }
 
+	// .checklist__quote
+
+	&__quote {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "";
+			height: 87px;
+			width: 304px;
+			transform: skewX(20deg);
+			background-color: $color-pr3;
+		}
+	}
+
+	// .checklist__quote-text
+
+	&__quote-text {
+		position: relative;
+		padding: 15px 0px 0px 45px;
+		font-weight: 700;
+		line-height: 120%;
+		text-transform: uppercase;
+		color: $color-pr4;
+	}
+
+	// .checklist__quote-title
+
+	&__quote-title {
+		position: relative;
+		margin-top: -8px;
+		line-height: 140%;
+		letter-spacing: 0.05em;
+		text-align: end;
+	}
 
 	// .checklist__description
 
-	&__description {}
+	&__description {
+		margin-top: 24px;
+		margin-bottom: 16px;
+	}
 
 	// .checklist__title
 
