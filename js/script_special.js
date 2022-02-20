@@ -25,7 +25,7 @@ function hideOuterElement(min, max, array) {
 		if (coordinates.left < min || coordinates.left > max) {
 			element.style.visibility = 'hidden';
 		}
-		console.log(min, max, coordinates.left, coordinates.right);
+		// console.log(min, max, coordinates.left, coordinates.right);
 	}
 	console.log('divider');
 }

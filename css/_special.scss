@@ -420,7 +420,7 @@
 		margin-top: 40px;
 
 		@include media-sm {
-			margin-top: 60px;
+			margin-top: 80px;
 		}
 
 		@include media-lg {
@@ -437,7 +437,8 @@
 
 		@include media-sm {
 			flex-direction: row;
-			align-items: center;
+			// align-items: center;
+			align-items: flex-start;
 			flex-wrap: nowrap;
 		}
 
@@ -448,7 +449,11 @@
 		position: relative;
 		flex: 0 0 auto;
 		// float: right;
-		margin-left: -16px;
+		margin-left: -24px;
+
+		@include media-xl {
+			margin-left: -250px;
+		}
 
 		&::before {
 			content: "";
@@ -498,23 +503,77 @@
 		flex: 0 0 auto;
 
 		@include media-sm {
-			margin-top: 0px;
-			width: 290px;
-			margin-right: 24px;
+			margin-top: 16px;
+			width: 247px;
+			margin-left: 20px;
+			// padding-right: 16px;
 		}
 
 		@include media-md {
+			margin-left: 30px;
 			width: 380px;
 		}
 
 		@include media-lg {
-			margin-right: 75px;
-			width: 444px;
+			// margin-right: 75px;
+			width: 460px;
 		}
 
 		@include media-xl {
-			margin-right: 45px;
-			align-self: flex-end;
+		margin-top: 60px;
+		margin-left: 24px;
+			// margin-right: 45px;
+			// align-self: flex-end;
+		}
+
+		.checklist {
+
+			// .checklist__quote
+			&__quote {}
+
+			// .checklist__quote-text
+			&__quote-text {}
+
+			// .checklist__quote-title
+			&__quote-title {}
+
+			// .checklist__description
+			&__description {
+				@include media-sm {
+					// margin-bottom: 16px;
+					padding-right: 9px;
+				}
+
+				@include media-md {
+					padding-right: 0px;
+				}
+
+			}
+
+			// .checklist__title
+			&__title {
+				@include media-sm {
+					margin-bottom: 8px;
+				}
+			}
+
+			// .checklist__body
+			&__body {
+				@include media-sm {
+					padding-right: 20px;
+				}
+
+				@include media-md {
+					padding-right: 0px;
+				}
+
+			}
+
+			// .checklist__item
+			&__item {}
+
+			// .checklist__icon
+			&__icon {}
 		}
 
 	}
@@ -578,13 +637,56 @@
 	&__quote {
 		position: relative;
 
+		@include media-xs {
+			margin-left: -20px;
+		}
+
+		@include media-sm {
+			width: 385px;
+			margin-left: -150px;
+		}
+
+		@include media-md {
+			width: 528px;
+		}
+
+		@include media-lg {
+			width: 650px;
+		}
+
+		// @include media-xl {
+
+		// }
 		&::before {
 			position: absolute;
 			content: "";
 			height: 87px;
-			width: 304px;
-			transform: skewX(20deg);
+			width: 150%;
+			transform: skewX(10deg);
 			background-color: $color-pr3;
+
+			@include media-xs {
+				height: 74px;
+				transform: skewX(20deg);
+			}
+
+			// @include media-sm {
+
+			// }
+
+			@include media-md {
+				height: 90px;
+			}
+
+			// @include media-lg {
+
+			// }
+
+			@include media-xl {
+				height: 107px;
+				left: -64px;
+			}
+
 		}
 	}
 
@@ -592,12 +694,26 @@
 
 	&__quote-text {
 		position: relative;
-		padding: 15px 0px 0px 45px;
+		padding: 15px 0px 0px 36px;
 		font-weight: 700;
 		line-height: 120%;
 		text-transform: uppercase;
 		color: $color-pr4;
+
+		@include media-md {
+			padding: 24px 0px 0px 24px;
+			letter-spacing: normal;
+		}
+
+		@include media-xl {
+			// padding: 34px 0px 0px 0px;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			padding-top: 34px;
+		}
 	}
+
 
 	// .checklist__quote-title
 
@@ -607,6 +723,28 @@
 		line-height: 140%;
 		letter-spacing: 0.05em;
 		text-align: end;
+
+
+		@include media-xs {
+			margin-top: 0;
+		}
+
+		// @include media-sm {
+
+		// }
+
+		// @include media-md {
+
+		// }
+
+		@include media-lg {
+			margin-top: 8px;
+			margin-right: 24px;
+		}
+
+		// @include media-xl {
+
+		// }
 	}
 
 	// .checklist__description
@@ -614,6 +752,28 @@
 	&__description {
 		margin-top: 24px;
 		margin-bottom: 16px;
+
+		@include media-xs {
+			margin-top: 20px;
+		}
+
+		@include media-sm {
+			margin-top: 30px;
+		}
+
+		@include media-md {
+			margin-bottom: 24px;
+		}
+
+		@include media-lg {
+			margin-top: 20px;
+			margin-bottom: 32px;
+		}
+
+		@include media-xl {
+			margin-top: 60px;
+			margin-bottom: 42px;
+		}
 	}
 
 	// .checklist__title
@@ -774,6 +934,7 @@
 		// margin-top: 24px;
 		display: flex;
 		flex-direction: row;
+		// transition: left 0.25s ease-in-out;
 
 		// transition: left 0.5s ease-out;
 	}

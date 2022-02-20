@@ -1627,7 +1627,7 @@ body {
 
 @media (min-width: 768px) {
   .meeting__inner {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 }
 
@@ -1653,9 +1653,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -1666,7 +1666,13 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  margin-left: -16px;
+  margin-left: -24px;
+}
+
+@media (min-width: 1920px) {
+  .meeting__img {
+    margin-left: -250px;
+  }
 }
 
 .meeting__img::before {
@@ -1729,30 +1735,59 @@ body {
 
 @media (min-width: 768px) {
   .meeting__list {
-    margin-top: 0px;
-    width: 290px;
-    margin-right: 24px;
+    margin-top: 16px;
+    width: 247px;
+    margin-left: 20px;
   }
 }
 
 @media (min-width: 1000px) {
   .meeting__list {
+    margin-left: 30px;
     width: 380px;
   }
 }
 
 @media (min-width: 1280px) {
   .meeting__list {
-    margin-right: 75px;
-    width: 444px;
+    width: 460px;
   }
 }
 
 @media (min-width: 1920px) {
   .meeting__list {
-    margin-right: 45px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    margin-top: 60px;
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .meeting__list .checklist__description {
+    padding-right: 9px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meeting__list .checklist__description {
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .meeting__list .checklist__title {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .meeting__list .checklist__body {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .meeting__list .checklist__body {
+    padding-right: 0px;
   }
 }
 
@@ -1809,23 +1844,85 @@ body {
   position: relative;
 }
 
+@media (min-width: 410px) {
+  .checklist__quote {
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .checklist__quote {
+    width: 385px;
+    margin-left: -150px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .checklist__quote {
+    width: 528px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .checklist__quote {
+    width: 650px;
+  }
+}
+
 .checklist__quote::before {
   position: absolute;
   content: "";
   height: 87px;
-  width: 304px;
-  -webkit-transform: skewX(20deg);
-          transform: skewX(20deg);
+  width: 150%;
+  -webkit-transform: skewX(10deg);
+          transform: skewX(10deg);
   background-color: #232731;
+}
+
+@media (min-width: 410px) {
+  .checklist__quote::before {
+    height: 74px;
+    -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+  }
+}
+
+@media (min-width: 1000px) {
+  .checklist__quote::before {
+    height: 90px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .checklist__quote::before {
+    height: 107px;
+    left: -64px;
+  }
 }
 
 .checklist__quote-text {
   position: relative;
-  padding: 15px 0px 0px 45px;
+  padding: 15px 0px 0px 36px;
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
   color: #EDC5A2;
+}
+
+@media (min-width: 1000px) {
+  .checklist__quote-text {
+    padding: 24px 0px 0px 24px;
+    letter-spacing: normal;
+  }
+}
+
+@media (min-width: 1920px) {
+  .checklist__quote-text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 34px;
+  }
 }
 
 .checklist__quote-title {
@@ -1836,9 +1933,54 @@ body {
   text-align: end;
 }
 
+@media (min-width: 410px) {
+  .checklist__quote-title {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .checklist__quote-title {
+    margin-top: 8px;
+    margin-right: 24px;
+  }
+}
+
 .checklist__description {
   margin-top: 24px;
   margin-bottom: 16px;
+}
+
+@media (min-width: 410px) {
+  .checklist__description {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .checklist__description {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .checklist__description {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .checklist__description {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .checklist__description {
+    margin-top: 60px;
+    margin-bottom: 42px;
+  }
 }
 
 .checklist__title {
