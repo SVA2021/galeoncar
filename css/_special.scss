@@ -982,7 +982,6 @@
 
 //*************** PHOTOSHOOT SECTION  ***********//
 
-
 .photoshoot {
 
 	@include gradientborder;
@@ -1163,6 +1162,225 @@
 
 	.checklist__body {
 		margin-top: 0px;
+	}
+}
+
+//*************** BUSINESS SECTION  ***********//
+
+.business {
+
+	@include gradientborder;
+	height: 971px;
+	background-image: $gradient-section, url('../img/special/square_320.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-xs {
+		height: 1046px;
+		background-image: $gradient-section, url('../img/special/square_410.webp');
+	}
+
+	@include media-sm {
+		background-image: $gradient-section, url('../img/special/square_768.webp');
+		height: 1029px;
+	}
+
+	@include media-md {
+		background-image: $gradient-section, url('../img/special/square_1000.webp');
+		height: 1131px;
+	}
+
+	@include media-lg {
+		background-image: $gradient-section, url('../img/special/square_1280.webp');
+		height: 1273px;
+	}
+
+	@include media-xl {
+		background-image: $gradient-section, url('../img/special/square_1920.webp');
+		height: 1386px;
+	}
+
+	// .business__inner
+
+	&__inner {
+		margin-top: 40px;
+
+		@include media-sm {
+			margin-top: 60px;
+		}
+
+		@include media-lg {
+			margin-top: 80px;
+		}
+
+	}
+
+	// .business__flex-wrapper
+	&__flex-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@include media-sm {
+			flex-direction: row;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+		}
+
+	}
+
+	// .business__img
+	&__img {
+		position: relative;
+		flex: 0 0 auto;
+		margin-left: -24px;
+
+		@include media-sm {
+			margin-top: 24px;
+		}
+
+		@include media-xl {
+			margin-top: 48px;
+			margin-left: -250px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			border: 1px solid $color-pr4;
+			top: -16px;
+			right: 16px;
+			width: 291px;
+			height: 192px;
+
+			@include media-xs {
+				width: 381px;
+				height: 232px;
+			}
+
+			@include media-sm {
+				top: -24px;
+				right: 24px;
+				width: 558px;
+				height: 500px;
+			}
+
+			@include media-md {
+				height: 581px;
+			}
+
+			@include media-lg {
+				width: 1170px;
+				height: 658px;
+			}
+
+			@include media-xl {
+				height: 666px;
+			}
+		}
+	}
+
+	// .business__list
+	&__list {
+		margin-top: 40px;
+		width: 100%;
+		flex: 0 0 auto;
+
+		@include media-sm {
+			margin-top: 0;
+			width: 226px;
+			margin-left: 24px;
+		}
+
+		@include media-md {
+			width: 382px;
+		}
+
+		@include media-lg {
+			margin-left: 30px;
+			width: 489px;
+		}
+
+		@include media-xl {
+			width: 460px;
+			margin-left: 24px;
+		}
+
+		.checklist {
+
+			// .checklist__description
+			&__description {
+				margin-top: 0;
+
+				@include media-sm {
+					padding-right: 0px;
+				}
+
+				@include media-md {
+					padding-right: 8px;
+				}
+
+				@include media-xl {
+					margin-bottom: 24px;
+				}
+
+			}
+
+			// .checklist__title
+			&__title {
+				margin-bottom: 8px;
+
+				@include media-sm {
+					margin-bottom: 8px;
+				}
+
+				@include media-md {
+					margin-bottom: 16px;
+				}
+
+			}
+
+			// .checklist__body
+			&__body {
+				@include media-sm {
+					margin-left: -8px;
+				}
+
+				@include media-md {
+					padding-right: 0px;
+				}
+
+			}
+
+			// .checklist__item
+			&__item {
+
+				@include media-sm {
+					margin-bottom: 0;
+					padding-right: 2px;
+				}
+
+				@include media-lg {
+					margin-bottom: 16px;
+				}
+			}
+		}
+	}
+
+	// .business__slider
+	&__slider {
+		margin-top: 8px;
+
+		@include media-sm {
+			margin-top: 48px;
+		}
+
+		@include media-md {
+			margin-top: 100px;
+		}
+
+		@include media-xl {
+			margin-top: 120px;
+		}
 	}
 }
 
