@@ -71,5 +71,7 @@ function setSlidePosition(sliderWrapper) {
 
 const transferSlider = document.querySelector('.transfer__slider');
 const meetingSlider = document.querySelector('.meeting__slider');
+const weddingSlider = document.querySelector('.wedding__slider');
 setSlidePosition(transferSlider);
 setSlidePosition(meetingSlider);
+setSlidePosition(weddingSlider);

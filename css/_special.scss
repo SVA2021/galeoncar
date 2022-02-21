@@ -516,8 +516,8 @@
 		}
 
 		@include media-xl {
-		margin-top: 60px;
-		margin-left: 24px;
+			margin-top: 60px;
+			margin-left: 24px;
 		}
 
 		.checklist {
@@ -590,6 +590,169 @@
 
 		@include media-xl {
 			margin-top: 120px;
+		}
+	}
+}
+
+//*************** WEDDING SECTION  ***********//
+
+.wedding {
+
+	@include gradientborder;
+	height: 870px;
+	background-image: $gradient-section, url('../img/special/wedding-invitation-with-wedding-bouquet-and-rings_320.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include media-xs {
+		background-image: $gradient-section, url('../img/special/wedding-invitation-with-wedding-bouquet-and-rings_410.webp');
+		height: 909px;
+	}
+
+	@include media-sm {
+		background-image: $gradient-section, url('../img/special/wedding-invitation-with-wedding-bouquet-and-rings_768.webp');
+		height: 862px;
+	}
+
+	@include media-md {
+		background-image: $gradient-section, url('../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1000.webp');
+		height: 995px;
+	}
+
+	@include media-lg {
+		background-image: $gradient-section, url('../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1280.webp');
+		height: 1140px;
+	}
+
+	@include media-xl {
+		background-image: $gradient-section, url('../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1920.webp');
+		height: 1371px;
+	}
+
+	// .wedding__inner
+
+	&__inner {
+		margin-top: 40px;
+
+		@include media-sm {
+			margin-top: 60px;
+		}
+
+		@include media-lg {
+			margin-top: 80px;
+		}
+
+		@include media-xl {
+			margin-top: 100px;
+		}
+	}
+
+	// .wedding__flex-wrapper
+
+	&__flex-wrapper {
+		display: flex;
+		flex-direction: column-reverse;
+
+		@include media-sm {
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+
+	}
+
+	// .wedding__img
+	&__img {
+		position: relative;
+		flex: 0 0 auto;
+
+		&::before {
+			content: "";
+			position: absolute;
+			border: 1px solid $color-pr4;
+			top: -16px;
+			left: 16px;
+			width: 291px;
+			height: 192px;
+
+			@include media-xs {
+				width: 381px;
+				height: 230px;
+			}
+
+			@include media-sm {
+				top: -20px;
+				left: 24px;
+				width: 433px;
+				height: 352px;
+			}
+
+			@include media-md {
+				top: -20px;
+				width: 724px;
+				height: 465px;
+			}
+
+			@include media-lg {
+				top: -24px;
+				width: 725px;
+				height: 528px;
+			}
+
+			@include media-xl {
+				top: -20px;
+				width: 1166px;
+				height: 648px;
+			}
+		}
+	}
+
+	// .wedding__list
+	&__list {
+		margin-top: 40px;
+		width: 100%;
+		flex: 0 0 auto;
+
+		@include media-sm {
+			margin-top: 0px;
+			width: 285px;
+			margin-right: 24px;
+		}
+
+		@include media-md {
+			width: 370px;
+		}
+
+		@include media-lg {
+			margin-right: 50px;
+			width: 480px;
+		}
+
+		@include media-xl {
+			margin-right: 30px;
+			align-self: flex-end;
+		}
+
+	}
+
+	// .wedding__slider
+	&__slider {
+		margin-top: 24px;
+
+		// @include media-xs {
+		// 	margin-top: 60px;
+		// }
+
+		@include media-sm {
+			margin-top: 60px;
+		}
+
+		@include media-md {
+			margin-top: 80px;
+		}
+
+		@include media-xl {
+			margin-top: 110px;
 		}
 	}
 }
