@@ -1819,6 +1819,223 @@ body {
   }
 }
 
+.wedding {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
+  height: 870px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_320.webp");
+  background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_320.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 410px) {
+  .wedding {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_410.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_410.webp");
+    height: 909px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wedding {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_768.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_768.webp");
+    height: 862px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wedding {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1000.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1000.webp");
+    height: 995px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wedding {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1280.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1280.webp");
+    height: 1140px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wedding {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1920.webp");
+    background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_1920.webp");
+    height: 1371px;
+  }
+}
+
+.wedding__inner {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .wedding__inner {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wedding__inner {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wedding__inner {
+    margin-top: 100px;
+  }
+}
+
+.wedding__flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .wedding__flex-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.wedding__img {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.wedding__img::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #EDC5A2;
+  top: -16px;
+  left: 16px;
+  width: 291px;
+  height: 192px;
+}
+
+@media (min-width: 410px) {
+  .wedding__img::before {
+    width: 381px;
+    height: 230px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wedding__img::before {
+    top: -20px;
+    left: 24px;
+    width: 433px;
+    height: 352px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wedding__img::before {
+    top: -20px;
+    width: 724px;
+    height: 465px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wedding__img::before {
+    top: -24px;
+    width: 725px;
+    height: 528px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wedding__img::before {
+    top: -20px;
+    width: 1166px;
+    height: 648px;
+  }
+}
+
+.wedding__list {
+  margin-top: 40px;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (min-width: 768px) {
+  .wedding__list {
+    margin-top: 0px;
+    width: 285px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wedding__list {
+    width: 370px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wedding__list {
+    margin-right: 50px;
+    width: 480px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wedding__list {
+    margin-right: 30px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.wedding__slider {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .wedding__slider {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wedding__slider {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wedding__slider {
+    margin-top: 110px;
+  }
+}
+
+.wedding .checklist__description {
+  margin-top: 0px;
+}
+
 .checklist {
   font: 400 14px "Gilroy", sans-serif;
   line-height: 120%;

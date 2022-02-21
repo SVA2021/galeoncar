@@ -739,10 +739,6 @@
 	&__slider {
 		margin-top: 24px;
 
-		// @include media-xs {
-		// 	margin-top: 60px;
-		// }
-
 		@include media-sm {
 			margin-top: 60px;
 		}
@@ -754,6 +750,10 @@
 		@include media-xl {
 			margin-top: 110px;
 		}
+	}
+
+	.checklist__description {
+		margin-top: 0px;
 	}
 }
 
