@@ -1154,10 +1154,10 @@
 		margin-bottom: 8px;
 
 		@include media-sm {
-		margin-top: 24px;
-		margin-bottom: 16px;
+			margin-top: 24px;
+			margin-bottom: 16px;
 		}
-		
+
 	}
 
 	.checklist__body {
@@ -1325,20 +1325,6 @@
 
 			}
 
-			// .checklist__title
-			&__title {
-				margin-bottom: 8px;
-
-				@include media-sm {
-					margin-bottom: 8px;
-				}
-
-				@include media-md {
-					margin-bottom: 16px;
-				}
-
-			}
-
 			// .checklist__body
 			&__body {
 				@include media-sm {
@@ -1359,8 +1345,12 @@
 					padding-right: 2px;
 				}
 
-				@include media-lg {
+				@include media-md {
 					margin-bottom: 16px;
+				}
+
+				@include media-xl {
+					margin-bottom: 24px;
 				}
 			}
 		}
@@ -1638,6 +1628,23 @@
 			position: absolute;
 			top: 0.5em;
 			left: 0.25em;
+		}
+	}
+
+	&__footer {
+		margin-top: 8px;
+
+		@include media-md {
+			margin-top: 16px;
+		}
+
+		@include media-lg {
+			margin-top: 24px;
+		}
+
+		&::before {
+			content: "*";
+			color: $color-pr4;
 		}
 	}
 }
