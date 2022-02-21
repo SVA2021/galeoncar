@@ -2986,23 +2986,26 @@ body {
   }
 }
 
-.rentfor .checklist__description {
-  margin-top: 0px;
-}
-
-.rentfor .checklist__title {
-  margin-bottom: 8px;
-}
-
 @media (min-width: 768px) {
-  .rentfor .checklist__title {
-    margin-top: 24px;
-    margin-bottom: 16px;
+  .rentfor .checklist__item {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rentfor .checklist__item {
+    margin-bottom: 24px;
   }
 }
 
 .rentfor .checklist__body {
   margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .rentfor .checklist__body {
+    margin-top: 8px;
+  }
 }
 
 .checklist {

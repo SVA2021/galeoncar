@@ -1378,37 +1378,6 @@
 
 .rentfor {
 
-	// @include gradientborder;
-	// height: 870px;
-	// background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_320.webp');
-	// background-repeat: no-repeat;
-	// background-size: cover;
-
-	// @include media-xs {
-	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_410.webp');
-	// 	height: 865px;
-	// }
-
-	// @include media-sm {
-	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_768.webp');
-	// 	height: 833px;
-	// }
-
-	// @include media-md {
-	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_1000.webp');
-	// 	height: 949px;
-	// }
-
-	// @include media-lg {
-	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_1280.webp');
-	// 	height: 1092px;
-	// }
-
-	// @include media-xl {
-	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_1920.webp');
-	// 	height: 1371px;
-	// }
-
 	// .rentfor__inner
 
 	&__inner {
@@ -1522,22 +1491,24 @@
 		}
 
 	}
-	.checklist__description {
-		margin-top: 0px;
-	}
 
-	.checklist__title {
-		margin-bottom: 8px;
+	.checklist__item {
 
 		@include media-sm {
-			margin-top: 24px;
-			margin-bottom: 16px;
+			margin-bottom: 8px;
+		}
+		@include media-lg {
+			margin-bottom: 24px;
 		}
 
 	}
 
 	.checklist__body {
 		margin-top: 0px;
+		
+		@include media-sm {
+			margin-top: 8px;
+		}
 	}
 }
 
