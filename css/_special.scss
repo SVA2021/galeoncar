@@ -1374,6 +1374,173 @@
 	}
 }
 
+//*************** RENT FOR... SECTION  ***********//
+
+.rentfor {
+
+	// @include gradientborder;
+	// height: 870px;
+	// background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_320.webp');
+	// background-repeat: no-repeat;
+	// background-size: cover;
+
+	// @include media-xs {
+	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_410.webp');
+	// 	height: 865px;
+	// }
+
+	// @include media-sm {
+	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_768.webp');
+	// 	height: 833px;
+	// }
+
+	// @include media-md {
+	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_1000.webp');
+	// 	height: 949px;
+	// }
+
+	// @include media-lg {
+	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_1280.webp');
+	// 	height: 1092px;
+	// }
+
+	// @include media-xl {
+	// 	background-image: $gradient-section, url('../img/special/Kazanskiy-sobor-e1616694244558_1920.webp');
+	// 	height: 1371px;
+	// }
+
+	// .rentfor__inner
+
+	&__inner {
+		margin-top: 40px;
+
+		@include media-sm {
+			margin-top: 60px;
+		}
+
+		@include media-lg {
+			margin-top: 80px;
+		}
+
+		@include media-xl {
+			margin-top: 100px;
+		}
+	}
+
+	// .rentfor__flex-wrapper
+	&__flex-wrapper {
+		display: flex;
+		flex-direction: column-reverse;
+
+		@include media-sm {
+			flex-direction: row;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+		}
+
+	}
+
+	// .rentfor__img
+	&__img {
+		position: relative;
+		flex: 0 0 auto;
+
+		@include media-sm {
+			margin-top: 24px;
+		}
+
+		@include media-xl {
+			margin-top: 0;
+			margin-bottom: 32px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			border: 1px solid $color-pr4;
+			top: -16px;
+			left: 16px;
+			width: 291px;
+			height: 192px;
+
+			@include media-xs {
+				width: 381px;
+				height: 232px;
+			}
+
+			@include media-sm {
+				top: -20px;
+				left: 24px;
+				width: 420px;
+				height: 340px;
+			}
+
+			@include media-md {
+				top: -20px;
+				width: 552px;
+				height: 390px;
+			}
+
+			@include media-lg {
+				top: -24px;
+				width: 727px;
+				height: 512px;
+			}
+
+			@include media-xl {
+				top: -20px;
+				width: 1169px;
+				height: 650px;
+			}
+		}
+	}
+
+	// .rentfor__list
+	&__list {
+		margin-top: 40px;
+		width: 100%;
+		flex: 0 0 auto;
+
+		@include media-sm {
+			margin-top: 0px;
+			width: 285px;
+			margin-right: 24px;
+		}
+
+		@include media-md {
+			width: 378px;
+		}
+
+		@include media-lg {
+			margin-right: 72px;
+			width: 444px;
+		}
+
+		@include media-xl {
+			margin-right: 48px;
+			align-self: flex-end;
+		}
+
+	}
+	.checklist__description {
+		margin-top: 0px;
+	}
+
+	.checklist__title {
+		margin-bottom: 8px;
+
+		@include media-sm {
+			margin-top: 24px;
+			margin-bottom: 16px;
+		}
+
+	}
+
+	.checklist__body {
+		margin-top: 0px;
+	}
+}
+
 //**** THIS SAME FOR ALL SECTIONS *********//
 
 .checklist {

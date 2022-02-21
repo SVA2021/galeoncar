@@ -2833,6 +2833,178 @@ body {
   }
 }
 
+.rentfor__inner {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .rentfor__inner {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rentfor__inner {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .rentfor__inner {
+    margin-top: 100px;
+  }
+}
+
+.rentfor__flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .rentfor__flex-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.rentfor__img {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (min-width: 768px) {
+  .rentfor__img {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .rentfor__img {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.rentfor__img::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #EDC5A2;
+  top: -16px;
+  left: 16px;
+  width: 291px;
+  height: 192px;
+}
+
+@media (min-width: 410px) {
+  .rentfor__img::before {
+    width: 381px;
+    height: 232px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rentfor__img::before {
+    top: -20px;
+    left: 24px;
+    width: 420px;
+    height: 340px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rentfor__img::before {
+    top: -20px;
+    width: 552px;
+    height: 390px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rentfor__img::before {
+    top: -24px;
+    width: 727px;
+    height: 512px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .rentfor__img::before {
+    top: -20px;
+    width: 1169px;
+    height: 650px;
+  }
+}
+
+.rentfor__list {
+  margin-top: 40px;
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (min-width: 768px) {
+  .rentfor__list {
+    margin-top: 0px;
+    width: 285px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rentfor__list {
+    width: 378px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rentfor__list {
+    margin-right: 72px;
+    width: 444px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .rentfor__list {
+    margin-right: 48px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+.rentfor .checklist__description {
+  margin-top: 0px;
+}
+
+.rentfor .checklist__title {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .rentfor .checklist__title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.rentfor .checklist__body {
+  margin-top: 0px;
+}
+
 .checklist {
   font: 400 14px "Gilroy", sans-serif;
   line-height: 120%;
