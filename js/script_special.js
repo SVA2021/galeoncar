@@ -69,15 +69,21 @@ function setSlidePosition(sliderWrapper) {
 	})
 }
 
-const transferSlider = document.querySelector('.transfer__slider');
-const meetingSlider = document.querySelector('.meeting__slider');
-const weddingSlider = document.querySelector('.wedding__slider');
-const datingSlider = document.querySelector('.dating__slider');
-const photoshootSlider = document.querySelector('.photoshoot__slider');
-const businessSlider = document.querySelector('.business__slider');
-setSlidePosition(transferSlider);
-setSlidePosition(meetingSlider);
-setSlidePosition(weddingSlider);
-setSlidePosition(datingSlider);
-setSlidePosition(photoshootSlider);
-setSlidePosition(businessSlider);
+// const transferSlider = document.querySelector('.transfer__slider');
+// const meetingSlider = document.querySelector('.meeting__slider');
+// const weddingSlider = document.querySelector('.wedding__slider');
+// const datingSlider = document.querySelector('.dating__slider');
+// const photoshootSlider = document.querySelector('.photoshoot__slider');
+// const businessSlider = document.querySelector('.business__slider');
+// setSlidePosition(transferSlider);
+// setSlidePosition(meetingSlider);
+// setSlidePosition(weddingSlider);
+// setSlidePosition(datingSlider);
+// setSlidePosition(photoshootSlider);
+// setSlidePosition(businessSlider);
+
+const slidersArray = document.querySelectorAll('.card-slider');
+
+for (const slider of slidersArray) {
+	setSlidePosition(slider);
+}
