@@ -830,7 +830,12 @@
 		flex: 0 0 auto;
 		margin-left: -24px;
 
+		@include media-sm {
+			margin-top: 24px;
+		}
+
 		@include media-xl {
+			margin-top: 48px;
 			margin-left: -250px;
 		}
 
@@ -850,7 +855,7 @@
 
 			@include media-sm {
 				top: -24px;
-				left: 24px;
+				right: 24px;
 				width: 465px;
 				height: 654px;
 			}
@@ -898,39 +903,42 @@
 
 		.checklist {
 
-			// .checklist__quote
-			&__quote {}
-
-			// .checklist__quote-text
-			&__quote-text {}
-
-			// .checklist__quote-title
-			&__quote-title {}
-
 			// .checklist__description
 			&__description {
+				margin-top: 0;
+
 				@include media-sm {
-					// margin-bottom: 16px;
-					padding-right: 9px;
+					padding-right: 0px;
 				}
 
 				@include media-md {
-					padding-right: 0px;
+					padding-right: 8px;
+				}
+
+				@include media-xl {
+					margin-bottom: 24px;
 				}
 
 			}
 
 			// .checklist__title
 			&__title {
+				margin-bottom: 8px;
+
 				@include media-sm {
 					margin-bottom: 8px;
 				}
+
+				@include media-md {
+					margin-bottom: 16px;
+				}
+
 			}
 
 			// .checklist__body
 			&__body {
 				@include media-sm {
-					padding-right: 20px;
+					margin-left: -8px;
 				}
 
 				@include media-md {
@@ -940,24 +948,26 @@
 			}
 
 			// .checklist__item
-			&__item {}
+			&__item {
 
-			// .checklist__icon
-			&__icon {}
+				@include media-sm {
+					margin-bottom: 0;
+					padding-right: 2px;
+				}
+
+				@include media-lg {
+					margin-bottom: 16px;
+				}
+			}
 		}
-
 	}
 
 	// .dating__slider
 	&__slider {
 		margin-top: 8px;
 
-		// @include media-xs {
-		// 	margin-top: 60px;
-		// }
-
 		@include media-sm {
-			margin-top: 24px;
+			margin-top: 48px;
 		}
 
 		@include media-md {
