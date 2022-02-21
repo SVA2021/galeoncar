@@ -2424,6 +2424,19 @@ body {
           flex: 0 0 auto;
 }
 
+@media (min-width: 768px) {
+  .photoshoot__img {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .photoshoot__img {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
 .photoshoot__img::before {
   content: "";
   position: absolute;
@@ -2445,8 +2458,8 @@ body {
   .photoshoot__img::before {
     top: -20px;
     left: 24px;
-    width: 385px;
-    height: 232px;
+    width: 415px;
+    height: 328px;
   }
 }
 
@@ -2534,6 +2547,21 @@ body {
 }
 
 .photoshoot .checklist__description {
+  margin-top: 0px;
+}
+
+.photoshoot .checklist__title {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .photoshoot .checklist__title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.photoshoot .checklist__body {
   margin-top: 0px;
 }
 

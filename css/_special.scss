@@ -1052,6 +1052,15 @@
 		position: relative;
 		flex: 0 0 auto;
 
+		@include media-sm {
+			margin-top: 24px;
+		}
+
+		@include media-xl {
+			margin-top: 0;
+			margin-bottom: 32px;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -1069,8 +1078,8 @@
 			@include media-sm {
 				top: -20px;
 				left: 24px;
-				width: 385px;
-				height: 232px;
+				width: 415px;
+				height: 328px;
 			}
 
 			@include media-md {
@@ -1139,6 +1148,20 @@
 	}
 
 	.checklist__description {
+		margin-top: 0px;
+	}
+
+	.checklist__title {
+		margin-bottom: 8px;
+
+		@include media-sm {
+		margin-top: 24px;
+		margin-bottom: 16px;
+		}
+		
+	}
+
+	.checklist__body {
 		margin-top: 0px;
 	}
 }
