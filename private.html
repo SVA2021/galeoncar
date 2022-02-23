@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
-	<link rel="stylesheet" href="/css/style_terms.css">
+	<link rel="stylesheet" href="/css/style_private.css">
 	<title>Galeoncar</title>
 </head>
 
@@ -49,8 +49,74 @@
 				</div>
 			</div>
 		</header>
-		<main class="main">
-			
+		<main class="main section__offset wrapper__container">
+			<form class="form">
+				<div class="login form__active">
+					<button class="form__btn form__btn-enter">вход</button>
+					<button class="form__btn form__btn-reg form__btn-inactive">регистрация</button>
+					<label for="login" class="form__label">
+						Логин
+						<input type="text" class="form__input" name="login">
+					</label>
+					<label for="password" class="form__label">
+						Пароль
+						<input type="text" class="form__input" name="password">
+					</label>
+					<div class="form__checkblock">
+						<input type="checkbox" class="form__input-check" name="remember" id="">
+						<label for="remember" class="form__label-check">
+							Запомнить меня на этом компьютере</label>
+						</div>
+					<button class="form__btn form__btn-auth" onclick="alert(111)">Авторизоваться</button>
+					<p class="form__text">Войти с помощью</p>
+					<div class="form__social">
+						<span class="form__icon icon-googleplus"></span>
+						<span class="form__icon icon-vkround"></span>
+						<span class="form__icon icon-facebookround"></span>
+					</div>
+					<p class="form__text">Вы можете войти через аккаунт в социальных сетях</p>
+					<div class="form__footer">
+						<a href="" class="form__link"></a>
+						Забыли пароль?</div>
+				</div>
+				<div class="signup">
+					<button class="form__btn form__btn-enter form__btn-inactive">вход</button>
+					<button class="form__btn form__btn-reg">регистрация</button>
+					<label for="login" class="form__label">Логин</label>
+					<input type="text" class="form__input" name="login" required>
+					<label for="password" class="form__label">Пароль</label>
+					<input type="text" class="form__input" name="password" required>
+					<label for="password_again" class="form__label">Подтверждение пароля</label>
+					<input type="text" class="form__input" name="password_again" required>
+					<label for="email" class="form__label">Адрес e-mail</label>
+					<input type="text" class="form__input" name="email" required>
+					<label for="first_name" class="form__label">Имя</label>
+					<input type="text" class="form__input" name="first_name">
+					<label for="last_name" class="form__label">Фамилия</label>
+					<input type="text" class="form__input" name="last_name">
+					<input type="checkbox" class="form__input" name="agree" id="">
+					<label for="agree" class="form__label">Согласен на обработку личных данных
+						<sup class="form__spec">1</sup></label>
+					<input type="checkbox" class="form__input" name="discount" id="">
+					<label for="discount" class="form__label">Я хочу учавствовать в бесплатной программе лояльности и получать баллы, информацию о скидках и акциях</label>
+					<p class="form__text">
+						Пароль должен быть не менее 6 символов длиной. Символом “
+						<span class="form__spec">*</span>” отмечены обязательные для заполнения поля.<br>
+						1 - Настоящим в соответствии с Федеральным законом № 152-ФЗ “О персональных данных” от 27.07.2006 Вы подтверждаете свое согласие на обработку персональных данных. С политикой можно ознакомиться по ссылке.
+					</p>
+				</div>
+				<div class="restore">
+					<p class="form__text">
+						Если вы забыли пароль, введите логин или E-Mail. Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.
+					</p>
+					<label for="login" class="form__label">Логин</label>
+					<input type="text" class="form__input" name="login">
+					<label for="password" class="form__label">Пароль</label>
+					<input type="text" class="form__input" name="password">
+					<button class="form__btn form__btn-resend">Выслать</button>
+					<div class="form__footer">Забыли пароль?</div>
+				</div>
+			</form>
 		</main>
 	</div>
 	<footer class="footer">
