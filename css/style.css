@@ -1964,6 +1964,7 @@ body {
 }
 
 .rent-type__card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1985,8 +1986,45 @@ body {
   margin: 24px auto;
 }
 
+@media (min-width: 1920px) {
+  .rent-type__card:hover .rent-type__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.rent-type__text {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 74px 38px 40px 50px;
+  background-color: #232731;
+  color: #fff;
+  font: 400 18px "Gilroy", sans-serif;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+}
+
+.rent-type__link {
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  margin: 0 auto;
+}
+
 .rent-type__btn.button__link {
-  margin-bottom: 32px;
+  margin-bottom: 42px;
   width: 222px;
   height: 48px;
 }

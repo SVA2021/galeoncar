@@ -16,6 +16,7 @@
 
 	// .rent-type__card
 	&__card {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -24,13 +25,47 @@
 		width: 100%;
 
 		&:nth-child(2) {
-		margin: 24px auto;
+			margin: 24px auto;
 		}
+
+		&:hover {
+
+			@include media-xl {
+
+				.rent-type__text {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+			}
+		}
+	}
+
+	&__text {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		padding: 74px 38px 40px 50px;
+		background-color: $color-pr3;
+		color: $color-white;
+		font: 400 18px $Gilroy;
+		line-height: 140%;
+		letter-spacing: 0.05em;
+	}
+
+	&__link {
+		display: block;
+		text-align: center;
+		line-height: 48px;
+		margin: 0 auto;
 	}
 
 	// .rent-type__btn
 	&__btn.button__link {
-		margin-bottom: 32px;
+		margin-bottom: 42px;
 		width: 222px;
 		height: 48px;
 	}
@@ -49,35 +84,38 @@
 	&__special {
 		background-image: url('../img/main/rent_type_3.webp');
 		background-repeat: no-repeat;
-		background-size: cover;}
+		background-size: cover;
+	}
 
 	// .card__nodriver
 	&__nodriver {
 		background-image: url('../img/main/rent_type_2.webp');
 		background-repeat: no-repeat;
-		background-size: cover;}
+		background-size: cover;
+	}
 }
 
 //**** XS container (410)  ********//////////
 
 @include media-xs {
 	.rent-type {
+
 		// .rent-type__inner
 		&__inner {
 			width: $mq-xs-container;
 		}
-	
+
 		// .rent-type__card
 		&__card {
 			height: 213px;
 		}
-	
+
 		// .rent-type__btn
 		&__btn {
 			margin-bottom: 40px;
 		}
 	}
-	
+
 }
 
 //**** SM container (768)  ********//////////
@@ -92,48 +130,49 @@
 			margin-top: 50px;
 			width: $mq-sm-container;
 		}
-	
+
 		// .rent-type__card
 		&__card {
 			height: 260px;
 			width: 456px;
 		}
-	
+
 		// .rent-type__btn
 		&__btn {
 			margin-bottom: 24px;
 		}
 	}
-	
+
 }
 
 //**** MD container (1000)  ********//////////
 
 @include media-md {
 	.rent-type {
+
 		// .rent-type__inner
 		&__inner {
 			width: 100%;
 			flex-direction: row;
 		}
-	
+
 		// .rent-type__card
 		&__card {
 			margin: 0px auto;
 			height: 190px;
 			width: 100%;
-			
-		&:nth-child(2) {
-			margin: 0px auto;
+
+			&:nth-child(2) {
+				margin: 0px auto;
 			}
 		}
-	
+
 		// .rent-type__btn
 		&__btn {
 			margin-bottom: 29px;
 		}
 	}
-	
+
 }
 
 //**** LG container (1280)  ********//////////
@@ -142,23 +181,23 @@
 	.rent-type {
 		padding-top: 100px;
 		padding-bottom: 100px;
-	
+
 		// .rent-type__inner
 		&__inner {
 			margin-top: 70px;
 		}
-	
+
 		// .rent-type__card
 		&__card {
 			height: 244px;
 		}
-	
+
 		// .rent-type__btn
 		&__btn {
 			margin-bottom: 25px;
 		}
 	}
-	
+
 }
 
 //**** XL container (1920)  ********//////////
@@ -172,13 +211,11 @@
 		&__card {
 			height: 378px;
 		}
-	
+
 		// .rent-type__btn
 		&__btn {
 			margin-bottom: 40px;
 		}
 	}
-	
+
 }
-
-
