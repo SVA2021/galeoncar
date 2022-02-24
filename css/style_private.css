@@ -1168,6 +1168,11 @@ body {
   opacity: 0.05;
 }
 
+.form__btn-resend {
+  margin: 28px auto;
+  width: 136px;
+}
+
 .form__label {
   margin: 10px auto;
   display: block;
@@ -1176,7 +1181,6 @@ body {
 
 .form__label-check {
   display: block;
-  text-align: left;
 }
 
 .form__input {
@@ -1207,7 +1211,7 @@ body {
       align-self: baseline;
   margin-top: 5px;
   margin-right: 12px;
-  width: 14px;
+  width: 16px;
   height: 14px;
   border-radius: 3px;
   background-color: #EDC5A2;
@@ -1222,7 +1226,7 @@ body {
   margin: 3px;
   color: #000;
   font-size: 10px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .form__checkblock {
@@ -1245,7 +1249,6 @@ body {
 .form__text {
   margin-top: 8px;
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .form__social {
@@ -1289,20 +1292,49 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 74px;
-  color: #EDC5A2;
   border-bottom: none;
 }
 
 .form__spec {
   color: #EDC5A2;
+  font-size: 16px;
+}
+
+.form__link {
+  display: block;
+  margin: 0 auto;
+  padding: 21px 0 27px 0;
+  color: #EDC5A2;
+}
+
+.form__link:active {
+  color: #B72025;
+}
+
+.login .form__text {
+  text-align: center;
 }
 
 .signup {
-  display: none;
+  color: #696969;
+}
+
+.signup .form__label-check {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.signup .form__input-check {
+  float: left;
+}
+
+.signup .form__footer {
+  font-size: 14px;
+  line-height: 120%;
 }
 
 .restore {
-  display: none;
+  color: #696969;
 }
 /*# sourceMappingURL=style_private.css.map */

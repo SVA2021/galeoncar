@@ -64,6 +64,10 @@
 		opacity: 0.05;
 	}
 
+	&__btn-resend {
+		margin: 28px auto;
+		width: 136px;
+	}
 	// .form__label
 
 	&__label {
@@ -71,14 +75,10 @@
 		display: block;
 		text-align: left;
 	}
-	
+
 	&__label-check {
-		// margin: 10px auto;
 		display: block;
-		// padding-top: 20px;
-		text-align: left;
-		// color: $color-white;
-		// padding-left: 24px;
+		// text-align: left;
 	}
 
 
@@ -91,10 +91,11 @@
 		border-radius: 5px;
 		background-color: $color-white5;
 		padding-left: 1em;
+
 		// color: $color-white;
-		&:focus{
-		background-color: $color-pr4;
-		color: $color-black;
+		&:focus {
+			background-color: $color-pr4;
+			color: $color-black;
 		}
 
 		@include media-xs {
@@ -109,7 +110,7 @@
 		align-self: baseline;
 		margin-top: 5px;
 		margin-right: 12px;
-		width: 14px;
+		width: 16px;
 		height: 14px;
 		border-radius: 3px;
 		background-color: $color-pr4;
@@ -122,27 +123,27 @@
 				margin: 3px;
 				color: $color-black;
 				font-size: 10px;
-				font-weight: bolder;
+				font-weight: bold;
 			}
 
 		}
 
-		// float: left;
 	}
 
 	&__checkblock {
 		margin: 10px auto;
 		display: flex;
 		flex-direction: row;
-		align-items:center;
+		align-items: center;
 		justify-content: center;
 	}
+
 	// .form__text
 
 	&__text {
 		margin-top: 8px;
 		margin-bottom: 16px;
-		text-align: center;
+		// text-align: center;
 	}
 
 	// .form__social
@@ -181,8 +182,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 74px;
-		color: $color-pr4;
 		border-bottom: none;
 	}
 
@@ -190,10 +189,27 @@
 
 	&__spec {
 		color: $color-pr4;
+		font-size: 16px;
+	}
+
+	&__link {
+		display: block;
+		margin: 0 auto;
+		padding: 21px 0 27px 0;
+		color: $color-pr4;
+
+		&:active {
+			color: $color-red6;
+		}
 	}
 }
 
-.login {}
+.login {
+	// display: none;
+	.form__text{
+		text-align: center;
+	}
+}
 
 .icon-googleplus {}
 
@@ -202,9 +218,28 @@
 .icon-facebookround {}
 
 .signup {
-	display: none;
+	// display: none;
+	color: $color-gray;
+
+	.form__label-check {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 120%;
+	}
+
+	.form__input-check {
+		float: left;
+	}
+
+	.form__footer {
+		// text-align: left;
+		font-size: 14px;
+		line-height: 120%;
+	}
 }
 
 .restore {
-	display: none;
+	// display: none;
+	color: $color-gray;
+
 }

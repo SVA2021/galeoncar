@@ -65,8 +65,9 @@
 					<div class="form__checkblock">
 						<input type="checkbox" class="form__input-check" name="remember" id="">
 						<label for="remember" class="form__label-check">
-							Запомнить меня на этом компьютере</label>
-						</div>
+							Запомнить меня на этом компьютере
+						</label>
+					</div>
 					<button class="form__btn form__btn-auth" onclick="alert(111)">Авторизоваться</button>
 					<p class="form__text">Войти с помощью</p>
 					<div class="form__social">
@@ -76,45 +77,57 @@
 					</div>
 					<p class="form__text">Вы можете войти через аккаунт в социальных сетях</p>
 					<div class="form__footer">
-						<a href="" class="form__link"></a>
-						Забыли пароль?</div>
+						<a href="" class="form__link">Забыли пароль?</a>
+					</div>
 				</div>
 				<div class="signup">
 					<button class="form__btn form__btn-enter form__btn-inactive">вход</button>
 					<button class="form__btn form__btn-reg">регистрация</button>
-					<label for="login" class="form__label">Логин</label>
+					<label for="login" class="form__label">Логин<span class="form__spec">*</span></label>
 					<input type="text" class="form__input" name="login" required>
-					<label for="password" class="form__label">Пароль</label>
+					<label for="password" class="form__label">Пароль<span class="form__spec">*</span></label>
 					<input type="text" class="form__input" name="password" required>
-					<label for="password_again" class="form__label">Подтверждение пароля</label>
+					<label for="password_again" class="form__label">Подтверждение пароля<span class="form__spec">*</span></label>
 					<input type="text" class="form__input" name="password_again" required>
-					<label for="email" class="form__label">Адрес e-mail</label>
+					<label for="email" class="form__label">Адрес e-mail<span class="form__spec">*</span></label>
 					<input type="text" class="form__input" name="email" required>
 					<label for="first_name" class="form__label">Имя</label>
 					<input type="text" class="form__input" name="first_name">
 					<label for="last_name" class="form__label">Фамилия</label>
 					<input type="text" class="form__input" name="last_name">
-					<input type="checkbox" class="form__input" name="agree" id="">
-					<label for="agree" class="form__label">Согласен на обработку личных данных
-						<sup class="form__spec">1</sup></label>
-					<input type="checkbox" class="form__input" name="discount" id="">
-					<label for="discount" class="form__label">Я хочу учавствовать в бесплатной программе лояльности и получать баллы, информацию о скидках и акциях</label>
+					<div class="form__checkblock">
+						<label for="agree" class="form__label-check">
+							<input type="checkbox" class="form__input-check" name="agree" id="">
+							Согласен на обработку личных данных <sup class="form__spec">1</sup>
+						</label>
+					</div>
+					<div class="form__checkblock">
+						<label for="discount" class="form__label-check">
+							<input type="checkbox" class="form__input-check" name="discount" id="">
+							Я хочу учавствовать в бесплатной программе лояльности и получать баллы, информацию о скидках и акциях
+						</label>
+					</div>
+					<div class="form__footer">
 					<p class="form__text">
-						Пароль должен быть не менее 6 символов длиной. Символом “
-						<span class="form__spec">*</span>” отмечены обязательные для заполнения поля.<br>
-						1 - Настоящим в соответствии с Федеральным законом № 152-ФЗ “О персональных данных” от 27.07.2006 Вы подтверждаете свое согласие на обработку персональных данных. С политикой можно ознакомиться по ссылке.
+						Пароль должен быть не менее 6 символов длиной. Символом “<span class="form__spec">*</span>” отмечены обязательные для заполнения поля.<br><br>
+						1 - Настоящим в соответствии с Федеральным законом № 152-ФЗ “О персональных данных” от 27.07.2006 Вы
+						подтверждаете свое согласие на обработку персональных данных. С политикой можно ознакомиться по ссылке.
 					</p>
+					</div>
 				</div>
 				<div class="restore">
 					<p class="form__text">
-						Если вы забыли пароль, введите логин или E-Mail. Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-Mail.
+						Если вы забыли пароль, введите логин или E-Mail. Контрольная строка для смены пароля, а также ваши
+						регистрационные данные, будут высланы вам по E-Mail.
 					</p>
 					<label for="login" class="form__label">Логин</label>
 					<input type="text" class="form__input" name="login">
 					<label for="password" class="form__label">Пароль</label>
 					<input type="text" class="form__input" name="password">
 					<button class="form__btn form__btn-resend">Выслать</button>
-					<div class="form__footer">Забыли пароль?</div>
+					<div class="form__footer">
+						<a href="" class="form__link">Авторизация</a>
+						</div>
 				</div>
 			</form>
 		</main>
