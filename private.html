@@ -51,7 +51,7 @@
 		</header>
 		<main class="main section__offset wrapper__container">
 			<form class="form">
-				<div class="login form__active">
+				<div class="login">
 					<button class="form__btn form__btn-enter">вход</button>
 					<button class="form__btn form__btn-reg form__btn-inactive">регистрация</button>
 					<label for="login" class="form__label">
@@ -68,7 +68,7 @@
 							Запомнить меня на этом компьютере
 						</label>
 					</div>
-					<button class="form__btn form__btn-auth" onclick="alert(111)">Авторизоваться</button>
+					<button class="form__btn form__btn-auth" onclick="alert('server not found')">Авторизоваться</button>
 					<p class="form__text">Войти с помощью</p>
 					<div class="form__social">
 						<span class="form__icon icon-googleplus"></span>
@@ -77,11 +77,13 @@
 					</div>
 					<p class="form__text">Вы можете войти через аккаунт в социальных сетях</p>
 					<div class="form__footer">
-						<a href="" class="form__link">Забыли пароль?</a>
+						<a href="" class="form__link" id="forgot">
+							Забыли пароль?
+						</a>
 					</div>
 				</div>
 				<div class="signup">
-					<button class="form__btn form__btn-enter form__btn-inactive">вход</button>
+					<button class="form__btn form__btn-enter form__btn-inactive"">вход</button>
 					<button class="form__btn form__btn-reg">регистрация</button>
 					<label for="login" class="form__label">Логин<span class="form__spec">*</span></label>
 					<input type="text" class="form__input" name="login" required>
@@ -124,9 +126,11 @@
 					<input type="text" class="form__input" name="login">
 					<label for="password" class="form__label">Пароль</label>
 					<input type="text" class="form__input" name="password">
-					<button class="form__btn form__btn-resend">Выслать</button>
+					<button class="form__btn form__btn-resend" onclick="alert('data sent to email')">
+						Выслать
+					</button>
 					<div class="form__footer">
-						<a href="" class="form__link">Авторизация</a>
+						<a href="" class="form__link" id="auth">Авторизация</a>
 						</div>
 				</div>
 			</form>

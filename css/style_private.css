@@ -1124,6 +1124,10 @@ body {
   }
 }
 
+.form__active {
+  display: block;
+}
+
 .form__btn {
   height: 48px;
   margin-bottom: 16px;
@@ -1311,11 +1315,22 @@ body {
   color: #B72025;
 }
 
+.login {
+  display: none;
+}
+
 .login .form__text {
   text-align: center;
 }
 
+.form__active.login,
+.form__active.signup,
+.form__active.restore {
+  display: block;
+}
+
 .signup {
+  display: none;
   color: #696969;
 }
 
@@ -1335,6 +1350,7 @@ body {
 }
 
 .restore {
+  display: none;
   color: #696969;
 }
 /*# sourceMappingURL=style_private.css.map */
