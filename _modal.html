@@ -1,67 +1,151 @@
-<section class="modal">
-	<header>
-		<h2>
-			<span class="header__title">Porsche 911 Carrera 4s</span>
-		</h2>
-	</header>
-	<div class="modal__inner wrapper__container">
-		<div class="modal__gallery-wrapper">
-			<div class="modal__hero-img">
-				<img src="./img/modal/Porsche-Panamera-960x550.webp" alt="PorschePanamera">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
+	<link rel="stylesheet" href="/css/modal.css">
+	<title>Galeoncar</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!--* this header same for all pages -->
+		<header class="header">
+			<div class="header__container">
+
+				<div class="header__logo">
+					<span class="icon-menu header__menu-bar"></span>
+					<img class="logo-lion" src="./img/svg/LogoLion.svg" alt="logo-lion">
+					<img class="logo-text" src="./img/svg/LogoText.svg" alt="logo-text-galeaoncar">
+				</div>
+				<nav class="header__menu menu ">
+					<ul class="menu__body">
+						<li class="menu__item"><a href="./index.html" class="menu__link">Главная</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Автопарк</a></li>
+						<li class="menu__item"><a href="./terms_rent.html" class="menu__link">Аренда</a></li>
+						<li class="menu__item"><a href="./business_rent.html" class="menu__link">Для бизнеса</a></li>
+						<li class="menu__item"><a href="./bank_details.html" class="menu__link">Контакты</a></li>
+						<li class="menu__item"><a href="./private.html" class="menu__link">Личный кабинет</a></li>
+					</ul>
+				</nav>
+				<div class="header__social">
+					<span class="icon-facebook"></span>
+					<span class="icon-instagram-brands"></span>
+					<span class="icon-vk-brands"></span>
+					<span class="icon-whatsup"></span>
+				</div>
+				<div class="header__phone">8 (995) 888-30-94</div>
+				<div class="header__app-shop">
+					<a class="apple-shop" href="#">
+						<img src="./img/svg/apple-store.svg" alt="apple-shop">
+					</a>
+					<a class="google-shop" href="#">
+						<img src="./img/svg/google-play.svg" alt="google-shop">
+					</a>
+				</div>
 			</div>
-			<div class="modal__gallery">
-				<img src="./img/modal/Rectangle 312.webp" alt="car on track" class="modal__gallery-item">
-				<img src="./img/modal/Rectangle 313.webp" alt="car interior" class="modal__gallery-item">
-				<img src="./img/modal/Rectangle 314.webp" alt="car interior" class="modal__gallery-item">
-				<img src="./img/modal/Rectangle 315.webp" alt="car sideview" class="modal__gallery-item">
-			</div>
-		</div>
-		<div class="modal__description">
-			<div class="modal__description-wrapper">
-				<div class="modal__description-item brand">
-					<p class="modal__description-title">Марка</p>
-					<p class="modal__description-value">Porsche</p>
-				</div>
-				<div class="modal__description-item power">
-					<p class="modal__description-title">Мощность</p>
-					<p class="modal__description-value">184 л.с.</p>
-				</div>
-				<div class="modal__description-item wheels">
-					<p class="modal__description-title">Привод</p>
-					<p class="modal__description-value">Полный</p>
-				</div>
-				<div class="modal__description-item consume">
-					<p class="modal__description-title">Расход</p>
-					<p class="modal__description-value">7.5 л на 100км</p>
-				</div>
-				<div class="modal__description-item maxspeed">
-					<p class="modal__description-title">Max скорость</p>
-					<p class="modal__description-value">230 км/ч</p>
-				</div>
-				<div class="modal__description-item acceleration">
-					<p class="modal__description-title">Разгон</p>
-					<p class="modal__description-value">6.9 сек до 100 км/ч</p>
-				</div>
-				<div class="modal__description-item seats">
-					<p class="modal__description-title">Количество мест</p>
-					<p class="modal__description-value">5</p>
-				</div>
-				<div class="modal__description-item colors">
-					<p class="modal__description-title">Доступные цвета</p>
-					<div class="colors__wrapper">
-						<span class="colors__item"></span>
-						<span class="colors__item"></span>
-						<span class="colors__item"></span>
-						<span class="colors__item"></span>
-						<span class="colors__item"></span>
+		</header>
+
+		<section class="modal wrapper__container">
+			<header>
+				<h2 class="modal__header">Porsche 911 Carrera 4s</h2>
+			</header>
+			<div class="modal__inner">
+				<div class="modal__gallery-wrapper">
+					<div class="modal__hero-img">
+						<!-- <img src="./img/modal/Porsche-Panamera-960x550.webp" alt="PorschePanamera"> -->
+						<span class="modal__video-btn icon-play-solid"></span>
+					</div>
+					<div class="modal__gallery">
+						<img src="./img/modal/Rectangle 312.webp" alt="car on track" class="modal__gallery-item">
+						<img src="./img/modal/Rectangle 313.webp" alt="car interior" class="modal__gallery-item">
+						<img src="./img/modal/Rectangle 314.webp" alt="car interior" class="modal__gallery-item">
+						<img src="./img/modal/Rectangle 315.webp" alt="car sideview" class="modal__gallery-item">
 					</div>
 				</div>
-				<div class="modal__description-item engine">
-					<p class="modal__description-title">Объем двигателя</p>
-					<p class="modal__description-value">2.0 л</p>
+				<div class="modal__description">
+					<div class="modal__description-wrapper">
+						<div class="modal__description-item brand">
+							<p class="modal__description-title">Марка</p>
+							<p class="modal__description-value">Porsche</p>
+						</div>
+						<div class="modal__description-item power">
+							<p class="modal__description-title">Мощность</p>
+							<p class="modal__description-value">184 л.с.</p>
+						</div>
+						<div class="modal__description-item wheels">
+							<p class="modal__description-title">Привод</p>
+							<p class="modal__description-value">Полный</p>
+						</div>
+						<div class="modal__description-item consume">
+							<p class="modal__description-title">Расход</p>
+							<p class="modal__description-value">7.5 л на 100км</p>
+						</div>
+						<div class="modal__description-item maxspeed">
+							<p class="modal__description-title">Max скорость</p>
+							<p class="modal__description-value">230 км/ч</p>
+						</div>
+						<div class="modal__description-item acceleration">
+							<p class="modal__description-title">Разгон</p>
+							<p class="modal__description-value">6.9 сек до 100 км/ч</p>
+						</div>
+						<div class="modal__description-item seats">
+							<p class="modal__description-title">Количество мест</p>
+							<p class="modal__description-value">5</p>
+						</div>
+						<div class="modal__description-item colors">
+							<p class="modal__description-title">Доступные цвета</p>
+							<div class="colors__wrapper">
+								<span class="colors__item"></span>
+								<span class="colors__item"></span>
+								<span class="colors__item"></span>
+								<span class="colors__item"></span>
+								<span class="colors__item"></span>
+							</div>
+						</div>
+						<div class="modal__description-item engine">
+							<p class="modal__description-title">Объем двигателя</p>
+							<p class="modal__description-value">2.0 л</p>
+						</div>
+					</div>
+					<button class="modal__button button__link">ЗАКАЗАТЬ МАШИНУ</button>
 				</div>
 			</div>
-			<button class="modal__button button__link">ЗАКАЗАТЬ МАШИНУ</button>
-		</div>
+		</section>
+
 	</div>
-</section>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__logo">
+				<img class="logo" src="./img/svg/LogoCombined.svg" alt="logo-footer">
+			</div>
+			<div class="footer__menu">
+				<nav class="menu">
+					<ul class="menu__body">
+						<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Автопарк</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Аренда</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Для бизнеса</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
+					</ul>
+				</nav>
+			</div>
+			<p class="footer__copyright">2022 &copy; <span>Galeoncar</span></p>
+			<p class="footer__confidential">Политика конфиденциальности</p>
+			<div class="footer__social">
+				<span class="icon-facebook"></span>
+				<span class="icon-instagram-brands"></span>
+				<span class="icon-vk-brands"></span>
+				<span class="icon-whatsup"></span>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/script_header_menu.js"></script>
+</body>
+
+</html>
