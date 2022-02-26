@@ -1106,6 +1106,7 @@ body {
 
 .modal {
   display: block;
+  position: relative;
   background-color: #15171E;
   outline: 0.25px solid red;
 }
@@ -1149,6 +1150,42 @@ body {
     font-size: 48px;
     line-height: 61px;
   }
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 14px;
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
+
+.modal__close::before, .modal__close::after {
+  position: absolute;
+  content: ' ';
+  height: 14px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.modal__close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal__close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal__inner {
@@ -1394,8 +1431,8 @@ body {
 @media (min-width: 768px) {
   .modal__description-wrapper {
     width: 66%;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
     row-gap: 24px;
         grid-template-areas: "brand power wheels engine" "consume maxspeed acceleration ." "seats colors . .";
   }
@@ -1403,8 +1440,8 @@ body {
 
 @media (min-width: 1000px) {
   .modal__description-wrapper {
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (20%)[5];
+        grid-template-columns: repeat(5, 20%);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
     row-gap: 30px;
@@ -1415,12 +1452,18 @@ body {
 .modal__description-item {
   font: 400 13px "Gilroy", sans-serif;
   line-height: 120%;
-  white-space: nowrap;
 }
 
 @media (min-width: 410px) {
   .modal__description-item {
+    white-space: nowrap;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal__description-item {
+    margin-right: 12px;
   }
 }
 

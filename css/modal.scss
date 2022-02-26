@@ -9,6 +9,7 @@
 
 .modal {
 	display: block;
+	position: relative;
 	background-color: $color-pr2;
 	outline: 0.25px solid red;
 
@@ -45,6 +46,41 @@
 		}
 
 
+	}
+
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 14px;
+		height: 42px;
+		width: 42px;
+		text-align: center;
+		font-size: 14px;
+		color: $color-white;
+		opacity: 0.75;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			content: ' ';
+			height: 14px;
+			width: 1px;
+			background-color: $color-white;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
 	}
 
 	// .modal__inner
@@ -208,14 +244,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		// justify-content: center;
 		margin-top: 24px;
 
 		@include media-sm {
 			margin-top: 32px;
 			flex-direction: row;
 			justify-content: space-between;
-			// gap: 24px;
 		}
 
 		@include media-md {
@@ -244,8 +278,7 @@
 
 		@include media-sm {
 			width: 66%;
-			grid-template-columns: repeat(4, 1fr);
-			// grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(4, 25%);
 			row-gap: 24px;
 			grid-template-areas:
 				"brand power wheels engine"
@@ -254,31 +287,28 @@
 		}
 
 		@include media-md {
-			grid-template-columns: repeat(5, 1fr);
+			grid-template-columns: repeat(5, 20%);
 			grid-template-rows: repeat(2, 1fr);
 			row-gap: 30px;
 			grid-template-areas:
 				"brand power wheels engine seats"
 				"consume maxspeed acceleration . colors";
-
 		}
 
-		// @include media-lg {
-
-		// }
-
-		// @include media-xl {
-
-		// }
 	}
 
 	// .modal__description-item
 	&__description-item {
 		font: 400 13px $Gilroy;
 		line-height: 120%;
-		white-space: nowrap;
+
 		@include media-xs {
+			white-space: nowrap;
 			font-size: 14px;
+		}
+
+		@include media-sm {
+			margin-right: 12px;
 		}
 
 		@include media-lg {
@@ -318,28 +348,12 @@
 		@include media-sm {
 			width: 31%;
 			margin: 0;
-			// flex: 0 0 auto;
-			// margin-top: 70px;
-			// margin-bottom: 104px;
 		}
 	}
 
 	// .modal__button
 
 	&__button {
-		// margin-top: 32px;
-		// margin-bottom: 44px;
-
-		// @include media-xs {
-		// 	margin-bottom: 34px;
-		// }
-
-		// @include media-sm {
-		// 	margin: 0;
-		// 	// flex: 0 0 auto;
-		// 	// margin-top: 70px;
-		// 	// margin-bottom: 104px;
-		// }
 	}
 }
 
