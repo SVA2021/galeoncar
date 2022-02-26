@@ -17,6 +17,7 @@ menuBtn.addEventListener('click', () => {
 );
 
 //******* car cards slider ****************************//
+const modalCarCard = document.querySelector('.modal');
 
 function hideOuterElement(min, max, array) {
 	for (const element of array) {
@@ -25,9 +26,7 @@ function hideOuterElement(min, max, array) {
 		if (coordinates.left < min || coordinates.left > max) {
 			element.style.visibility = 'hidden';
 		}
-		// console.log(min, max, coordinates.left, coordinates.right);
 	}
-	console.log('divider');
 }
 
 function setSlidePosition(sliderWrapper) {
@@ -47,6 +46,15 @@ function setSlidePosition(sliderWrapper) {
 	const maxPosition = wrapperCoordinate.right;
 
 	hideOuterElement(minPosition, maxPosition, items);
+
+	for (const item of items) {
+		item.addEventListener('click', function () {
+			modalCarCard.style.display = 'block';
+
+			console.log('click');
+		}
+		);
+	}
 
 	prevBtn.addEventListener('click', function () {
 		let position = parseInt(slider.style.left) || 0;
@@ -69,20 +77,12 @@ function setSlidePosition(sliderWrapper) {
 	})
 }
 
-// const transferSlider = document.querySelector('.transfer__slider');
-// const meetingSlider = document.querySelector('.meeting__slider');
-// const weddingSlider = document.querySelector('.wedding__slider');
-// const datingSlider = document.querySelector('.dating__slider');
-// const photoshootSlider = document.querySelector('.photoshoot__slider');
-// const businessSlider = document.querySelector('.business__slider');
-// setSlidePosition(transferSlider);
-// setSlidePosition(meetingSlider);
-// setSlidePosition(weddingSlider);
-// setSlidePosition(datingSlider);
-// setSlidePosition(photoshootSlider);
-// setSlidePosition(businessSlider);
-
 const slidersArray = document.querySelectorAll('.card-slider');
+const closeCardBtn = document.getElementById('closeCardBtn');
+
+closeCardBtn.addEventListener('click', function (e) {
+	modalCarCard.style.display = 'none';
+})
 
 for (const slider of slidersArray) {
 	setSlidePosition(slider);

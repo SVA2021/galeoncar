@@ -1,0 +1,454 @@
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $color-pr2;
+	outline: 0.25px solid red;
+
+	&__header {
+		padding-top: 38px;
+		margin-bottom: 24px;
+		color: $color-pr4;
+		font: 900 18px $Gilroy;
+		line-height: 23px;
+		letter-spacing: 0.1em;
+
+		@include media-xs {
+			padding-top: 52px;
+			margin-bottom: 30px;
+			font-size: 24px;
+			line-height: 31px;
+		}
+
+		@include media-sm {
+			padding-top: 42px;
+			margin-bottom: 24px;
+			font-size: 36px;
+			line-height: 46px;
+		}
+
+		@include media-md {
+			padding-top: 80px;
+			margin-bottom: 42px;
+		}
+
+		@include media-lg {
+			font-size: 48px;
+			line-height: 61px;
+		}
+
+
+	}
+
+	&__close {
+	outline: 0.25px solid yellow;
+	position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 14px;
+		height: 42px;
+		width: 42px;
+		text-align: center;
+		font-size: 14px;
+		color: $color-white;
+		opacity: 0.75;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			content: ' ';
+			height: 14px;
+			width: 1px;
+			background-color: $color-white;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	// .modal__inner
+	&__inner {
+		color: $color-white;
+		// margin-top: 24px;
+
+		@include media-xs {
+			// margin-top: 32px;
+		}
+
+		@include media-sm {
+			padding-bottom: 40px;
+			// margin-top: 24px;
+		}
+
+		@include media-md {
+			padding-bottom: 45px;
+		}
+
+		@include media-lg {
+			padding-bottom: 56px;
+		}
+
+		@include media-xl {
+			padding-bottom: 80px;
+		}
+	}
+
+	// .modal__gallery-wrapper
+
+	&__gallery-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		@include media-sm {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+
+	// .modal__hero-img
+
+	&__hero-img {
+		margin-left: -19px;
+		background-image: url('../img/modal/Porsche-Panamera-960x550.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+		width: 320px;
+		height: 194px;
+
+
+		@include media-xs {
+			width: 372px;
+			margin-left: 0;
+		}
+
+		@include media-sm {
+			width: 472px;
+		}
+
+		@include media-md {
+			width: 626px;
+			height: 268px;
+		}
+
+		@include media-lg {
+			width: 799px;
+			height: 344px;
+		}
+
+		@include media-xl {
+			width: 952px;
+			height: 426px;
+		}
+
+	}
+
+	&__video-btn {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-40px, -40px);
+
+		z-index: 10;
+		height: 80px;
+		width: 80px;
+		color: $color-white;
+		border: 1px solid $color-white;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&:hover {
+			border-color: $color-pr4;
+			color: $color-pr4;
+		}
+
+		&:active {
+			border-color: $color-red6;
+			color: $color-red6;
+		}
+	}
+
+	.icon-play-solid::before {
+		position: absolute;
+		font-size: 24px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-0.25em, -0.5em);
+	}
+
+	// .modal__gallery
+	&__gallery {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 14px;
+
+		@include media-sm {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 24px;
+		}
+
+	}
+
+	// .modal__gallery-item
+	&__gallery-item {
+		width: 83px;
+		height: 70px;
+
+		@include media-sm {
+			width: 100px;
+			height: 85px;
+		}
+
+		@include media-md {
+			width: 138px;
+			height: 122px;
+		}
+
+		@include media-lg {
+			width: 182px;
+			height: 160px;
+		}
+
+		@include media-xl {
+			width: 219px;
+			height: 201px;
+		}
+	}
+
+	// .modal__description
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 24px;
+
+		@include media-sm {
+			margin-top: 32px;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@include media-md {
+			margin-top: 24px;
+		}
+
+		@include media-lg {
+			margin-top: 42px;
+		}
+
+		@include media-xl {}
+
+	}
+
+	// .modal__description-wrapper
+
+	&__description-wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		row-gap: 16px;
+		grid-template-areas:
+			"brand power wheels"
+			"consume maxspeed acceleration"
+			"seats colors engine";
+
+		@include media-sm {
+			width: 66%;
+			grid-template-columns: repeat(4, 25%);
+			row-gap: 24px;
+			grid-template-areas:
+				"brand power wheels engine"
+				"consume maxspeed acceleration ."
+				"seats colors . .";
+		}
+
+		@include media-md {
+			grid-template-columns: repeat(5, 20%);
+			grid-template-rows: repeat(2, 1fr);
+			row-gap: 30px;
+			grid-template-areas:
+				"brand power wheels engine seats"
+				"consume maxspeed acceleration . colors";
+		}
+
+	}
+
+	// .modal__description-item
+	&__description-item {
+		font: 400 13px $Gilroy;
+		line-height: 120%;
+
+		@include media-xs {
+			white-space: nowrap;
+			font-size: 14px;
+		}
+
+		@include media-sm {
+			margin-right: 12px;
+		}
+
+		@include media-lg {
+			font-size: 16px;
+			line-height: 160%;
+			letter-spacing: 0.05em;
+		}
+
+	}
+
+	// .modal__description-title
+
+	&__description-title {}
+
+	// .modal__description-value
+	&__description-value {
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-top: 4px;
+
+		@include media-lg {
+			line-height: 120%;
+		}
+	}
+
+	&__button-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 32px;
+		margin-bottom: 44px;
+
+		@include media-xs {
+			margin-bottom: 34px;
+		}
+
+		@include media-sm {
+			width: 31%;
+			margin: 0;
+		}
+	}
+
+	// .modal__button
+
+	&__button {
+	}
+}
+
+.header {
+
+	// .header__title
+
+	&__title {}
+}
+
+.wrapper {
+
+	// .wrapper__container
+
+	&__container {}
+}
+
+.brand {
+	grid-area: brand;
+}
+
+.power {
+	grid-area: power;
+}
+
+.wheels {
+	grid-area: wheels;
+}
+
+.consume {
+	grid-area: consume;
+}
+
+.maxspeed {
+	grid-area: maxspeed;
+}
+
+.acceleration {
+	grid-area: acceleration;
+}
+
+.seats {
+	grid-area: seats;
+}
+
+.colors {
+	grid-area: colors;
+
+	// .colors__wrapper
+	&__wrapper {
+		display: flex;
+		flex-direction: row;
+		margin-top: 6px;
+		gap: 4px;
+
+		@include media-xs {
+			gap: 8px;
+		}
+	}
+
+	// .colors__item
+	&__item {
+		display: block;
+		width: 12px;
+		height: 12px;
+
+		&:nth-child(1) {
+			background-color: $color-white;
+		}
+
+		&:nth-child(2) {
+			background-color: $color-gray;
+		}
+
+		&:nth-child(3) {
+			background-color: $color-red6;
+		}
+
+		&:nth-child(4) {
+			background-color: $color-black;
+		}
+
+		&:nth-child(5) {
+			background-color: $color-brown;
+		}
+
+		@include media-xs {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
+.engine {
+	grid-area: engine;
+}
+
+.button {
+
+	// .button__link
+
+	&__link {}
+}
