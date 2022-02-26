@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/style_carpark.css">
 	<title>Galeoncar</title>
 </head>
 
@@ -50,76 +50,55 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="banner">
-				<div class="banner__container">
-					<header class="banner__header">
-						<h1>
-							<span class="header__subhero">аренда</span>
-							<span class="header__hero">премиум автомобилей</span>
+			
+			<section class="carpark">
+				<div class="wrapper__container">
+					<header class="carpark__header">
+						<h1 class="header__hero">
+							<span class="header__subhero">НАШ</span>
+							АВТОПАРК
 						</h1>
-						<div class="banner__button search__open">
-							<span class="icon-menu"></span>
-						</div>
 					</header>
-					<div class="banner__search search__modal">
-						<form action="#" class="search__form">
-							<legend class="search__header">подобрать автомобиль</legend>
-							<div class="search__close"><span></span></div>
-							<div class="search__select">
-								<span class="arrow down"></span>
-								<select name="car-brand" id="carBrand">
-									<option value="0">Марка автомобиля</option>
-									<option value="1">Mercedes</option>
-									<option value="2">Nissan</option>
-									<option value="3">Porshe</option>
-								</select>
+					<div class="carpark__inner">
+						<div class="carpark__table">
+							<h3 class="carpark__title">
+								АВТОМОБИЛЬ ПО ПОДПИСКЕ С&nbsp;ПОЛНЫМ ОБСЛУЖИВАНИЕМ
+							</h3>
+							<div class="carpark__main">
+								<div class="carpark__item">
+									<span class="carpark__icon icon-pin"></span>
+									<p class="carpark__address">
+										<span class="carpark__subtitle">Наш адрес:</span>
+										Санкт-Петербург, Таежная улица, 37
+									</p>
+								</div>
+								<div class="carpark__item">
+									<span class="carpark__icon icon-clock"></span>
+									<p class="carpark__address">
+										<span class="carpark__subtitle">Время работы:</span>
+										круглосуточно
+									</p>
+								</div>
 							</div>
-							<div class="search__select">
-								<span class="arrow down"></span>
-								<select name="car-model" id="carModel">
-									<option value="0">Марка автомобиля</option>
-									<option value="1">Maybach</option>
-									<option value="2">Panamera</option>
-									<option value="3">Audi Q5</option>
-								</select>
-							</div>
-							<div class="search__select">
-								<span class="arrow down"></span>
-								<select name="car-type" id="carType">
-									<option value="0">Тип автомобиля</option>
-									<option value="1">Limousine</option>
-									<option value="2">Crossover</option>
-									<option value="3">Sedan</option>
-								</select>
-							</div>
-							<!-- </div> -->
-							<button class="search__submit">выбрать</button>
-						</form>
-					</div>
-					<div class="banner__slider slider" id="bannerSlider">
-						<div class="slider__navigation">
-							<span class="slider__left js-prev icon-arrow"></span>
-							<span class="slider__center"></span>
-							<span class="slider__right js-next icon-arrow"></span>
+							<button class="carpark__call button__link">ЗАКАЗАТЬ МАШИНУ</button>
 						</div>
-						<div class="slider__body" id="bannerSliderBody">
-							<!-- <div class="slider__slide js-slide">
-								<img src="./img/main/slider_320_15.webp" alt="car">
-							</div>
-							<div class="slider__slide js-slide">
-								<img src="./img/main/slider_320_01.webp" alt="car">
-							</div>
-							<div class="slider__slide js-slide">
-								<img src="./img/main/slider_320_02.webp" alt="car">
-							</div>
-							<div class="slider__slide js-slide">
-								<img src="./img/main/slider_320_03.webp" alt="car">
-							</div> -->
+						<div class="carpark__select">
+							<ul class="carpark__select-body">
+								<li class="carpark__select-item">
+									<span class="carpark__select-marker select__premium"></span>
+								</li>
+								<li class="carpark__select-item">
+									<span class="carpark__select-marker select__business"></span>
+								</li>
+								<li class="carpark__select-item">
+									<span class="carpark__select-marker select__sport"></span>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="car-order">
 				<header class="section__header">
 					<h2>
@@ -148,7 +127,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="car-order">
 				<header class="section__header">
 					<h2>
@@ -177,7 +156,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="car-order">
 				<header class="section__header">
 					<h2>
@@ -206,7 +185,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 		</main>
 	</div>
 	<footer class="footer">
