@@ -14,6 +14,7 @@ $color-pr4-op25: #EDC5A240;
 $color-red6-op25: #B7202540;
 //opacity 0.05
 $color-white5: #ffffff0d;
+$color-white25: #ffffff40;
 //gradient
 $gradient-section: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%);
 
@@ -107,42 +108,6 @@ $height-footer-xxs: 252px;
 $z-index-navigation: 10;
 $z-index-notification: 100;
 $z-index-modal: 1000;
-
-
-// //**** XS container (410)  ********//////////
-
-// @include media-xs {
-// }
-
-
-// //**** SM container (768)  ********//////////
-
-// @include media-sm {
-
-// }
-
-
-// //**** MD container (1000)  ********//////////
-
-// @include media-md {
-
-// }
-
-
-// //**** LG container (1280)  ********//////////
-
-// @include media-lg {
-
-
-// }
-
-
-// //**** XL container (1920)  ********//////////
-
-// @include media-xl {
-
-// }
-
 
 
 // @include media-xs {

@@ -1364,6 +1364,8 @@ body {
 }
 
 .carpark__table {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 233px;
   display: -webkit-box;
@@ -1386,6 +1388,7 @@ body {
 
 @media (min-width: 410px) {
   .carpark__table {
+    margin-top: 40px;
     height: 247px;
   }
 }
@@ -1495,6 +1498,294 @@ body {
 @media (min-width: 768px) {
   .carpark__subtitle {
     display: block;
+  }
+}
+
+.carpark__gradient {
+  z-index: 0;
+  position: absolute;
+  left: 94px;
+  top: 303px;
+  width: 318px;
+  height: 318px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: linear-gradient(108deg, #FFFFFF 11.7%, rgba(255, 255, 255, 0) 34.3%) border-box;
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@media (min-width: 410px) {
+  .carpark__gradient {
+    width: 388px;
+    height: 388px;
+    left: 91px;
+    top: 358px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carpark__gradient {
+    width: 578px;
+    height: 578px;
+    left: 446px;
+    top: 97px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .carpark__gradient {
+    width: 578px;
+    height: 578px;
+    left: 614px;
+    top: 137px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carpark__gradient {
+    width: 822px;
+    height: 822px;
+    left: 780px;
+    top: 58px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .carpark__gradient {
+    width: 822px;
+    height: 822px;
+    left: 1108px;
+    top: 98px;
+  }
+}
+
+.carpark__select-item {
+  font: 500 14px "Gilroy", sans-serif;
+  line-height: 120%;
+  text-transform: uppercase;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+}
+
+.carpark__select-item a {
+  color: #fff;
+}
+
+.carpark__select-item a:hover {
+  color: #EDC5A2;
+}
+
+.carpark__select-item a:active {
+  color: #B72025;
+}
+
+.carpark__select-item:hover .carpark__select-marker::before {
+  background-color: #EDC5A2;
+  opacity: 1;
+}
+
+.carpark__select-item:active .carpark__select-marker::before {
+  background-color: #B72025;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .carpark__select-item {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carpark__select-item {
+    font-size: 24px;
+  }
+}
+
+.carpark__select-marker {
+  position: relative;
+  width: 22.59px;
+  height: 22.59px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 0px 8px;
+  background-color: #ffffff40;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .carpark__select-marker {
+    width: 44px;
+    height: 44px;
+    margin: 0px 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .carpark__select-marker {
+    margin: 0px 62px;
+  }
+}
+
+.carpark__select-marker::before {
+  content: "";
+  width: 13.28px;
+  height: 13.28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .carpark__select-marker::before {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.select__premium {
+  position: absolute;
+  left: 20px;
+  top: 395px;
+}
+
+@media (min-width: 410px) {
+  .select__premium {
+    left: 19px;
+    top: 469px;
+  }
+}
+
+@media (min-width: 768px) {
+  .select__premium {
+    left: 335px;
+    top: 269px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .select__premium {
+    left: 503px;
+    top: 309px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .select__premium {
+    left: 600px;
+    top: 346px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .select__premium {
+    left: 928px;
+    top: 386px;
+  }
+}
+
+.select__business {
+  position: absolute;
+  left: 22px;
+  top: 459px;
+}
+
+@media (min-width: 410px) {
+  .select__business {
+    left: 19px;
+    top: 536.22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .select__business {
+    left: 335px;
+    top: 357px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .select__business {
+    left: 503px;
+    top: 397px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .select__business {
+    left: 605px;
+    top: 470px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .select__business {
+    left: 933px;
+    top: 510px;
+  }
+}
+
+.select__sport {
+  position: absolute;
+  left: 45px;
+  top: 523px;
+}
+
+@media (min-width: 410px) {
+  .select__sport {
+    left: 32.75px;
+    top: 603.44px;
+  }
+}
+
+@media (min-width: 768px) {
+  .select__sport {
+    left: 353px;
+    top: 445px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .select__sport {
+    left: 521px;
+    top: 485px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .select__sport {
+    left: 640px;
+    top: 592px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .select__sport {
+    left: 968px;
+    top: 632px;
   }
 }
 /*# sourceMappingURL=style_carpark.css.map */
