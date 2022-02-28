@@ -151,7 +151,8 @@
 		padding: 0 10px 16px 10px;
 		color: $color-pr4;
 		font-size: 36px;
-
+		cursor: pointer;
+		
 		&:hover {
 			&::after {
 				position: absolute;
