@@ -7,6 +7,12 @@ const accordeonItems = accordeon.querySelectorAll('.accordeon__item');
 
 for (const item of accordeonItems) {
 	item.addEventListener('click', function () {
-		item.classList.toggle('accordeon__active');
+		if (item.classList.contains('accordeon__active')) {
+			item.classList.remove('accordeon__active');
+		} else {
+			let activeItem = accordeon.querySelector('.accordeon__active');
+			activeItem?.classList.remove('accordeon__active');
+			item.classList.add('accordeon__active');
+		}
 	})
 }

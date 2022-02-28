@@ -1,21 +1,5 @@
 'use strict';
 
-const windowWidth = document.documentElement.clientWidth;
-const windWidth = document.documentElement.offsetWidth;
-
-//******* header ************************//
-const menuBtn = document.querySelector('.header__menu-bar');
-const appShop = document.querySelector('.header__app-shop');
-const menuList = document.querySelector('.header__menu');
-
-menuBtn.addEventListener('click', () => {
-	if (windowWidth <= 767) {
-		appShop.classList.toggle('app-shop__active');
-	}
-	menuList.classList.toggle('menu__active');
-}
-);
-
 //******* car cards slider ****************************//
 const modalCarCard = document.querySelector('.modal');
 
