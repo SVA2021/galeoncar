@@ -30,7 +30,6 @@
 	}
 
 	// .special-banner__header
-
 	&__header {
 		padding-top: 40px;
 
@@ -46,16 +45,11 @@
 			padding-top: 100px;
 		}
 	}
-
-	// .special-banner__inner
-
-	&__inner {}
 }
 
 .special {
 
 	// .special__list
-
 	&__list {
 		margin: 0 auto;
 		margin-top: 174px;
@@ -94,14 +88,12 @@
 		@include media-xl {
 			margin: 0 auto;
 			margin-top: 350px;
-			// margin: 350px 0px 0px 0px;
 			width: 1260px;
 			justify-content: center;
 		}
 	}
 
 	// .special__link
-
 	&__list-item {
 		order: 5;
 		display: inline-block;
@@ -125,24 +117,17 @@
 			padding: 12px 20px;
 		}
 
-		// @include media-sm {}
-
 		@include media-md {
 			font-size: 18px;
 			line-height: 120%;
 			padding: 18px 24px;
-
 		}
 
 		@include media-lg {
 			font-size: 24px;
 			line-height: 120%;
 			padding: 26px 24px;
-
 		}
-
-		// @include media-xl {}
-
 	}
 
 	&__link {
@@ -162,11 +147,9 @@
 			height: 41px;
 			text-align: center;
 			order: 8;
-			// padding: 12px 36px;
 			border-radius: 6px;
 			font: 400 14px $Gilroy;
 			line-height: 41px;
-			// line-height: 120%;
 			text-transform: uppercase;
 			background-color: $color-pr4-op25;
 			border: 1px solid $color-pr4;
@@ -184,8 +167,6 @@
 				background-color: $color-red6-op25;
 			}
 		}
-
-		// @include media-sm {}
 
 		@include media-md {
 			width: 182px;
@@ -256,7 +237,6 @@
 	}
 
 	// .transfer__inner
-
 	&__inner {
 		margin-top: 40px;
 
@@ -271,7 +251,6 @@
 	}
 
 	// .transfer__flex-wrapper
-
 	&__flex-wrapper {
 		display: flex;
 		flex-direction: column-reverse;

@@ -1,7 +1,5 @@
 .rent-type {
 	background-color: $color-pr1;
-	padding-top: 30px;
-	padding-bottom: 40px;
 
 	// .rent-type__inner
 	&__inner {
@@ -122,8 +120,6 @@
 
 @include media-sm {
 	.rent-type {
-		padding-top: 80px;
-		padding-bottom: 80px;
 
 		// .rent-type__inner
 		&__inner {
@@ -179,8 +175,6 @@
 
 @include media-lg {
 	.rent-type {
-		padding-top: 100px;
-		padding-bottom: 100px;
 
 		// .rent-type__inner
 		&__inner {
@@ -204,8 +198,6 @@
 
 @include media-xl {
 	.rent-type {
-		padding-top: 140px;
-		padding-bottom: 140px;
 
 		// .rent-type__card
 		&__card {
@@ -217,5 +209,4 @@
 			margin-bottom: 40px;
 		}
 	}
-
 }

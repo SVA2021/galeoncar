@@ -5,7 +5,6 @@
 	left: 0;
 	right: 0;
 	background-color: $color-pr2;
-	outline: 0.25px solid red;
 
 	&__header {
 		padding-top: 38px;
@@ -43,7 +42,6 @@
 	}
 
 	&__close {
-	outline: 0.25px solid yellow;
 	position: absolute;
 		top: 10px;
 		right: 10px;
@@ -81,15 +79,9 @@
 	// .modal__inner
 	&__inner {
 		color: $color-white;
-		// margin-top: 24px;
-
-		@include media-xs {
-			// margin-top: 32px;
-		}
 
 		@include media-sm {
 			padding-bottom: 40px;
-			// margin-top: 24px;
 		}
 
 		@include media-md {
@@ -255,8 +247,6 @@
 			margin-top: 42px;
 		}
 
-		@include media-xl {}
-
 	}
 
 	// .modal__description-wrapper
@@ -311,12 +301,7 @@
 			line-height: 160%;
 			letter-spacing: 0.05em;
 		}
-
 	}
-
-	// .modal__description-title
-
-	&__description-title {}
 
 	// .modal__description-value
 	&__description-value {
@@ -346,24 +331,6 @@
 		}
 	}
 
-	// .modal__button
-
-	&__button {
-	}
-}
-
-.header {
-
-	// .header__title
-
-	&__title {}
-}
-
-.wrapper {
-
-	// .wrapper__container
-
-	&__container {}
 }
 
 .brand {
@@ -444,11 +411,4 @@
 
 .engine {
 	grid-area: engine;
-}
-
-.button {
-
-	// .button__link
-
-	&__link {}
 }

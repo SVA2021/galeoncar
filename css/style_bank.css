@@ -104,7 +104,6 @@ body {
 }
 
 .wrapper {
-  outline: 1px solid green;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -330,7 +329,6 @@ body {
 }
 
 .wrapper__container {
-  outline: 1px solid aqua;
   margin: 0 auto;
   width: 282px;
 }

@@ -1,14 +1,11 @@
 .car-order {
 	background-color: $color-pr2;
-	padding: 40px 0;
 	border: 0.64px solid;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
 
 	// .car-order__inner
 	&__inner {
-		margin: 0 auto;
-		width: $mq-xxs;
 		position: relative;
 	}
 
@@ -98,12 +95,6 @@
 @include media-xs {
 	.car-order {
 
-		padding: 40px 0;
-
-		&__inner {
-			width: $mq-xs;
-		}
-
 		&__wrapper {
 			margin-top: 42px;
 		}
@@ -125,12 +116,6 @@
 @include media-sm {
 	.car-order {
 
-		padding: 80px 0;
-
-		&__inner {
-			width: $mq-sm;
-		}
-
 		&__wrapper {
 			margin-top: 49px;
 		}
@@ -140,17 +125,17 @@
 			width: 333px;
 		}
 	}
-	
-.breadcrumb {
 
-	// .breadcrumb__body
-	&__body {
-		font: 400 18px $Gilroy;
-		line-height: 140%;
-		letter-spacing: 0.05em;
-		text-transform: capitalize;
+	.breadcrumb {
+
+		// .breadcrumb__body
+		&__body {
+			font: 400 18px $Gilroy;
+			line-height: 140%;
+			letter-spacing: 0.05em;
+			text-transform: capitalize;
+		}
 	}
-}
 }
 
 
@@ -159,37 +144,27 @@
 @include media-md {
 	.car-order {
 
-		&__inner {
-			width: $mq-md;
-		}
-
 		&__wrapper {
 			margin-top: 57px;
 		}
 	}
 
-	
-.breadcrumb {
 
-	// .breadcrumb__body
-	&__body {
-		font: 400 18px $Gilroy;
-		line-height: 140%;
-		text-transform: capitalize;
+	.breadcrumb {
+
+		// .breadcrumb__body
+		&__body {
+			font: 400 18px $Gilroy;
+			line-height: 140%;
+			text-transform: capitalize;
+		}
 	}
-}
 }
 
 //**** LG container (1280)  ********//////////
 
 @include media-lg {
 	.car-order {
-
-		padding: 100px 0;
-
-		&__inner {
-			width: $mq-lg;
-		}
 
 		&__wrapper {
 			margin-top: 80px;
@@ -205,17 +180,17 @@
 		}
 	}
 
-	
-.breadcrumb {
 
-	// .breadcrumb__body
-	&__body {
-		margin-top: 16px;
-		font: 400 24px $CeraPro;
-		line-height: 120%;
-		text-transform: uppercase;
+	.breadcrumb {
+
+		// .breadcrumb__body
+		&__body {
+			margin-top: 16px;
+			font: 400 24px $CeraPro;
+			line-height: 120%;
+			text-transform: uppercase;
+		}
 	}
-}
 
 }
 
@@ -224,12 +199,6 @@
 
 @include media-xl {
 	.car-order {
-
-		padding: 140px 0;
-
-		&__inner {
-			width: $mq-xl;
-		}
 
 		&__wrapper {
 			margin-top: 58px;
@@ -245,12 +214,12 @@
 		}
 	}
 
-	
-.breadcrumb {
 
-	// .breadcrumb__body
-	&__body {
-		margin-top: 42px;
+	.breadcrumb {
+
+		// .breadcrumb__body
+		&__body {
+			margin-top: 42px;
+		}
 	}
-}
 }

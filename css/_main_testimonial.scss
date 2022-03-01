@@ -6,17 +6,13 @@
 	color: $color-white;
 
 	// .testimonial__inner
-
 	&__inner {
-		width: $mq-xxs-container;
 		position: relative;
-		margin: 0 auto;
 		margin-top: 24px;
 		padding-top: 58px;
 	}
 
 	// .testimonial__userlist
-
 	&__userlist {
 		position: absolute;
 		top: 0;
@@ -28,7 +24,6 @@
 	}
 
 	// .testimonial__usercard
-
 	&__usercard {
 		width: 221px;
 		height: 58px;
@@ -41,7 +36,6 @@
 	}
 
 	// .testimonial__userpic
-
 	&__userpic {
 		margin-right: 8px;
 		height: 58px;
@@ -52,7 +46,6 @@
 	}
 
 	// .testimonial__username
-
 	&__username {
 		display: block;
 		padding: 4px 0;
@@ -62,7 +55,6 @@
 	}
 
 	// .testimonial__userinfo
-
 	&__userinfo {
 		font: 400 14px $Gilroy;
 		line-height: 160%;
@@ -72,19 +64,16 @@
 	}
 
 	// .testimonial__detail
-
 	&__detail {
 		margin-top: 24px;
 		position: relative;
 		width: 100%;
 	}
 	// .testimonial__slider-list-item
-
 	&__slider-list-item {
 		display: none;
 	}
 	// .testimonial__navigation
-
 	&__navigation {
 		position: absolute;
 		top: 0;
@@ -98,7 +87,6 @@
 	}
 
 	// .testimonial__navigation-prev
-
 	&__navigation-prev,
 	&__navigation-next {
 		display: inline-block;
@@ -112,7 +100,6 @@
 	}
 
 	// .testimonial__navigation-center
-
 	&__navigation-center {
 		opacity: 0.3;
 		width: 60px;
@@ -138,7 +125,6 @@
 	}
 
 	// .testimonial__detailed-username
-
 	&__detailed-username {
 		font: 700 18px $Gilroy;
 		line-height: 120%;
@@ -146,7 +132,6 @@
 	}
 
 	// .testimonial__detailed-text
-
 	&__detailed-text {
 		margin-top: 24px;
 		mix-blend-mode: normal;
@@ -156,7 +141,6 @@
 	}
 
 	//.testimonial__detailed-footer
-
 	&__detailed-footer {
 		margin-top: 24px;
 		display: flex;
@@ -167,13 +151,11 @@
 	}
 
 	// .testimonial__detailed-raiting
-
 	&__detailed-raiting {
 		font-size: 20px;
 	}
 
 	// .testimonial__detailed-expand
-
 	&__detailed-expand {
 		font: 400 14px $Gilroy;
 		line-height: 140%;
@@ -181,7 +163,6 @@
 	}
 
 	// .testimonial__video
-
 	&__video {
 		margin-top: 40px;
 		position: relative;
@@ -240,11 +221,6 @@
 	.testimonial {
 		height: $height-testimoinal-xs;
 
-		// .testimonial__inner
-		&__inner {
-			width: $mq-xs-container;
-		}
-
 		// .testimonial__detailed-text
 		&__detailed-text {
 			padding-right: 8px;
@@ -281,7 +257,6 @@
 		// .testimonial__inner
 		&__inner {
 			margin-top: 60px;
-			width: $mq-sm-container;
 		}
 
 		// .testimonial__usercard
@@ -304,7 +279,6 @@
 			margin-right: 24px;
 			width: 338px;
 			float: left;
-
 		}
 
 		// .testimonial__detailed-username
@@ -349,11 +323,6 @@
 	.testimonial {
 		height: $height-testimoinal-md;
 
-		// .testimonial__inner
-		&__inner {
-			width: $mq-md-container;
-		}
-
 		// .testimonial__detail
 		&__detail {
 			width: 375px;
@@ -388,7 +357,6 @@
 		// .testimonial__inner
 		&__inner {
 			margin-top: 80px;
-			width: $mq-lg-container;
 		}
 
 		// .testimonial__userlist
@@ -445,11 +413,6 @@
 		height: $height-testimoinal-xl;
 		padding: 140px 0;
 		@include gradient2color(460px);
-
-		// .testimonial__inner
-		&__inner {
-			width: $mq-xl-container;
-		}
 
 		// .testimonial__detail
 		&__detail {

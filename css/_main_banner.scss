@@ -3,7 +3,6 @@
 @import './main_slider_banner';
 
 .banner {
-	// outline: 1px solid red;
 	background-image: url('../img/main/banner_320.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -23,26 +22,12 @@
 	}
 
 	// .banner__container
-
 	&__container {
-		// outline: 1px solid red;
-
-		margin: 0 auto;
 		position: relative;
-		width: $mq-xxs-container;
 		height: 100%;
 	}
 
-	// .banner__header
-
-	&__header {
-		text-transform: uppercase;
-		text-align: center;
-
-	}
-
 	// .banner__button
-
 	&__button {
 		position: absolute;
 		top: 0;
@@ -70,39 +55,9 @@
 
 	}
 
-	// .banner__search
-
-	&__search {}
-
 	// .banner__slider
-
 	&__slider {
 		height: 100%;
-	}
-}
-
-.header {
-
-	// .header__hero
-
-	&__hero {
-		font: 900 $font-size-hero-xs $Gilroy;
-		letter-spacing: 0.1em;
-		line-height: 1.3em;
-		color: transparent;
-		-webkit-text-stroke: 0.74px $color-pr4;
-	}
-
-	// .header__subhero
-
-	&__subhero {
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 8px;
-		font: 400 $font-size-subhero-xs $Gilroy;
-		line-height: 1.17em;
-		letter-spacing: 0.1em;
-		color: $color-white;
 	}
 }
 
@@ -112,10 +67,6 @@
 	.banner {
 		background-image: url('../img/main/banner_#{stripUnit($mq-xs)}.webp');
 		height: $height-banner-xs;
-
-		&__container {
-			width: $mq-xs-container;
-		}
 	}
 }
 
@@ -127,29 +78,8 @@
 		height: $height-banner-sm;
 		padding-top: 80px;
 
-		&__container {
-			width: $mq-sm-container;
-		}
-
 		&__slider {
 			margin-top: 10px;
-		}
-	}
-
-	.header {
-
-		// .header__hero
-
-		&__hero {
-			font-size: $font-size-hero-sm;
-			-webkit-text-stroke: 1px $color-pr4;
-		}
-
-		// .header__subhero
-
-		&__subhero {
-			margin-bottom: 16px;
-			font-size: $font-size-hero-sm / 2;
 		}
 	}
 
@@ -161,10 +91,6 @@
 	.banner {
 		background-image: url('../img/main/banner_#{stripUnit($mq-md)}.webp');
 		height: $height-banner-md;
-
-		&__container {
-			width: $mq-md-container;
-		}
 
 		&__slider {
 			margin-top: 30px;
@@ -181,27 +107,8 @@
 		height: $height-banner-lg;
 		padding-top: 100px;
 
-		&__container {
-			width: $mq-lg-container;
-		}
-
 		&__slider {
 			margin-top: 40px;
-		}
-	}
-
-	.header {
-
-		// .header__hero
-
-		&__hero {
-			font-size: $font-size-hero-lg;
-		}
-
-		// .header__subhero
-
-		&__subhero {
-			margin-bottom: 24px;
 		}
 	}
 
@@ -214,26 +121,5 @@
 		background-image: url('../img/main/banner_#{stripUnit($mq-xl)}.webp');
 		height: $height-banner-xl;
 		padding-top: 132px;
-
-		&__container {
-			width: $mq-xl-container;
-		}
 	}
-
-	.header {
-
-		// .header__hero
-
-		&__hero {
-			font-size: $font-size-hero-xl;
-		}
-
-		// .header__subhero
-
-		&__subhero {
-			margin-bottom: 16px;
-			font-size: $font-size-hero-xl / 2;
-		}
-	}
-
 }

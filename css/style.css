@@ -104,7 +104,6 @@ body {
 }
 
 .wrapper {
-  outline: 1px solid green;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -330,7 +329,6 @@ body {
 }
 
 .wrapper__container {
-  outline: 1px solid aqua;
   margin: 0 auto;
   width: 282px;
 }
@@ -1463,15 +1461,8 @@ body {
 }
 
 .banner__container {
-  margin: 0 auto;
   position: relative;
-  width: 282px;
   height: 100%;
-}
-
-.banner__header {
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .banner__button {
@@ -1504,31 +1495,10 @@ body {
   height: 100%;
 }
 
-.header__hero {
-  font: 900 26px "Gilroy", sans-serif;
-  letter-spacing: 0.1em;
-  line-height: 1.3em;
-  color: transparent;
-  -webkit-text-stroke: 0.74px #EDC5A2;
-}
-
-.header__subhero {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 8px;
-  font: 400 18px "Gilroy", sans-serif;
-  line-height: 1.17em;
-  letter-spacing: 0.1em;
-  color: #fff;
-}
-
 @media (min-width: 410px) {
   .banner {
     background-image: url("../img/main/banner_410.webp");
     height: 469px;
-  }
-  .banner__container {
-    width: 372px;
   }
 }
 
@@ -1538,19 +1508,8 @@ body {
     height: 572px;
     padding-top: 80px;
   }
-  .banner__container {
-    width: 720px;
-  }
   .banner__slider {
     margin-top: 10px;
-  }
-  .header__hero {
-    font-size: 48px;
-    -webkit-text-stroke: 1px #EDC5A2;
-  }
-  .header__subhero {
-    margin-bottom: 16px;
-    font-size: 24px;
   }
 }
 
@@ -1558,9 +1517,6 @@ body {
   .banner {
     background-image: url("../img/main/banner_1000.webp");
     height: 646px;
-  }
-  .banner__container {
-    width: 948px;
   }
   .banner__slider {
     margin-top: 30px;
@@ -1573,17 +1529,8 @@ body {
     height: 808px;
     padding-top: 100px;
   }
-  .banner__container {
-    width: 1212px;
-  }
   .banner__slider {
     margin-top: 40px;
-  }
-  .header__hero {
-    font-size: 64px;
-  }
-  .header__subhero {
-    margin-bottom: 24px;
   }
 }
 
@@ -1592,16 +1539,6 @@ body {
     background-image: url("../img/main/banner_1920.webp");
     height: 981px;
     padding-top: 132px;
-  }
-  .banner__container {
-    width: 1440px;
-  }
-  .header__hero {
-    font-size: 72px;
-  }
-  .header__subhero {
-    margin-bottom: 16px;
-    font-size: 36px;
   }
 }
 
@@ -1940,8 +1877,6 @@ body {
 
 .rent-type {
   background-color: #0A0C11;
-  padding-top: 30px;
-  padding-bottom: 40px;
 }
 
 .rent-type__inner {
@@ -2060,10 +1995,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .rent-type {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
   .rent-type__inner {
     margin-top: 50px;
     width: 720px;
@@ -2099,10 +2030,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .rent-type {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
   .rent-type__inner {
     margin-top: 70px;
   }
@@ -2115,10 +2042,6 @@ body {
 }
 
 @media (min-width: 1920px) {
-  .rent-type {
-    padding-top: 140px;
-    padding-bottom: 140px;
-  }
   .rent-type__card {
     height: 378px;
   }
@@ -2129,15 +2052,12 @@ body {
 
 .car-order {
   background-color: #15171E;
-  padding: 40px 0;
   border: 0.64px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
 }
 
 .car-order__inner {
-  margin: 0 auto;
-  width: 320px;
   position: relative;
 }
 
@@ -2235,12 +2155,6 @@ body {
 }
 
 @media (min-width: 410px) {
-  .car-order {
-    padding: 40px 0;
-  }
-  .car-order__inner {
-    width: 410px;
-  }
   .car-order__wrapper {
     margin-top: 42px;
   }
@@ -2254,12 +2168,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .car-order {
-    padding: 80px 0;
-  }
-  .car-order__inner {
-    width: 768px;
-  }
   .car-order__wrapper {
     margin-top: 49px;
   }
@@ -2276,9 +2184,6 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .car-order__inner {
-    width: 1000px;
-  }
   .car-order__wrapper {
     margin-top: 57px;
   }
@@ -2290,12 +2195,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .car-order {
-    padding: 100px 0;
-  }
-  .car-order__inner {
-    width: 1280px;
-  }
   .car-order__wrapper {
     margin-top: 80px;
   }
@@ -2315,12 +2214,6 @@ body {
 }
 
 @media (min-width: 1920px) {
-  .car-order {
-    padding: 140px 0;
-  }
-  .car-order__inner {
-    width: 1920px;
-  }
   .car-order__wrapper {
     margin-top: 58px;
   }
@@ -2337,7 +2230,6 @@ body {
 }
 
 .rent-terms {
-  padding: 40px 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_320.webp");
   background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_320.webp");
   background-repeat: no-repeat;
@@ -2349,7 +2241,6 @@ body {
 .rent-terms__inner {
   margin: 0 auto;
   margin-top: 49px;
-  width: 282px;
 }
 
 .rent-terms__table {
@@ -2476,7 +2367,6 @@ body {
   }
   .rent-terms__inner {
     margin-top: 40px;
-    width: 372px;
   }
   .rent-terms__table {
     width: 410px;
@@ -2502,13 +2392,11 @@ body {
 
 @media (min-width: 768px) {
   .rent-terms {
-    padding: 80px 0;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_768.webp");
     background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_768.webp");
   }
   .rent-terms__inner {
     margin-top: 84px;
-    width: 720px;
   }
   .rent-terms__table {
     width: 721px;
@@ -2559,7 +2447,6 @@ body {
   }
   .rent-terms__inner {
     margin-top: 60px;
-    width: 948px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2612,13 +2499,11 @@ body {
 
 @media (min-width: 1280px) {
   .rent-terms {
-    padding: 100px 0;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_1280.webp");
     background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_1280.webp");
   }
   .rent-terms__inner {
     margin-top: 80px;
-    width: 1212px;
   }
   .rent-terms__table {
     width: 391px;
@@ -2633,12 +2518,10 @@ body {
 
 @media (min-width: 1920px) {
   .rent-terms {
-    padding: 140px 0;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/main/road_1920.webp");
     background: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/main/road_1920.webp");
   }
   .rent-terms__inner {
-    width: 1440px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2660,9 +2543,7 @@ body {
 }
 
 .testimonial__inner {
-  width: 282px;
   position: relative;
-  margin: 0 auto;
   margin-top: 24px;
   padding-top: 58px;
 }
@@ -2882,9 +2763,6 @@ body {
   .testimonial {
     height: 733px;
   }
-  .testimonial__inner {
-    width: 372px;
-  }
   .testimonial__detailed-text {
     padding-right: 8px;
     font-size: 14px;
@@ -2910,7 +2788,6 @@ body {
   }
   .testimonial__inner {
     margin-top: 60px;
-    width: 720px;
   }
   .testimonial__usercard {
     margin-right: 83px;
@@ -2956,9 +2833,6 @@ body {
   .testimonial {
     height: 724px;
   }
-  .testimonial__inner {
-    width: 948px;
-  }
   .testimonial__detail {
     width: 375px;
   }
@@ -2982,7 +2856,6 @@ body {
   }
   .testimonial__inner {
     margin-top: 80px;
-    width: 1212px;
   }
   .testimonial__userlist {
     -webkit-box-pack: justify;
@@ -3020,9 +2893,6 @@ body {
     height: 883px;
     padding: 140px 0;
     background-image: linear-gradient(to right, #15171E 460px, #0A0C11 460px);
-  }
-  .testimonial__inner {
-    width: 1440px;
   }
   .testimonial__detail {
     width: 630px;
