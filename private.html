@@ -56,14 +56,14 @@
 					<button class="form__btn form__btn-reg form__btn-inactive">регистрация</button>
 					<label for="login" class="form__label">
 						Логин
-						<input type="text" class="form__input" name="login">
+						<input type="text" class="form__input" id="login">
 					</label>
 					<label for="password" class="form__label">
 						Пароль
-						<input type="text" class="form__input" name="password">
+						<input type="text" class="form__input" id="password">
 					</label>
 					<div class="form__checkblock">
-						<input type="checkbox" class="form__input-check" name="remember" id="">
+						<input type="checkbox" class="form__input-check" id="remember">
 						<label for="remember" class="form__label-check">
 							Запомнить меня на этом компьютере
 						</label>
@@ -83,29 +83,33 @@
 					</div>
 				</div>
 				<div class="signup">
-					<button class="form__btn form__btn-enter form__btn-inactive"">вход</button>
+					<button class="form__btn form__btn-enter form__btn-inactive">вход</button>
 					<button class="form__btn form__btn-reg">регистрация</button>
 					<label for="login" class="form__label">Логин<span class="form__spec">*</span></label>
 					<input type="text" class="form__input" name="login" required>
 					<label for="password" class="form__label">Пароль<span class="form__spec">*</span></label>
 					<input type="text" class="form__input" name="password" required>
-					<label for="password_again" class="form__label">Подтверждение пароля<span class="form__spec">*</span></label>
-					<input type="text" class="form__input" name="password_again" required>
-					<label for="email" class="form__label">Адрес e-mail<span class="form__spec">*</span></label>
-					<input type="text" class="form__input" name="email" required>
-					<label for="first_name" class="form__label">Имя</label>
-					<input type="text" class="form__input" name="first_name">
-					<label for="last_name" class="form__label">Фамилия</label>
-					<input type="text" class="form__input" name="last_name">
+					<label  class="form__label">Подтверждение пароля<span class="form__spec">*</span>
+						<input type="text" class="form__input"  required>
+					</label>
+					<label  class="form__label">Адрес e-mail<span class="form__spec">*</span>
+						<input type="text" class="form__input"  required>
+					</label>
+					<label class="form__label">Имя
+						<input type="text" class="form__input">
+					</label>
+					<label  class="form__label">Фамилия
+						<input type="text" class="form__input" >
+					</label>
 					<div class="form__checkblock">
 						<label for="agree" class="form__label-check">
-							<input type="checkbox" class="form__input-check" name="agree" id="">
+							<input type="checkbox" class="form__input-check" id="agree">
 							Согласен на обработку личных данных <sup class="form__spec">1</sup>
 						</label>
 					</div>
 					<div class="form__checkblock">
 						<label for="discount" class="form__label-check">
-							<input type="checkbox" class="form__input-check" name="discount" id="">
+							<input type="checkbox" class="form__input-check" id="discount">
 							Я хочу учавствовать в бесплатной программе лояльности и получать баллы, информацию о скидках и акциях
 						</label>
 					</div>
