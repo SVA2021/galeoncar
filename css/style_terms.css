@@ -1204,6 +1204,7 @@ body {
 .accordeon__sublist {
   display: none;
   margin-top: 16px;
+  max-height: 0;
 }
 
 .accordeon__subitem {
@@ -1226,6 +1227,8 @@ body {
 
 .accordeon__active .accordeon__sublist {
   display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .accordeon__active .arrow {
