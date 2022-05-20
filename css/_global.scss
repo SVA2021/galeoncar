@@ -16,6 +16,7 @@ body {
 	position: relative;
 	min-width: $mq-xxs;
 	width: $mq-xxs;
+	overflow-x: hidden;
 
 	@include media-xs {
 		width: $mq-xs;
