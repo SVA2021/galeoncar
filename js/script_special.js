@@ -3,15 +3,15 @@
 //******* car cards slider ****************************//
 const modalCarCard = document.querySelector('.modal');
 
-function hideOuterElement(min, max, array) {
-	for (const element of array) {
-		let coordinates = element.getBoundingClientRect();
-		element.style.visibility = 'visible';
-		if (coordinates.left < min || coordinates.left > max) {
-			element.style.visibility = 'hidden';
-		}
-	}
-}
+// function hideOuterElement(min, max, array) {
+// 	for (const element of array) {
+// 		let coordinates = element.getBoundingClientRect();
+// 		element.style.visibility = 'visible';
+// 		if (coordinates.left < min || coordinates.left > max) {
+// 			element.style.visibility = 'hidden';
+// 		}
+// 	}
+// }
 
 function setSlidePosition(sliderWrapper) {
 
@@ -25,15 +25,15 @@ function setSlidePosition(sliderWrapper) {
 	const sliderItemWidth = sliderItem.offsetWidth;
 	const parentWidth = sliderWrapper.parentElement.offsetWidth;
 	const gap = 24; // constant in mockup
-	const wrapperCoordinate = sliderWrapper.parentElement.getBoundingClientRect();
-	const minPosition = wrapperCoordinate.left;
-	const maxPosition = wrapperCoordinate.right;
+	// const wrapperCoordinate = sliderWrapper.parentElement.getBoundingClientRect();
+	// const minPosition = wrapperCoordinate.left;
+	// const maxPosition = wrapperCoordinate.right;
 
-	hideOuterElement(minPosition, maxPosition, items);
+	// hideOuterElement(minPosition, maxPosition, items);
 
 	for (const item of items) {
 		item.addEventListener('click', function () {
-			modalCarCard.style.display = 'block';
+			modalCarCard.style.display = 'flex';
 
 			console.log('click');
 		}
@@ -46,7 +46,7 @@ function setSlidePosition(sliderWrapper) {
 		let newPosition = sliderItemWidth + position + gap;
 		slider.style.left = newPosition + 'px';
 
-		hideOuterElement(minPosition, maxPosition, items);
+		// hideOuterElement(minPosition, maxPosition, items);
 
 	})
 
@@ -56,7 +56,7 @@ function setSlidePosition(sliderWrapper) {
 		if (parentWidth + gap + Math.abs(position) >= sliderWidth) return false;
 		slider.style.left = newPosition + 'px';
 
-		hideOuterElement(minPosition, maxPosition, items);
+		// hideOuterElement(minPosition, maxPosition, items);
 
 	})
 }
