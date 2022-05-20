@@ -39,7 +39,7 @@
 		background-color: $color-pr4;
 		text-align: center;
 
-		&:focus {
+		&:focus, &:focus-within {
 			background-color: $color-white;
 		}
 

@@ -60,7 +60,23 @@
 		span {
 			margin: 0 4px;
 			cursor: pointer;
+
+			&:active {
+				text-decoration: none;
+				color: $color-white;
+			}
+
+			&:hover {
+				color: $color-pr4;
+			}
+
+			&:active,
+			&:focus,
+			&:focus-within {
+				color: $color-red6;
+			}
 		}
+
 	}
 
 	// .header__phone
@@ -100,10 +116,12 @@
 
 .logo-lion {
 	height: 30px;
+	aspect-ratio: 63/88;
 }
 
 .logo-text {
 	height: 28px;
+	aspect-ratio: 7/3;
 }
 
 .menu {
@@ -132,15 +150,23 @@
 		color: $color-pr4;
 	}
 
-	a:active {
+	a:active,
+	a:focus {
 		color: $color-red6;
 	}
 
 }
 
-.apple-shop,
+.apple-shop {
+	img {
+		height: 32px;
+		aspect-ratio: 146/45;
+	}
+}
+
 .google-shop {
 	img {
+		aspect-ratio: 16/5;
 		height: 32px;
 	}
 }

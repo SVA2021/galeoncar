@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="galeoncar is service for car rent">
 	<link type="image/png" sizes="16x16" rel="icon" href="./img/favicon-16x16.png">
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Galeoncar</title>
@@ -22,7 +23,7 @@
 					<img class="logo-lion" src="./img/svg/LogoLion.svg" alt="logo-lion">
 					<img class="logo-text" src="./img/svg/LogoText.svg" alt="logo-text-galeaoncar">
 				</div>
-				<nav class="header__menu menu ">
+				<nav class="header__menu menu">
 					<ul class="menu__body">
 						<li class="menu__item"><a href="./index.html" class="menu__link">Главная</a></li>
 						<li class="menu__item"><a href="./carpark.html" class="menu__link">Автопарк</a></li>
@@ -33,10 +34,10 @@
 					</ul>
 				</nav>
 				<div class="header__social">
-					<span class="icon-facebook"></span>
-					<span class="icon-instagram-brands"></span>
-					<span class="icon-vk-brands"></span>
-					<span class="icon-whatsup"></span>
+					<span class="icon-facebook"><a href="#"><span class="sr-only">facebook</span></a></span>
+					<span class="icon-instagram-brands"><a href="#"><span class="sr-only">instagram</span></a></span>
+					<span class="icon-vk-brands"><a href="#"><span class="sr-only">vk</span></a></span>
+					<span class="icon-whatsup"><a href="#"><span class="sr-only">whatsup</span></a></span>
 				</div>
 				<div class="header__phone">8 (995) 888-30-94</div>
 				<div class="header__app-shop">
@@ -50,15 +51,15 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="banner wrapper__container">
-				<div class="banner__container">
+			<section class="banner">
+				<div class="banner__container wrapper__container">
 					<header class="banner__header">
 						<h1 class="header__hero">
 							<span class="header__subhero">аренда</span>
 							премиум автомобилей
 						</h1>
 						<div class="banner__button search__open">
-							<span class="icon-menu"></span>
+							<span class="icon-menu" role="button" tabindex="0"  aria-label="open window to choose car"></span>
 						</div>
 					</header>
 					<div class="banner__search search__modal">
@@ -98,9 +99,9 @@
 					</div>
 					<div class="banner__slider slider" id="bannerSlider">
 						<div class="slider__navigation">
-							<span class="slider__left js-prev icon-arrow"></span>
+							<span class="slider__left js-prev icon-arrow" role="button" tabindex="0" aria-label="show previous slide"></span>
 							<span class="slider__center"></span>
-							<span class="slider__right js-next icon-arrow"></span>
+							<span class="slider__right js-next icon-arrow" role="button" tabindex="0" aria-label="show next slide"></span>
 						</div>
 						<div class="slider__body" id="bannerSliderBody">
 							<!-- <div class="slider__slide js-slide">
