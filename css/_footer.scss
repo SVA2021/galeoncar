@@ -46,6 +46,22 @@
 
 		span {
 			margin: 0px 10px;
+			cursor: pointer;
+
+			&:active {
+				text-decoration: none;
+				color: $color-white;
+			}
+
+			&:hover {
+				color: $color-pr4;
+			}
+
+			&:active,
+			&:focus,
+			&:focus-within {
+				color: $color-red6;
+			}
 		}
 	}
 
