@@ -112,6 +112,7 @@ body {
   position: relative;
   min-width: 320px;
   width: 320px;
+  overflow-x: hidden;
 }
 
 @media (min-width: 410px) {
@@ -685,7 +686,7 @@ body {
 
 .header__menu.menu__active {
   display: block;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .header__social {
@@ -741,6 +742,23 @@ body {
   display: none;
 }
 
+.header__app-shop a:link,
+.header__app-shop a:visited,
+.header__app-shop a:hover,
+.header__app-shop a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__app-shop a:hover .icon-svg,
+.header__app-shop a:focus .icon-svg {
+  stroke: #EDC5A2;
+}
+
+.header__app-shop a:active .icon-svg {
+  stroke: #B72025;
+}
+
 .header__app-shop.app-shop__active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,7 +771,7 @@ body {
   top: 257px;
   left: 32px;
   row-gap: 20px;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .icon-menu {
@@ -798,14 +816,41 @@ body {
   color: #B72025;
 }
 
-.apple-shop img {
+.icon-svg {
   height: 32px;
-  aspect-ratio: 146/45;
+  stroke: #fff;
 }
 
-.google-shop img {
-  aspect-ratio: 16/5;
-  height: 32px;
+.icon-svg:hover, .icon-svg:focus {
+  stroke: #EDC5A2;
+}
+
+.icon-svg:active {
+  stroke: #B72025;
+}
+
+@media (min-width: 410px) {
+  .icon-svg {
+    height: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon-svg {
+    height: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .icon-svg {
+    height: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .icon-svg {
+    height: 45px;
+  }
 }
 
 @media (min-width: 410px) {
@@ -1075,6 +1120,20 @@ body {
 
 .footer__social span {
   margin: 0px 10px;
+  cursor: pointer;
+}
+
+.footer__social span:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__social span:hover {
+  color: #EDC5A2;
+}
+
+.footer__social span:active, .footer__social span:focus, .footer__social span:focus-within {
+  color: #B72025;
 }
 
 .footer__logo .logo {

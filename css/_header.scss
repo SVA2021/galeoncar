@@ -43,7 +43,7 @@
 
 	&__menu.menu__active {
 		display: block;
-		z-index: $z-index-navigation;
+		z-index: $z-index-modal;
 	}
 
 	// .header__social
@@ -93,6 +93,27 @@
 
 	&__app-shop {
 		display: none;
+
+		a:link,
+		a:visited,
+		a:hover,
+		a:active {
+			text-decoration: none;
+			color: $color-white;
+		}
+
+		a:hover,
+		a:focus {
+			.icon-svg {
+				stroke: $color-pr4;
+			}
+		}
+
+		a:active {
+			.icon-svg {
+				stroke: $color-red6;
+			}
+		}
 	}
 
 	&__app-shop.app-shop__active {
@@ -102,7 +123,7 @@
 		top: $height-header-xxs + 197px;
 		left: 32px;
 		row-gap: 20px;
-		z-index: $z-index-navigation;
+		z-index: $z-index-modal;
 
 	}
 
@@ -144,6 +165,7 @@
 	a:active {
 		text-decoration: none;
 		color: $color-white;
+
 	}
 
 	a:hover {
@@ -157,19 +179,53 @@
 
 }
 
-.apple-shop {
-	img {
+.icon-svg {
+	height: 32px;
+	stroke: $color-white;
+
+	&:hover,
+	&:focus {
+		stroke: $color-pr4;
+	}
+
+	&:active {
+		stroke: $color-red6;
+	}
+
+	@include media-xs {
 		height: 32px;
-		aspect-ratio: 146/45;
+	}
+
+	@include media-sm {
+		height: 24px;
+	}
+
+	@include media-md {
+		height: 30px;
+	}
+
+	@include media-lg {
+		height: 45px;
 	}
 }
 
-.google-shop {
-	img {
-		aspect-ratio: 16/5;
-		height: 32px;
-	}
-}
+// .apple-shop {
+
+// 	img,
+// 	svg {
+// 		// height: 32px;
+// 		// aspect-ratio: 146/45;
+// 	}
+// }
+
+// .google-shop {
+
+// 	img,
+// 	svg {
+// 		// aspect-ratio: 16/5;
+// 		// height: 32px;
+// 	}
+// }
 
 //**** XS container (410)  ********//////////
 
