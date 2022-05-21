@@ -1275,11 +1275,11 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 14px;
   height: 42px;
   width: 42px;
   text-align: center;
-  font-size: 14px;
+  font-size: 28px;
+  line-height: 42px;
   color: #fff;
   opacity: 0.75;
   cursor: pointer;
@@ -1287,24 +1287,6 @@ body {
 
 .contacts__close:hover {
   opacity: 1;
-}
-
-.contacts__close::before, .contacts__close::after {
-  position: absolute;
-  content: ' ';
-  height: 14px;
-  width: 1px;
-  background-color: #fff;
-}
-
-.contacts__close::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.contacts__close::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .contacts__main {

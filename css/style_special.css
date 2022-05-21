@@ -3594,11 +3594,11 @@ body {
   position: absolute;
   top: 10px;
   right: 0px;
-  padding: 14px;
   height: 42px;
   width: 42px;
   text-align: center;
-  font-size: 14px;
+  font-size: 28px;
+  line-height: 42px;
   color: #fff;
   opacity: 0.75;
   cursor: pointer;
@@ -3606,24 +3606,6 @@ body {
 
 .modal__close:hover {
   opacity: 1;
-}
-
-.modal__close::before, .modal__close::after {
-  position: absolute;
-  content: ' ';
-  height: 14px;
-  width: 1px;
-  background-color: #fff;
-}
-
-.modal__close::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.modal__close::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .modal__inner {
