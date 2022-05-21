@@ -1612,4 +1612,13 @@ body {
     margin-top: 24px;
   }
 }
+
+.businesscar__img img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  aspect-ratio: 128/72;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style_business_rent.css.map */

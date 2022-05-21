@@ -3494,6 +3494,9 @@ body {
 .card-slider__img {
   margin-left: 10px;
   width: 156px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media (min-width: 1920px) {
@@ -3524,6 +3527,17 @@ body {
 
 .card-slider__text {
   margin-left: 8px;
+}
+
+.special--img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .modal {

@@ -61,13 +61,14 @@
 	}
 
 	&__btn-inactive {
-		opacity: 0.05;
+		opacity: 0.5;
 	}
 
 	&__btn-resend {
 		margin: 28px auto;
 		width: 136px;
 	}
+
 	// .form__label
 	&__label {
 		margin: 10px auto;
@@ -86,12 +87,20 @@
 		margin: 4px auto;
 		height: 36px;
 		border-radius: 5px;
-		background-color: $color-white5;
+		background-color: $color-white;
+		opacity: 0.05;
 		padding-left: 1em;
+		color: $color-white;
 
 		&:focus {
+			opacity: 1;
 			background-color: $color-pr4;
-			color: $color-black;
+			// color: $color-white;
+		}
+
+		&:not(:placeholder-shown) {
+			background-color: $color-white5;
+			opacity: 1;
 		}
 
 		@include media-xs {
@@ -121,6 +130,9 @@
 				font-size: 10px;
 				font-weight: bold;
 			}
+		}
+		&:focus{
+			outline: 1px solid $color-white;
 		}
 	}
 
@@ -152,7 +164,7 @@
 		color: $color-pr4;
 		font-size: 36px;
 		cursor: pointer;
-		
+
 		&:hover {
 			&::after {
 				position: absolute;
@@ -194,7 +206,8 @@
 
 .login {
 	display: none;
-	.form__text{
+
+	.form__text {
 		text-align: center;
 	}
 }

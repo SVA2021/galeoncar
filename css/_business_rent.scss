@@ -198,4 +198,12 @@
 			margin-top: 24px;
 		}
 	}
+
+	&__img{
+		img{
+			width: fit-content;
+			aspect-ratio: 128/72;
+			object-fit: cover;
+		}
+	}
 }

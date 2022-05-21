@@ -20,6 +20,13 @@
 		}
 	}
 
+	&__img{
+		img{
+			object-fit: cover;
+			aspect-ratio: 16/9;
+			width: fit-content;
+		}
+	}
 	// .nodriver__table
 	&__table {
 		position: relative;

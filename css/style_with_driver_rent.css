@@ -1421,6 +1421,15 @@ body {
   }
 }
 
+.driver__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .driver__table {
   position: relative;
   width: 324px;
