@@ -401,6 +401,20 @@ body {
   }
 }
 
+.gradient__border {
+  position: relative;
+}
+
+.gradient__border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ffffff00), color-stop(#ffffff20), to(#ffffff00));
+  background-image: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
+}
+
 .sr-only {
   display: inline-block;
   width: 0px;
@@ -1475,9 +1489,6 @@ body {
 }
 
 .transfer {
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
   height: 857px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
   background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/airplane-taking-off-from-the-airport_320.webp");
@@ -1688,9 +1699,6 @@ body {
 }
 
 .meeting {
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
   height: 908px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_410.webp");
   background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/low-angle-shot-of-grey-skyscrapers-in-front-of-the-river-under-the-dark-cloudy-sky_410.webp");
@@ -1935,9 +1943,6 @@ body {
 }
 
 .wedding {
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
   height: 870px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_320.webp");
   background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/wedding-invitation-with-wedding-bouquet-and-rings_320.webp");
@@ -2152,9 +2157,6 @@ body {
 }
 
 .dating {
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
   height: 1083px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/__large_город_д.фуфаев _2_ 320.webp");
   background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/__large_город_д.фуфаев _2_ 320.webp");
@@ -2436,9 +2438,6 @@ body {
 }
 
 .photoshoot {
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
   height: 870px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/Kazanskiy-sobor-e1616694244558_320.webp");
   background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/Kazanskiy-sobor-e1616694244558_320.webp");
@@ -2681,9 +2680,6 @@ body {
 }
 
 .business {
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
   height: 971px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #15171E), color-stop(57.28%, rgba(21, 23, 30, 0.61)), color-stop(91.36%, #15171E)), url("../img/special/square_320.webp");
   background-image: linear-gradient(180deg, #15171E 7.47%, rgba(21, 23, 30, 0.61) 57.28%, #15171E 91.36%), url("../img/special/square_320.webp");

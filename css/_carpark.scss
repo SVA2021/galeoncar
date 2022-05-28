@@ -212,17 +212,13 @@
 
 		a {
 			color: $color-white;
-
-			&:hover {
-				color: $color-pr4;
-			}
-
-			&:active {
-				color: $color-red6;
-			}
 		}
 
 		&:hover {
+			a {
+				color: $color-pr4;
+			}
+
 			.carpark__select-marker {
 				&::before {
 					background-color: $color-pr4;
@@ -232,6 +228,10 @@
 		}
 
 		&:active {
+			a {
+				color: $color-red6;
+			}
+
 			.carpark__select-marker {
 				&::before {
 					background-color: $color-red6;

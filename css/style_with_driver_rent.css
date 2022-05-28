@@ -401,6 +401,20 @@ body {
   }
 }
 
+.gradient__border {
+  position: relative;
+}
+
+.gradient__border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ffffff00), color-stop(#ffffff20), to(#ffffff00));
+  background-image: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
+}
+
 .sr-only {
   display: inline-block;
   width: 0px;
@@ -1221,9 +1235,6 @@ body {
 
 .car-order {
   background-color: #15171E;
-  border: 0.64px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
 }
 
 .car-order__inner {

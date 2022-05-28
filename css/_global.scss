@@ -337,6 +337,18 @@ body {
 	}
 }
 
+.gradient__border {
+	position: relative;
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		height: 2px;
+		width: 100%;
+		background-image: linear-gradient(to left, #ffffff00, #ffffff20, #ffffff00);
+	}
+}
 //********* accessibility special class ***********************************//
 
 .sr-only {
