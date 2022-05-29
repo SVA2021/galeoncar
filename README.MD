@@ -11,8 +11,8 @@ As is different functional elements and many images.
 - Code reusage where it's possible. 
 - Tryouts of different approaches of code organization. 
   For example, code nesting for media queries in SASS was made in 2 ways: 
-	- 1.  All section code into every media query. 
-	- 2. Separate media query for every class/subclass.
+	- All section code into every media query. 
+	- Separate media query for every class/subclass.
 
 ## Technologies
 HTML5, CSS3, JS, SASS, Git, GitHub (+ GitHub.Pages), BEM.
