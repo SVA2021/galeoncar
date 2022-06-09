@@ -34,27 +34,11 @@
 
 	// .slider__center
 	&__center {
-		// display: inline-block;
 		margin: 0 27px;
 		height: 5px;
 		width: 5px;
 		border-radius: 50%;
 		background-color: $color-white;
-	}
-
-	// .slider__right
-	&__right {
-		// display: inline-block;
-	}
-
-	&__left:hover,
-	&__right:hover {
-		// color: $color-pr4;
-	}
-
-	&__left:active,
-	&__right:active {
-		// color: $color-red6;
 	}
 
 	// .slider__body
@@ -84,7 +68,6 @@
 
 		img {
 			height: 200px;
-			// width: min-content;
 		}
 
 		z-index: 100;
@@ -97,7 +80,6 @@
 		top: 6%;
 
 		img {
-			// aspect-ratio: 658/458;
 			height: 175px;
 		}
 

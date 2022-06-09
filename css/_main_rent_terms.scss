@@ -1,5 +1,4 @@
 .rent-terms {
-	// padding: 40px 0;
 	background: $gradient-section, url('../img/main/road_320.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -10,7 +9,6 @@
 	&__inner {
 		margin: 0 auto;
 		margin-top: 49px;
-		// width: $mq-xxs-container;
 	}
 
 	// .rent-terms__table
@@ -156,7 +154,6 @@
 		// .rent-terms__inner
 		&__inner {
 			margin-top: 40px;
-			// width: $mq-xs-container;
 		}
 
 		// .rent-terms__table
@@ -195,13 +192,11 @@
 @include media-sm {
 
 	.rent-terms {
-		// padding: 80px 0;
 		background: $gradient-section, url('../img/main/road_768.webp');
 
 		// .rent-terms__inner
 		&__inner {
 			margin-top: 84px;
-			// width: $mq-sm-container;
 		}
 
 		// .rent-terms__table
@@ -270,7 +265,6 @@
 		// .rent-terms__inner
 		&__inner {
 			margin-top: 60px;
-			// width: $mq-md-container;
 
 			display: flex;
 			flex-direction: row-reverse;
@@ -329,13 +323,11 @@
 @include media-lg {
 
 	.rent-terms {
-		// padding: 100px 0;
 		background: $gradient-section, url('../img/main/road_1280.webp');
 
 		// .rent-terms__inner
 		&__inner {
 			margin-top: 80px;
-			// width: $mq-lg-container;
 		}
 
 		// .rent-terms__table
@@ -360,12 +352,10 @@
 @include media-xl {
 
 	.rent-terms {
-		// padding: 140px 0;
 		background: $gradient-section, url('../img/main/road_1920.webp');
 
 		// .rent-terms__inner
 		&__inner {
-			// width: $mq-xl-container;
 			justify-content: space-between;
 		}
 

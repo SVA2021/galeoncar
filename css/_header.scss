@@ -209,24 +209,6 @@
 	}
 }
 
-// .apple-shop {
-
-// 	img,
-// 	svg {
-// 		// height: 32px;
-// 		// aspect-ratio: 146/45;
-// 	}
-// }
-
-// .google-shop {
-
-// 	img,
-// 	svg {
-// 		// aspect-ratio: 16/5;
-// 		// height: 32px;
-// 	}
-// }
-
 //**** XS container (410)  ********//////////
 
 @include media-xs {
@@ -515,12 +497,10 @@
 		&__phone {
 			font-size: 36px;
 		}
-
 	}
 
 	// .menu__item
 	.menu__item {
 		font-size: 18px;
 	}
-
 }

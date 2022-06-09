@@ -501,15 +501,6 @@
 
 		.checklist {
 
-			// .checklist__quote
-			&__quote {}
-
-			// .checklist__quote-text
-			&__quote-text {}
-
-			// .checklist__quote-title
-			&__quote-title {}
-
 			// .checklist__description
 			&__description {
 				@include media-sm {
@@ -542,11 +533,6 @@
 
 			}
 
-			// .checklist__item
-			&__item {}
-
-			// .checklist__icon
-			&__icon {}
 		}
 
 	}
@@ -1499,14 +1485,6 @@
 	line-height: 120%;
 	color: $color-white;
 
-	// @include media-xs {
-
-	// }
-
-	// @include media-sm {
-
-	// }
-
 	@include media-md {
 		font-size: 16px;
 		line-height: 160%;
@@ -1517,10 +1495,6 @@
 		font-size: 18px;
 		line-height: 160%;
 	}
-
-	// @include media-xl {
-
-	// }
 
 	// .checklist__quote
 
@@ -1544,9 +1518,6 @@
 			width: 650px;
 		}
 
-		// @include media-xl {
-
-		// }
 		&::before {
 			position: absolute;
 			content: "";
@@ -1560,17 +1531,9 @@
 				transform: skewX(20deg);
 			}
 
-			// @include media-sm {
-
-			// }
-
 			@include media-md {
 				height: 90px;
 			}
-
-			// @include media-lg {
-
-			// }
 
 			@include media-xl {
 				height: 107px;
@@ -1596,7 +1559,6 @@
 		}
 
 		@include media-xl {
-			// padding: 34px 0px 0px 0px;
 			text-align: center;
 			margin: 0;
 			padding: 0;
@@ -1619,22 +1581,11 @@
 			margin-top: 0;
 		}
 
-		// @include media-sm {
-
-		// }
-
-		// @include media-md {
-
-		// }
-
 		@include media-lg {
 			margin-top: 8px;
 			margin-right: 24px;
 		}
 
-		// @include media-xl {
-
-		// }
 	}
 
 	// .checklist__description
@@ -1674,18 +1625,10 @@
 		text-transform: uppercase;
 		font-size: 16px;
 
-		// @include media-xs {
-
-		// }
-
 		@include media-sm {
 			margin-bottom: 24px;
 			font-size: 18px;
 		}
-
-		// @include media-md {
-
-		// }
 
 		@include media-lg {
 			margin-bottom: 42px;
@@ -1693,17 +1636,6 @@
 			font-size: 24px;
 		}
 
-		// @include media-xl {
-
-		// }
-
-	}
-
-	// .checklist__body
-
-	&__body {
-		// margin-top: 16px;
-		// padding-left: 48px;
 	}
 
 	// .checklist__item
@@ -1721,17 +1653,9 @@
 			margin-bottom: 16px;
 		}
 
-		// @include media-md {
-
-		// }
-
 		@include media-lg {
 			margin-bottom: 24px;
 		}
-
-		// @include media-xl {
-
-		// }
 
 	}
 
@@ -1786,14 +1710,6 @@
 		}
 	}
 
-	// .card-slider__navigation-prev
-
-	&__navigation-prev {}
-
-	// .card-slider__navigation-next
-
-	&__navigation-next {}
-
 	&__navigation-prev,
 	&__navigation-next {
 		display: inline-block;
@@ -1838,12 +1754,8 @@
 	&__body {
 		position: absolute;
 		left: 0;
-		// margin-top: 24px;
 		display: flex;
 		flex-direction: row;
-		// transition: left 0.25s ease-in-out;
-
-		// transition: left 0.5s ease-out;
 	}
 
 	// .card-slider__item
@@ -1879,10 +1791,6 @@
 			width: 340px;
 		}
 
-		// .card-slider__item-active {
-		// 	display: block;
-		// }
-
 	}
 
 	// .card-slider__title
@@ -1899,7 +1807,6 @@
 	&__img {
 		margin-left: 10px;
 		width: 156px;
-		// aspect-ratio: 12/5;
 		height: fit-content;
 
 		@include media-xl {
@@ -1925,10 +1832,6 @@
 		line-height: 120%;
 		margin-bottom: 8px;
 	}
-
-	// .card-slider__icon
-
-	&__icon {}
 
 	// .card-slider__text
 
